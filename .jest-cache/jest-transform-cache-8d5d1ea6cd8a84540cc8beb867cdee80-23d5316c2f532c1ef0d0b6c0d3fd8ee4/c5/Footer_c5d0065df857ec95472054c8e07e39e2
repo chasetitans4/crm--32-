@@ -1,0 +1,381 @@
+f4843ef706658d478eebfcb3c75d2e1f
+'use client';
+"use strict";
+
+/* istanbul ignore next */
+function cov_2l5q1gsn4x() {
+  var path = "C:\\Users\\chase\\Downloads\\crm (32)\\src\\components\\layout\\Footer.tsx";
+  var hash = "e77a2a83720b80da87a63d0b61f9c21df1b9ae18";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "C:\\Users\\chase\\Downloads\\crm (32)\\src\\components\\layout\\Footer.tsx",
+    statementMap: {
+      "0": {
+        start: {
+          line: 3,
+          column: 0
+        },
+        end: {
+          line: 5,
+          column: 3
+        }
+      },
+      "1": {
+        start: {
+          line: 6,
+          column: 0
+        },
+        end: {
+          line: 11,
+          column: 3
+        }
+      },
+      "2": {
+        start: {
+          line: 9,
+          column: 8
+        },
+        end: {
+          line: 9,
+          column: 24
+        }
+      },
+      "3": {
+        start: {
+          line: 12,
+          column: 20
+        },
+        end: {
+          line: 12,
+          column: 48
+        }
+      },
+      "4": {
+        start: {
+          line: 13,
+          column: 29
+        },
+        end: {
+          line: 13,
+          column: 71
+        }
+      },
+      "5": {
+        start: {
+          line: 15,
+          column: 4
+        },
+        end: {
+          line: 17,
+          column: 6
+        }
+      },
+      "6": {
+        start: {
+          line: 19,
+          column: 15
+        },
+        end: {
+          line: 39,
+          column: 1
+        }
+      },
+      "7": {
+        start: {
+          line: 20,
+          column: 4
+        },
+        end: {
+          line: 38,
+          column: 7
+        }
+      },
+      "8": {
+        start: {
+          line: 40,
+          column: 17
+        },
+        end: {
+          line: 40,
+          column: 23
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "(anonymous_0)",
+        decl: {
+          start: {
+            line: 8,
+            column: 9
+          },
+          end: {
+            line: 8,
+            column: 10
+          }
+        },
+        loc: {
+          start: {
+            line: 8,
+            column: 20
+          },
+          end: {
+            line: 10,
+            column: 5
+          }
+        },
+        line: 8
+      },
+      "1": {
+        name: "_interop_require_default",
+        decl: {
+          start: {
+            line: 14,
+            column: 9
+          },
+          end: {
+            line: 14,
+            column: 33
+          }
+        },
+        loc: {
+          start: {
+            line: 14,
+            column: 39
+          },
+          end: {
+            line: 18,
+            column: 1
+          }
+        },
+        line: 14
+      },
+      "2": {
+        name: "(anonymous_2)",
+        decl: {
+          start: {
+            line: 19,
+            column: 15
+          },
+          end: {
+            line: 19,
+            column: 16
+          }
+        },
+        loc: {
+          start: {
+            line: 19,
+            column: 37
+          },
+          end: {
+            line: 39,
+            column: 1
+          }
+        },
+        line: 19
+      }
+    },
+    branchMap: {
+      "0": {
+        loc: {
+          start: {
+            line: 15,
+            column: 11
+          },
+          end: {
+            line: 17,
+            column: 5
+          }
+        },
+        type: "cond-expr",
+        locations: [{
+          start: {
+            line: 15,
+            column: 35
+          },
+          end: {
+            line: 15,
+            column: 38
+          }
+        }, {
+          start: {
+            line: 15,
+            column: 41
+          },
+          end: {
+            line: 17,
+            column: 5
+          }
+        }],
+        line: 15
+      },
+      "1": {
+        loc: {
+          start: {
+            line: 15,
+            column: 11
+          },
+          end: {
+            line: 15,
+            column: 32
+          }
+        },
+        type: "binary-expr",
+        locations: [{
+          start: {
+            line: 15,
+            column: 11
+          },
+          end: {
+            line: 15,
+            column: 14
+          }
+        }, {
+          start: {
+            line: 15,
+            column: 18
+          },
+          end: {
+            line: 15,
+            column: 32
+          }
+        }],
+        line: 15
+      },
+      "2": {
+        loc: {
+          start: {
+            line: 19,
+            column: 18
+          },
+          end: {
+            line: 19,
+            column: 32
+          }
+        },
+        type: "default-arg",
+        locations: [{
+          start: {
+            line: 19,
+            column: 30
+          },
+          end: {
+            line: 19,
+            column: 32
+          }
+        }],
+        line: 19
+      }
+    },
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0
+    },
+    f: {
+      "0": 0,
+      "1": 0,
+      "2": 0
+    },
+    b: {
+      "0": [0, 0],
+      "1": [0, 0],
+      "2": [0]
+    },
+    inputSourceMap: {
+      version: 3,
+      sources: ["C:\\Users\\chase\\Downloads\\crm (32)\\src\\components\\layout\\Footer.tsx"],
+      sourcesContent: ["'use client'\n\nimport React from 'react'\n\ninterface FooterProps {\n  className?: string\n}\n\nconst Footer: React.FC<FooterProps> = ({ className = '' }) => {\n  return (\n    <footer className={`bg-white border-t border-gray-200 px-6 py-4 ${className}`}>\n      <div className=\"flex items-center justify-between\">\n        <div className=\"text-sm text-gray-600\">\n          \xA9 2024 CRM Dashboard. All rights reserved.\n        </div>\n        <div className=\"flex items-center space-x-4\">\n          <span className=\"text-sm text-gray-600\">Version 1.0.0</span>\n        </div>\n      </div>\n    </footer>\n  )\n}\n\nexport default Footer"],
+      names: ["Footer", "className", "footer", "div", "span"],
+      mappings: "AAAA;;;;;+BAuBA;;;eAAA;;;;8DArBkB;;;;;;AAMlB,MAAMA,SAAgC,CAAC,EAAEC,YAAY,EAAE,EAAE;IACvD,qBACE,qBAACC;QAAOD,WAAW,CAAC,4CAA4C,EAAEA,WAAW;kBAC3E,cAAA,sBAACE;YAAIF,WAAU;;8BACb,qBAACE;oBAAIF,WAAU;8BAAwB;;8BAGvC,qBAACE;oBAAIF,WAAU;8BACb,cAAA,qBAACG;wBAAKH,WAAU;kCAAwB;;;;;;AAKlD;MAEA,WAAeD"
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "e77a2a83720b80da87a63d0b61f9c21df1b9ae18"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_2l5q1gsn4x = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+cov_2l5q1gsn4x();
+cov_2l5q1gsn4x().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+/* istanbul ignore next */
+cov_2l5q1gsn4x().s[1]++;
+Object.defineProperty(exports, "default", {
+  enumerable: true,
+  get: function () {
+    /* istanbul ignore next */
+    cov_2l5q1gsn4x().f[0]++;
+    cov_2l5q1gsn4x().s[2]++;
+    return _default;
+  }
+});
+const _jsxruntime =
+/* istanbul ignore next */
+(cov_2l5q1gsn4x().s[3]++, require("react/jsx-runtime"));
+const _react =
+/* istanbul ignore next */
+(/*#__PURE__*/cov_2l5q1gsn4x().s[4]++, _interop_require_default(require("react")));
+function _interop_require_default(obj) {
+  /* istanbul ignore next */
+  cov_2l5q1gsn4x().f[1]++;
+  cov_2l5q1gsn4x().s[5]++;
+  return /* istanbul ignore next */(cov_2l5q1gsn4x().b[1][0]++, obj) &&
+  /* istanbul ignore next */
+  (cov_2l5q1gsn4x().b[1][1]++, obj.__esModule) ?
+  /* istanbul ignore next */
+  (cov_2l5q1gsn4x().b[0][0]++, obj) :
+  /* istanbul ignore next */
+  (cov_2l5q1gsn4x().b[0][1]++, {
+    default: obj
+  });
+}
+/* istanbul ignore next */
+cov_2l5q1gsn4x().s[6]++;
+const Footer = ({
+  className =
+  /* istanbul ignore next */
+  (cov_2l5q1gsn4x().b[2][0]++, '')
+}) => {
+  /* istanbul ignore next */
+  cov_2l5q1gsn4x().f[2]++;
+  cov_2l5q1gsn4x().s[7]++;
+  return /*#__PURE__*/(0, _jsxruntime.jsx)("footer", {
+    className: `bg-white border-t border-gray-200 px-6 py-4 ${className}`,
+    children: /*#__PURE__*/(0, _jsxruntime.jsxs)("div", {
+      className: "flex items-center justify-between",
+      children: [/*#__PURE__*/(0, _jsxruntime.jsx)("div", {
+        className: "text-sm text-gray-600",
+        children: "\xa9 2024 CRM Dashboard. All rights reserved."
+      }), /*#__PURE__*/(0, _jsxruntime.jsx)("div", {
+        className: "flex items-center space-x-4",
+        children: /*#__PURE__*/(0, _jsxruntime.jsx)("span", {
+          className: "text-sm text-gray-600",
+          children: "Version 1.0.0"
+        })
+      })]
+    })
+  });
+};
+const _default =
+/* istanbul ignore next */
+(cov_2l5q1gsn4x().s[8]++, Footer);
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfZGVmYXVsdCIsIkZvb3RlciIsImNsYXNzTmFtZSIsImNvdl8ybDVxMWdzbjR4IiwiYiIsImYiLCJzIiwiX2pzeHJ1bnRpbWUiLCJqc3giLCJqc3hzIl0sInNvdXJjZXMiOlsiQzpcXFVzZXJzXFxjaGFzZVxcRG93bmxvYWRzXFxjcm0gKDMyKVxcc3JjXFxjb21wb25lbnRzXFxsYXlvdXRcXEZvb3Rlci50c3giXSwic291cmNlc0NvbnRlbnQiOlsiJ3VzZSBjbGllbnQnXG5cbmltcG9ydCBSZWFjdCBmcm9tICdyZWFjdCdcblxuaW50ZXJmYWNlIEZvb3RlclByb3BzIHtcbiAgY2xhc3NOYW1lPzogc3RyaW5nXG59XG5cbmNvbnN0IEZvb3RlcjogUmVhY3QuRkM8Rm9vdGVyUHJvcHM+ID0gKHsgY2xhc3NOYW1lID0gJycgfSkgPT4ge1xuICByZXR1cm4gKFxuICAgIDxmb290ZXIgY2xhc3NOYW1lPXtgYmctd2hpdGUgYm9yZGVyLXQgYm9yZGVyLWdyYXktMjAwIHB4LTYgcHktNCAke2NsYXNzTmFtZX1gfT5cbiAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1iZXR3ZWVuXCI+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwidGV4dC1zbSB0ZXh0LWdyYXktNjAwXCI+XG4gICAgICAgICAgwqkgMjAyNCBDUk0gRGFzaGJvYXJkLiBBbGwgcmlnaHRzIHJlc2VydmVkLlxuICAgICAgICA8L2Rpdj5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJmbGV4IGl0ZW1zLWNlbnRlciBzcGFjZS14LTRcIj5cbiAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJ0ZXh0LXNtIHRleHQtZ3JheS02MDBcIj5WZXJzaW9uIDEuMC4wPC9zcGFuPlxuICAgICAgICA8L2Rpdj5cbiAgICAgIDwvZGl2PlxuICAgIDwvZm9vdGVyPlxuICApXG59XG5cbmV4cG9ydCBkZWZhdWx0IEZvb3RlciJdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OytCQXVCQTs7Ozs7O1dBQUFBLFFBQUE7Ozs7Ozs7O3dFQXJCa0I7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBTWxCLE1BQU1DLE1BQUEsR0FBZ0NBLENBQUM7RUFBRUMsU0FBQTtFQUFBO0VBQUEsQ0FBQUMsY0FBQSxHQUFBQyxDQUFBLFVBQVksRUFBRTtBQUFBLENBQUU7RUFBQTtFQUFBRCxjQUFBLEdBQUFFLENBQUE7RUFBQUYsY0FBQSxHQUFBRyxDQUFBO0VBQ3ZELG9CQUNFLElBQUFDLFdBQUEsQ0FBQUMsR0FBQSxFQUFDO0lBQU9OLFNBQUEsRUFBVywrQ0FBK0NBLFNBQUEsRUFBVztjQUMzRSxpQkFBQUssV0FBQSxDQUFBRSxJQUFBLEVBQUM7TUFBSVAsU0FBQSxFQUFVOzhCQUNiLElBQUFLLFdBQUEsQ0FBQUMsR0FBQSxFQUFDO1FBQUlOLFNBQUEsRUFBVTtrQkFBd0I7dUJBR3ZDLElBQUFLLFdBQUEsQ0FBQUMsR0FBQSxFQUFDO1FBQUlOLFNBQUEsRUFBVTtrQkFDYixpQkFBQUssV0FBQSxDQUFBQyxHQUFBLEVBQUM7VUFBS04sU0FBQSxFQUFVO29CQUF3Qjs7Ozs7QUFLbEQ7TUFFQUYsUUFBQTtBQUFBO0FBQUEsQ0FBQUcsY0FBQSxHQUFBRyxDQUFBLE9BQWVMLE1BQUEiLCJpZ25vcmVMaXN0IjpbXX0=

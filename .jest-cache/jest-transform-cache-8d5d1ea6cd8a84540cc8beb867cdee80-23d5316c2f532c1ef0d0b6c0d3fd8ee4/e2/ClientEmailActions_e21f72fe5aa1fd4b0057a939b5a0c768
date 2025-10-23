@@ -1,0 +1,292 @@
+6df56f760b15950344936f724bd37b09
+"use strict";
+
+/* istanbul ignore next */
+function cov_phb4nfgy0() {
+  var path = "C:\\Users\\chase\\Downloads\\crm (32)\\src\\components\\clients\\ClientEmailActions.tsx";
+  var hash = "074650b314a8525b40aba6a8109e46dfa20552d7";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "C:\\Users\\chase\\Downloads\\crm (32)\\src\\components\\clients\\ClientEmailActions.tsx",
+    statementMap: {
+      "0": {
+        start: {
+          line: 2,
+          column: 0
+        },
+        end: {
+          line: 4,
+          column: 3
+        }
+      },
+      "1": {
+        start: {
+          line: 5,
+          column: 0
+        },
+        end: {
+          line: 10,
+          column: 3
+        }
+      },
+      "2": {
+        start: {
+          line: 8,
+          column: 8
+        },
+        end: {
+          line: 8,
+          column: 34
+        }
+      },
+      "3": {
+        start: {
+          line: 11,
+          column: 17
+        },
+        end: {
+          line: 11,
+          column: 50
+        }
+      },
+      "4": {
+        start: {
+          line: 12,
+          column: 26
+        },
+        end: {
+          line: 12,
+          column: 31
+        }
+      },
+      "5": {
+        start: {
+          line: 14,
+          column: 29
+        },
+        end: {
+          line: 17,
+          column: 1
+        }
+      },
+      "6": {
+        start: {
+          line: 18,
+          column: 25
+        },
+        end: {
+          line: 39,
+          column: 1
+        }
+      },
+      "7": {
+        start: {
+          line: 19,
+          column: 4
+        },
+        end: {
+          line: 38,
+          column: 5
+        }
+      },
+      "8": {
+        start: {
+          line: 20,
+          column: 8
+        },
+        end: {
+          line: 34,
+          column: 11
+        }
+      },
+      "9": {
+        start: {
+          line: 35,
+          column: 8
+        },
+        end: {
+          line: 35,
+          column: 61
+        }
+      },
+      "10": {
+        start: {
+          line: 37,
+          column: 8
+        },
+        end: {
+          line: 37,
+          column: 62
+        }
+      },
+      "11": {
+        start: {
+          line: 40,
+          column: 27
+        },
+        end: {
+          line: 42,
+          column: 1
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "(anonymous_0)",
+        decl: {
+          start: {
+            line: 7,
+            column: 9
+          },
+          end: {
+            line: 7,
+            column: 10
+          }
+        },
+        loc: {
+          start: {
+            line: 7,
+            column: 20
+          },
+          end: {
+            line: 9,
+            column: 5
+          }
+        },
+        line: 7
+      },
+      "1": {
+        name: "(anonymous_1)",
+        decl: {
+          start: {
+            line: 18,
+            column: 25
+          },
+          end: {
+            line: 18,
+            column: 26
+          }
+        },
+        loc: {
+          start: {
+            line: 18,
+            column: 41
+          },
+          end: {
+            line: 39,
+            column: 1
+          }
+        },
+        line: 18
+      }
+    },
+    branchMap: {},
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0
+    },
+    f: {
+      "0": 0,
+      "1": 0
+    },
+    b: {},
+    inputSourceMap: {
+      version: 3,
+      sources: ["C:\\Users\\chase\\Downloads\\crm (32)\\src\\components\\clients\\ClientEmailActions.tsx"],
+      sourcesContent: ["import { mailjetService } from \"../../services/mailjet\"\n\ninterface Client {\n  id: string\n  name: string\n  email: string\n}\n\nconst welcomeTemplateId = 12345 // Replace with your actual Mailjet template ID\n\nconst welcomeEmailTemplate = `\n  <h1>Welcome!</h1>\n  <p>Thank you for joining our service.</p>\n`\n\nconst sendWelcomeEmail = async (client: Client) => {\n  try {\n    await mailjetService.sendEmail({\n      from: { email: \"noreply@company.com\", name: \"Company Name\" },\n      to: [{ email: client.email, name: client.name }],\n      subject: \"Welcome to our service!\",\n      htmlPart: welcomeEmailTemplate,\n      templateId: welcomeTemplateId,\n    })\n    console.log(`Welcome email sent to ${client.email}`)\n  } catch (error) {\n    console.error(\"Failed to send welcome email:\", error)\n  }\n}\n\nexport const ClientEmailActions = {\n  sendWelcomeEmail,\n}\n"],
+      names: ["ClientEmailActions", "welcomeTemplateId", "welcomeEmailTemplate", "sendWelcomeEmail", "client", "mailjetService", "sendEmail", "from", "email", "name", "to", "subject", "htmlPart", "templateId", "console", "log", "error"],
+      mappings: ";;;;+BA8BaA;;;eAAAA;;;yBA9BkB;AAQ/B,MAAMC,oBAAoB,MAAM,+CAA+C;;AAE/E,MAAMC,uBAAuB,CAAC;;;AAG9B,CAAC;AAED,MAAMC,mBAAmB,OAAOC;IAC9B,IAAI;QACF,MAAMC,uBAAc,CAACC,SAAS,CAAC;YAC7BC,MAAM;gBAAEC,OAAO;gBAAuBC,MAAM;YAAe;YAC3DC,IAAI;gBAAC;oBAAEF,OAAOJ,OAAOI,KAAK;oBAAEC,MAAML,OAAOK,IAAI;gBAAC;aAAE;YAChDE,SAAS;YACTC,UAAUV;YACVW,YAAYZ;QACd;QACAa,QAAQC,GAAG,CAAC,CAAC,sBAAsB,EAAEX,OAAOI,KAAK,EAAE;IACrD,EAAE,OAAOQ,OAAO;QACdF,QAAQE,KAAK,CAAC,iCAAiCA;IACjD;AACF;AAEO,MAAMhB,qBAAqB;IAChCG;AACF"
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "074650b314a8525b40aba6a8109e46dfa20552d7"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_phb4nfgy0 = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+cov_phb4nfgy0();
+cov_phb4nfgy0().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+/* istanbul ignore next */
+cov_phb4nfgy0().s[1]++;
+Object.defineProperty(exports, "ClientEmailActions", {
+  enumerable: true,
+  get: function () {
+    /* istanbul ignore next */
+    cov_phb4nfgy0().f[0]++;
+    cov_phb4nfgy0().s[2]++;
+    return ClientEmailActions;
+  }
+});
+const _mailjet =
+/* istanbul ignore next */
+(cov_phb4nfgy0().s[3]++, require("../../services/mailjet"));
+const welcomeTemplateId =
+/* istanbul ignore next */
+(cov_phb4nfgy0().s[4]++, 12345) // Replace with your actual Mailjet template ID
+;
+const welcomeEmailTemplate =
+/* istanbul ignore next */
+(cov_phb4nfgy0().s[5]++, `
+  <h1>Welcome!</h1>
+  <p>Thank you for joining our service.</p>
+`);
+/* istanbul ignore next */
+cov_phb4nfgy0().s[6]++;
+const sendWelcomeEmail = async client => {
+  /* istanbul ignore next */
+  cov_phb4nfgy0().f[1]++;
+  cov_phb4nfgy0().s[7]++;
+  try {
+    /* istanbul ignore next */
+    cov_phb4nfgy0().s[8]++;
+    await _mailjet.mailjetService.sendEmail({
+      from: {
+        email: "noreply@company.com",
+        name: "Company Name"
+      },
+      to: [{
+        email: client.email,
+        name: client.name
+      }],
+      subject: "Welcome to our service!",
+      htmlPart: welcomeEmailTemplate,
+      templateId: welcomeTemplateId
+    });
+    /* istanbul ignore next */
+    cov_phb4nfgy0().s[9]++;
+    console.log(`Welcome email sent to ${client.email}`);
+  } catch (error) {
+    /* istanbul ignore next */
+    cov_phb4nfgy0().s[10]++;
+    console.error("Failed to send welcome email:", error);
+  }
+};
+const ClientEmailActions =
+/* istanbul ignore next */
+(cov_phb4nfgy0().s[11]++, {
+  sendWelcomeEmail
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJDbGllbnRFbWFpbEFjdGlvbnMiLCJ3ZWxjb21lVGVtcGxhdGVJZCIsImNvdl9waGI0bmZneTAiLCJzIiwid2VsY29tZUVtYWlsVGVtcGxhdGUiLCJzZW5kV2VsY29tZUVtYWlsIiwiY2xpZW50IiwiZiIsIl9tYWlsamV0IiwibWFpbGpldFNlcnZpY2UiLCJzZW5kRW1haWwiLCJmcm9tIiwiZW1haWwiLCJuYW1lIiwidG8iLCJzdWJqZWN0IiwiaHRtbFBhcnQiLCJ0ZW1wbGF0ZUlkIiwiY29uc29sZSIsImxvZyIsImVycm9yIl0sInNvdXJjZXMiOlsiQzpcXFVzZXJzXFxjaGFzZVxcRG93bmxvYWRzXFxjcm0gKDMyKVxcc3JjXFxjb21wb25lbnRzXFxjbGllbnRzXFxDbGllbnRFbWFpbEFjdGlvbnMudHN4Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IG1haWxqZXRTZXJ2aWNlIH0gZnJvbSBcIi4uLy4uL3NlcnZpY2VzL21haWxqZXRcIlxuXG5pbnRlcmZhY2UgQ2xpZW50IHtcbiAgaWQ6IHN0cmluZ1xuICBuYW1lOiBzdHJpbmdcbiAgZW1haWw6IHN0cmluZ1xufVxuXG5jb25zdCB3ZWxjb21lVGVtcGxhdGVJZCA9IDEyMzQ1IC8vIFJlcGxhY2Ugd2l0aCB5b3VyIGFjdHVhbCBNYWlsamV0IHRlbXBsYXRlIElEXG5cbmNvbnN0IHdlbGNvbWVFbWFpbFRlbXBsYXRlID0gYFxuICA8aDE+V2VsY29tZSE8L2gxPlxuICA8cD5UaGFuayB5b3UgZm9yIGpvaW5pbmcgb3VyIHNlcnZpY2UuPC9wPlxuYFxuXG5jb25zdCBzZW5kV2VsY29tZUVtYWlsID0gYXN5bmMgKGNsaWVudDogQ2xpZW50KSA9PiB7XG4gIHRyeSB7XG4gICAgYXdhaXQgbWFpbGpldFNlcnZpY2Uuc2VuZEVtYWlsKHtcbiAgICAgIGZyb206IHsgZW1haWw6IFwibm9yZXBseUBjb21wYW55LmNvbVwiLCBuYW1lOiBcIkNvbXBhbnkgTmFtZVwiIH0sXG4gICAgICB0bzogW3sgZW1haWw6IGNsaWVudC5lbWFpbCwgbmFtZTogY2xpZW50Lm5hbWUgfV0sXG4gICAgICBzdWJqZWN0OiBcIldlbGNvbWUgdG8gb3VyIHNlcnZpY2UhXCIsXG4gICAgICBodG1sUGFydDogd2VsY29tZUVtYWlsVGVtcGxhdGUsXG4gICAgICB0ZW1wbGF0ZUlkOiB3ZWxjb21lVGVtcGxhdGVJZCxcbiAgICB9KVxuICAgIGNvbnNvbGUubG9nKGBXZWxjb21lIGVtYWlsIHNlbnQgdG8gJHtjbGllbnQuZW1haWx9YClcbiAgfSBjYXRjaCAoZXJyb3IpIHtcbiAgICBjb25zb2xlLmVycm9yKFwiRmFpbGVkIHRvIHNlbmQgd2VsY29tZSBlbWFpbDpcIiwgZXJyb3IpXG4gIH1cbn1cblxuZXhwb3J0IGNvbnN0IENsaWVudEVtYWlsQWN0aW9ucyA9IHtcbiAgc2VuZFdlbGNvbWVFbWFpbCxcbn1cbiJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OzsrQkE4QmE7Ozs7OztXQUFBQSxrQkFBQTs7Ozs7aUNBOUJrQjtBQVEvQixNQUFNQyxpQkFBQTtBQUFBO0FBQUEsQ0FBQUMsYUFBQSxHQUFBQyxDQUFBLE9BQW9CLE9BQU07QUFBQTtBQUVoQyxNQUFNQyxvQkFBQTtBQUFBO0FBQUEsQ0FBQUYsYUFBQSxHQUFBQyxDQUFBLE9BQXVCOzs7QUFHN0IsQ0FBQztBQUFBO0FBQUFELGFBQUEsR0FBQUMsQ0FBQTtBQUVELE1BQU1FLGdCQUFBLEdBQW1CLE1BQU9DLE1BQUE7RUFBQTtFQUFBSixhQUFBLEdBQUFLLENBQUE7RUFBQUwsYUFBQSxHQUFBQyxDQUFBO0VBQzlCLElBQUk7SUFBQTtJQUFBRCxhQUFBLEdBQUFDLENBQUE7SUFDRixNQUFNSyxRQUFBLENBQUFDLGNBQWMsQ0FBQ0MsU0FBUyxDQUFDO01BQzdCQyxJQUFBLEVBQU07UUFBRUMsS0FBQSxFQUFPO1FBQXVCQyxJQUFBLEVBQU07TUFBZTtNQUMzREMsRUFBQSxFQUFJLENBQUM7UUFBRUYsS0FBQSxFQUFPTixNQUFBLENBQU9NLEtBQUs7UUFBRUMsSUFBQSxFQUFNUCxNQUFBLENBQU9PO01BQUssRUFBRTtNQUNoREUsT0FBQSxFQUFTO01BQ1RDLFFBQUEsRUFBVVosb0JBQUE7TUFDVmEsVUFBQSxFQUFZaEI7SUFDZDtJQUFBO0lBQUFDLGFBQUEsR0FBQUMsQ0FBQTtJQUNBZSxPQUFBLENBQVFDLEdBQUcsQ0FBQyx5QkFBeUJiLE1BQUEsQ0FBT00sS0FBSyxFQUFFO0VBQ3JELEVBQUUsT0FBT1EsS0FBQSxFQUFPO0lBQUE7SUFBQWxCLGFBQUEsR0FBQUMsQ0FBQTtJQUNkZSxPQUFBLENBQVFFLEtBQUssQ0FBQyxpQ0FBaUNBLEtBQUE7RUFDakQ7QUFDRjtBQUVPLE1BQU1wQixrQkFBQTtBQUFBO0FBQUEsQ0FBQUUsYUFBQSxHQUFBQyxDQUFBLFFBQXFCO0VBQ2hDRTtBQUNGIiwiaWdub3JlTGlzdCI6W119

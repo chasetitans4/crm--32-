@@ -1,0 +1,372 @@
+399debca3e9ec2e6e7ee223d1cb61fbd
+"use client";
+"use strict";
+
+/* istanbul ignore next */
+function cov_ze4wm6h9h() {
+  var path = "C:\\Users\\chase\\Downloads\\crm (32)\\src\\components\\AppWithProviders.tsx";
+  var hash = "d4f08e4ba1d0e02d3f61856689e62a83bff7cd20";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "C:\\Users\\chase\\Downloads\\crm (32)\\src\\components\\AppWithProviders.tsx",
+    statementMap: {
+      "0": {
+        start: {
+          line: 3,
+          column: 0
+        },
+        end: {
+          line: 5,
+          column: 3
+        }
+      },
+      "1": {
+        start: {
+          line: 6,
+          column: 0
+        },
+        end: {
+          line: 11,
+          column: 3
+        }
+      },
+      "2": {
+        start: {
+          line: 9,
+          column: 8
+        },
+        end: {
+          line: 9,
+          column: 32
+        }
+      },
+      "3": {
+        start: {
+          line: 12,
+          column: 20
+        },
+        end: {
+          line: 12,
+          column: 48
+        }
+      },
+      "4": {
+        start: {
+          line: 13,
+          column: 29
+        },
+        end: {
+          line: 13,
+          column: 71
+        }
+      },
+      "5": {
+        start: {
+          line: 14,
+          column: 20
+        },
+        end: {
+          line: 14,
+          column: 52
+        }
+      },
+      "6": {
+        start: {
+          line: 15,
+          column: 21
+        },
+        end: {
+          line: 15,
+          column: 54
+        }
+      },
+      "7": {
+        start: {
+          line: 16,
+          column: 31
+        },
+        end: {
+          line: 16,
+          column: 65
+        }
+      },
+      "8": {
+        start: {
+          line: 17,
+          column: 27
+        },
+        end: {
+          line: 17,
+          column: 70
+        }
+      },
+      "9": {
+        start: {
+          line: 19,
+          column: 4
+        },
+        end: {
+          line: 21,
+          column: 6
+        }
+      },
+      "10": {
+        start: {
+          line: 24,
+          column: 4
+        },
+        end: {
+          line: 30,
+          column: 7
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "(anonymous_0)",
+        decl: {
+          start: {
+            line: 8,
+            column: 9
+          },
+          end: {
+            line: 8,
+            column: 10
+          }
+        },
+        loc: {
+          start: {
+            line: 8,
+            column: 20
+          },
+          end: {
+            line: 10,
+            column: 5
+          }
+        },
+        line: 8
+      },
+      "1": {
+        name: "_interop_require_default",
+        decl: {
+          start: {
+            line: 18,
+            column: 9
+          },
+          end: {
+            line: 18,
+            column: 33
+          }
+        },
+        loc: {
+          start: {
+            line: 18,
+            column: 39
+          },
+          end: {
+            line: 22,
+            column: 1
+          }
+        },
+        line: 18
+      },
+      "2": {
+        name: "AppWithProviders",
+        decl: {
+          start: {
+            line: 23,
+            column: 9
+          },
+          end: {
+            line: 23,
+            column: 25
+          }
+        },
+        loc: {
+          start: {
+            line: 23,
+            column: 28
+          },
+          end: {
+            line: 31,
+            column: 1
+          }
+        },
+        line: 23
+      }
+    },
+    branchMap: {
+      "0": {
+        loc: {
+          start: {
+            line: 19,
+            column: 11
+          },
+          end: {
+            line: 21,
+            column: 5
+          }
+        },
+        type: "cond-expr",
+        locations: [{
+          start: {
+            line: 19,
+            column: 35
+          },
+          end: {
+            line: 19,
+            column: 38
+          }
+        }, {
+          start: {
+            line: 19,
+            column: 41
+          },
+          end: {
+            line: 21,
+            column: 5
+          }
+        }],
+        line: 19
+      },
+      "1": {
+        loc: {
+          start: {
+            line: 19,
+            column: 11
+          },
+          end: {
+            line: 19,
+            column: 32
+          }
+        },
+        type: "binary-expr",
+        locations: [{
+          start: {
+            line: 19,
+            column: 11
+          },
+          end: {
+            line: 19,
+            column: 14
+          }
+        }, {
+          start: {
+            line: 19,
+            column: 18
+          },
+          end: {
+            line: 19,
+            column: 32
+          }
+        }],
+        line: 19
+      }
+    },
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0
+    },
+    f: {
+      "0": 0,
+      "1": 0,
+      "2": 0
+    },
+    b: {
+      "0": [0, 0],
+      "1": [0, 0]
+    },
+    inputSourceMap: {
+      version: 3,
+      sources: ["C:\\Users\\chase\\Downloads\\crm (32)\\src\\components\\AppWithProviders.tsx"],
+      sourcesContent: ["\"use client\"\n\nimport React from 'react'\nimport { AppProvider } from \"@/context/AppContext\"\nimport { AuthProvider } from \"@/context/AuthContext\"\nimport { EnhancedErrorBoundary } from \"@/components/EnhancedErrorBoundary\"\nimport App from \"@/App\"\n\nexport default function AppWithProviders() {\n  return (\n    <EnhancedErrorBoundary>\n      <AuthProvider>\n        <AppProvider>\n          <App />\n        </AppProvider>\n      </AuthProvider>\n    </EnhancedErrorBoundary>\n  )\n}"],
+      names: ["AppWithProviders", "EnhancedErrorBoundary", "AuthProvider", "AppProvider", "App"],
+      mappings: "AAAA;;;;;+BAQA;;;eAAwBA;;;;8DANN;4BACU;6BACC;uCACS;4DACtB;;;;;;AAED,SAASA;IACtB,qBACE,qBAACC,4CAAqB;kBACpB,cAAA,qBAACC,yBAAY;sBACX,cAAA,qBAACC,uBAAW;0BACV,cAAA,qBAACC,YAAG;;;;AAKd"
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "d4f08e4ba1d0e02d3f61856689e62a83bff7cd20"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_ze4wm6h9h = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+cov_ze4wm6h9h();
+cov_ze4wm6h9h().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+/* istanbul ignore next */
+cov_ze4wm6h9h().s[1]++;
+Object.defineProperty(exports, "default", {
+  enumerable: true,
+  get: function () {
+    /* istanbul ignore next */
+    cov_ze4wm6h9h().f[0]++;
+    cov_ze4wm6h9h().s[2]++;
+    return AppWithProviders;
+  }
+});
+const _jsxruntime =
+/* istanbul ignore next */
+(cov_ze4wm6h9h().s[3]++, require("react/jsx-runtime"));
+const _react =
+/* istanbul ignore next */
+(/*#__PURE__*/cov_ze4wm6h9h().s[4]++, _interop_require_default(require("react")));
+const _AppContext =
+/* istanbul ignore next */
+(cov_ze4wm6h9h().s[5]++, require("../context/AppContext"));
+const _AuthContext =
+/* istanbul ignore next */
+(cov_ze4wm6h9h().s[6]++, require("../context/AuthContext"));
+const _EnhancedErrorBoundary =
+/* istanbul ignore next */
+(cov_ze4wm6h9h().s[7]++, require("./EnhancedErrorBoundary"));
+const _App =
+/* istanbul ignore next */
+(/*#__PURE__*/cov_ze4wm6h9h().s[8]++, _interop_require_default(require("../App")));
+function _interop_require_default(obj) {
+  /* istanbul ignore next */
+  cov_ze4wm6h9h().f[1]++;
+  cov_ze4wm6h9h().s[9]++;
+  return /* istanbul ignore next */(cov_ze4wm6h9h().b[1][0]++, obj) &&
+  /* istanbul ignore next */
+  (cov_ze4wm6h9h().b[1][1]++, obj.__esModule) ?
+  /* istanbul ignore next */
+  (cov_ze4wm6h9h().b[0][0]++, obj) :
+  /* istanbul ignore next */
+  (cov_ze4wm6h9h().b[0][1]++, {
+    default: obj
+  });
+}
+function AppWithProviders() {
+  /* istanbul ignore next */
+  cov_ze4wm6h9h().f[2]++;
+  cov_ze4wm6h9h().s[10]++;
+  return /*#__PURE__*/(0, _jsxruntime.jsx)(_EnhancedErrorBoundary.EnhancedErrorBoundary, {
+    children: /*#__PURE__*/(0, _jsxruntime.jsx)(_AuthContext.AuthProvider, {
+      children: /*#__PURE__*/(0, _jsxruntime.jsx)(_AppContext.AppProvider, {
+        children: /*#__PURE__*/(0, _jsxruntime.jsx)(_App.default, {})
+      })
+    })
+  });
+}
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJBcHBXaXRoUHJvdmlkZXJzIiwiY292X3plNHdtNmg5aCIsImYiLCJzIiwiX2pzeHJ1bnRpbWUiLCJqc3giLCJfRW5oYW5jZWRFcnJvckJvdW5kYXJ5IiwiRW5oYW5jZWRFcnJvckJvdW5kYXJ5IiwiX0F1dGhDb250ZXh0IiwiQXV0aFByb3ZpZGVyIiwiX0FwcENvbnRleHQiLCJBcHBQcm92aWRlciIsIl9BcHAiLCJkZWZhdWx0Il0sInNvdXJjZXMiOlsiQzpcXFVzZXJzXFxjaGFzZVxcRG93bmxvYWRzXFxjcm0gKDMyKVxcc3JjXFxjb21wb25lbnRzXFxBcHBXaXRoUHJvdmlkZXJzLnRzeCJdLCJzb3VyY2VzQ29udGVudCI6WyJcInVzZSBjbGllbnRcIlxuXG5pbXBvcnQgUmVhY3QgZnJvbSAncmVhY3QnXG5pbXBvcnQgeyBBcHBQcm92aWRlciB9IGZyb20gXCJAL2NvbnRleHQvQXBwQ29udGV4dFwiXG5pbXBvcnQgeyBBdXRoUHJvdmlkZXIgfSBmcm9tIFwiQC9jb250ZXh0L0F1dGhDb250ZXh0XCJcbmltcG9ydCB7IEVuaGFuY2VkRXJyb3JCb3VuZGFyeSB9IGZyb20gXCJAL2NvbXBvbmVudHMvRW5oYW5jZWRFcnJvckJvdW5kYXJ5XCJcbmltcG9ydCBBcHAgZnJvbSBcIkAvQXBwXCJcblxuZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gQXBwV2l0aFByb3ZpZGVycygpIHtcbiAgcmV0dXJuIChcbiAgICA8RW5oYW5jZWRFcnJvckJvdW5kYXJ5PlxuICAgICAgPEF1dGhQcm92aWRlcj5cbiAgICAgICAgPEFwcFByb3ZpZGVyPlxuICAgICAgICAgIDxBcHAgLz5cbiAgICAgICAgPC9BcHBQcm92aWRlcj5cbiAgICAgIDwvQXV0aFByb3ZpZGVyPlxuICAgIDwvRW5oYW5jZWRFcnJvckJvdW5kYXJ5PlxuICApXG59Il0sIm1hcHBpbmdzIjoiQUFBQTs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7K0JBUUE7Ozs7OztXQUF3QkEsZ0JBQUE7Ozs7Ozs7O3VFQU5OOzs7aUNBQ1U7OztpQ0FDQzs7O2lDQUNTOzs7dUVBQ3RCOzs7Ozs7Ozs7Ozs7Ozs7QUFFRCxTQUFTQSxpQkFBQTtFQUFBO0VBQUFDLGFBQUEsR0FBQUMsQ0FBQTtFQUFBRCxhQUFBLEdBQUFFLENBQUE7RUFDdEIsb0JBQ0UsSUFBQUMsV0FBQSxDQUFBQyxHQUFBLEVBQUNDLHNCQUFBLENBQUFDLHFCQUFxQjtjQUNwQixpQkFBQUgsV0FBQSxDQUFBQyxHQUFBLEVBQUNHLFlBQUEsQ0FBQUMsWUFBWTtnQkFDWCxpQkFBQUwsV0FBQSxDQUFBQyxHQUFBLEVBQUNLLFdBQUEsQ0FBQUMsV0FBVztrQkFDVixpQkFBQVAsV0FBQSxDQUFBQyxHQUFBLEVBQUNPLElBQUEsQ0FBQUMsT0FBRzs7OztBQUtkIiwiaWdub3JlTGlzdCI6W119

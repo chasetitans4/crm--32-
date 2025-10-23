@@ -1,0 +1,408 @@
+f3f6484094b2a1ce222d9fc5162e41af
+"use strict";
+
+/* istanbul ignore next */
+function cov_tulznt8tc() {
+  var path = "C:\\Users\\chase\\Downloads\\crm (32)\\src\\app\\api\\analytics\\[metric]\\route.ts";
+  var hash = "e06ede10d1e41a3438f8b2db4892ff7c684ca6ba";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "C:\\Users\\chase\\Downloads\\crm (32)\\src\\app\\api\\analytics\\[metric]\\route.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 2,
+          column: 0
+        },
+        end: {
+          line: 4,
+          column: 3
+        }
+      },
+      "1": {
+        start: {
+          line: 5,
+          column: 0
+        },
+        end: {
+          line: 10,
+          column: 3
+        }
+      },
+      "2": {
+        start: {
+          line: 8,
+          column: 8
+        },
+        end: {
+          line: 8,
+          column: 19
+        }
+      },
+      "3": {
+        start: {
+          line: 11,
+          column: 16
+        },
+        end: {
+          line: 11,
+          column: 38
+        }
+      },
+      "4": {
+        start: {
+          line: 13,
+          column: 17
+        },
+        end: {
+          line: 47,
+          column: 1
+        }
+      },
+      "5": {
+        start: {
+          line: 49,
+          column: 4
+        },
+        end: {
+          line: 72,
+          column: 5
+        }
+      },
+      "6": {
+        start: {
+          line: 50,
+          column: 27
+        },
+        end: {
+          line: 50,
+          column: 39
+        }
+      },
+      "7": {
+        start: {
+          line: 51,
+          column: 21
+        },
+        end: {
+          line: 51,
+          column: 43
+        }
+      },
+      "8": {
+        start: {
+          line: 52,
+          column: 8
+        },
+        end: {
+          line: 59,
+          column: 9
+        }
+      },
+      "9": {
+        start: {
+          line: 53,
+          column: 12
+        },
+        end: {
+          line: 58,
+          column: 15
+        }
+      },
+      "10": {
+        start: {
+          line: 60,
+          column: 8
+        },
+        end: {
+          line: 63,
+          column: 11
+        }
+      },
+      "11": {
+        start: {
+          line: 65,
+          column: 8
+        },
+        end: {
+          line: 65,
+          column: 63
+        }
+      },
+      "12": {
+        start: {
+          line: 66,
+          column: 8
+        },
+        end: {
+          line: 71,
+          column: 11
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "(anonymous_0)",
+        decl: {
+          start: {
+            line: 7,
+            column: 9
+          },
+          end: {
+            line: 7,
+            column: 10
+          }
+        },
+        loc: {
+          start: {
+            line: 7,
+            column: 20
+          },
+          end: {
+            line: 9,
+            column: 5
+          }
+        },
+        line: 7
+      },
+      "1": {
+        name: "GET",
+        decl: {
+          start: {
+            line: 48,
+            column: 15
+          },
+          end: {
+            line: 48,
+            column: 18
+          }
+        },
+        loc: {
+          start: {
+            line: 48,
+            column: 40
+          },
+          end: {
+            line: 73,
+            column: 1
+          }
+        },
+        line: 48
+      }
+    },
+    branchMap: {
+      "0": {
+        loc: {
+          start: {
+            line: 51,
+            column: 21
+          },
+          end: {
+            line: 51,
+            column: 43
+          }
+        },
+        type: "binary-expr",
+        locations: [{
+          start: {
+            line: 51,
+            column: 21
+          },
+          end: {
+            line: 51,
+            column: 37
+          }
+        }, {
+          start: {
+            line: 51,
+            column: 41
+          },
+          end: {
+            line: 51,
+            column: 43
+          }
+        }],
+        line: 51
+      },
+      "1": {
+        loc: {
+          start: {
+            line: 52,
+            column: 8
+          },
+          end: {
+            line: 59,
+            column: 9
+          }
+        },
+        type: "if",
+        locations: [{
+          start: {
+            line: 52,
+            column: 8
+          },
+          end: {
+            line: 59,
+            column: 9
+          }
+        }, {
+          start: {
+            line: undefined,
+            column: undefined
+          },
+          end: {
+            line: undefined,
+            column: undefined
+          }
+        }],
+        line: 52
+      }
+    },
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0
+    },
+    f: {
+      "0": 0,
+      "1": 0
+    },
+    b: {
+      "0": [0, 0],
+      "1": [0, 0]
+    },
+    inputSourceMap: {
+      version: 3,
+      sources: ["C:\\Users\\chase\\Downloads\\crm (32)\\src\\app\\api\\analytics\\[metric]\\route.ts"],
+      sourcesContent: ["import { NextRequest, NextResponse } from 'next/server';\n\n// Mock data generators\nconst mockData: Record<string, any> = {\n  sales: { labels: ['Jan', 'Feb', 'Mar'], data: [12, 19, 15] },\n  clients: { stages: { Prospect: 5, Proposal: 3, Negotiation: 2 } },\n  tasks: { status: { Completed: 45, Pending: 20 } },\n  revenue: { total: 83200, monthly: [15000, 22000, 18000] }\n};\n\n// GET /api/analytics/[metric]\nexport async function GET(\n  request: NextRequest,\n  { params }: { params: Promise<{ metric: string }> }\n) {\n  try {\n    const { metric } = await params;\n    const data = mockData[metric] || {};\n    if (!data) {\n      return NextResponse.json({ success: false, error: 'Metric not found' }, { status: 404 });\n    }\n    return NextResponse.json({ success: true, data });\n  } catch (error) {\n    console.error('Error fetching analytics data:', error);\n    return NextResponse.json({ success: false, error: 'Failed to fetch data' }, { status: 500 });\n  }\n}"],
+      names: ["GET", "mockData", "sales", "labels", "data", "clients", "stages", "Prospect", "Proposal", "Negotiation", "tasks", "status", "Completed", "Pending", "revenue", "total", "monthly", "request", "params", "metric", "NextResponse", "json", "success", "error", "console"],
+      mappings: ";;;;+BAWsBA;;;eAAAA;;;wBAXoB;AAE1C,uBAAuB;AACvB,MAAMC,WAAgC;IACpCC,OAAO;QAAEC,QAAQ;YAAC;YAAO;YAAO;SAAM;QAAEC,MAAM;YAAC;YAAI;YAAI;SAAG;IAAC;IAC3DC,SAAS;QAAEC,QAAQ;YAAEC,UAAU;YAAGC,UAAU;YAAGC,aAAa;QAAE;IAAE;IAChEC,OAAO;QAAEC,QAAQ;YAAEC,WAAW;YAAIC,SAAS;QAAG;IAAE;IAChDC,SAAS;QAAEC,OAAO;QAAOC,SAAS;YAAC;YAAO;YAAO;SAAM;IAAC;AAC1D;AAGO,eAAehB,IACpBiB,OAAoB,EACpB,EAAEC,MAAM,EAA2C;IAEnD,IAAI;QACF,MAAM,EAAEC,MAAM,EAAE,GAAG,MAAMD;QACzB,MAAMd,OAAOH,QAAQ,CAACkB,OAAO,IAAI,CAAC;QAClC,IAAI,CAACf,MAAM;YACT,OAAOgB,oBAAY,CAACC,IAAI,CAAC;gBAAEC,SAAS;gBAAOC,OAAO;YAAmB,GAAG;gBAAEZ,QAAQ;YAAI;QACxF;QACA,OAAOS,oBAAY,CAACC,IAAI,CAAC;YAAEC,SAAS;YAAMlB;QAAK;IACjD,EAAE,OAAOmB,OAAO;QACdC,QAAQD,KAAK,CAAC,kCAAkCA;QAChD,OAAOH,oBAAY,CAACC,IAAI,CAAC;YAAEC,SAAS;YAAOC,OAAO;QAAuB,GAAG;YAAEZ,QAAQ;QAAI;IAC5F;AACF"
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "e06ede10d1e41a3438f8b2db4892ff7c684ca6ba"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_tulznt8tc = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+cov_tulznt8tc();
+cov_tulznt8tc().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+/* istanbul ignore next */
+cov_tulznt8tc().s[1]++;
+Object.defineProperty(exports, "GET", {
+  enumerable: true,
+  get: function () {
+    /* istanbul ignore next */
+    cov_tulznt8tc().f[0]++;
+    cov_tulznt8tc().s[2]++;
+    return GET;
+  }
+});
+const _server =
+/* istanbul ignore next */
+(cov_tulznt8tc().s[3]++, require("next/server"));
+// Mock data generators
+const mockData =
+/* istanbul ignore next */
+(cov_tulznt8tc().s[4]++, {
+  sales: {
+    labels: ['Jan', 'Feb', 'Mar'],
+    data: [12, 19, 15]
+  },
+  clients: {
+    stages: {
+      Prospect: 5,
+      Proposal: 3,
+      Negotiation: 2
+    }
+  },
+  tasks: {
+    status: {
+      Completed: 45,
+      Pending: 20
+    }
+  },
+  revenue: {
+    total: 83200,
+    monthly: [15000, 22000, 18000]
+  }
+});
+async function GET(request, {
+  params
+}) {
+  /* istanbul ignore next */
+  cov_tulznt8tc().f[1]++;
+  cov_tulznt8tc().s[5]++;
+  try {
+    const {
+      metric
+    } =
+    /* istanbul ignore next */
+    (cov_tulznt8tc().s[6]++, await params);
+    const data =
+    /* istanbul ignore next */
+    (cov_tulznt8tc().s[7]++,
+    /* istanbul ignore next */
+    (cov_tulznt8tc().b[0][0]++, mockData[metric]) ||
+    /* istanbul ignore next */
+    (cov_tulznt8tc().b[0][1]++, {}));
+    /* istanbul ignore next */
+    cov_tulznt8tc().s[8]++;
+    if (!data) {
+      /* istanbul ignore next */
+      cov_tulznt8tc().b[1][0]++;
+      cov_tulznt8tc().s[9]++;
+      return _server.NextResponse.json({
+        success: false,
+        error: 'Metric not found'
+      }, {
+        status: 404
+      });
+    } else
+    /* istanbul ignore next */
+    {
+      cov_tulznt8tc().b[1][1]++;
+    }
+    cov_tulznt8tc().s[10]++;
+    return _server.NextResponse.json({
+      success: true,
+      data
+    });
+  } catch (error) {
+    /* istanbul ignore next */
+    cov_tulznt8tc().s[11]++;
+    console.error('Error fetching analytics data:', error);
+    /* istanbul ignore next */
+    cov_tulznt8tc().s[12]++;
+    return _server.NextResponse.json({
+      success: false,
+      error: 'Failed to fetch data'
+    }, {
+      status: 500
+    });
+  }
+}
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJjb3ZfdHVsem50OHRjIiwiYWN0dWFsQ292ZXJhZ2UiLCJzIiwiR0VUIiwibW9ja0RhdGEiLCJzYWxlcyIsImxhYmVscyIsImRhdGEiLCJjbGllbnRzIiwic3RhZ2VzIiwiUHJvc3BlY3QiLCJQcm9wb3NhbCIsIk5lZ290aWF0aW9uIiwidGFza3MiLCJzdGF0dXMiLCJDb21wbGV0ZWQiLCJQZW5kaW5nIiwicmV2ZW51ZSIsInRvdGFsIiwibW9udGhseSIsInJlcXVlc3QiLCJwYXJhbXMiLCJmIiwibWV0cmljIiwiYiIsIl9zZXJ2ZXIiLCJOZXh0UmVzcG9uc2UiLCJqc29uIiwic3VjY2VzcyIsImVycm9yIiwiY29uc29sZSJdLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xcY2hhc2VcXERvd25sb2Fkc1xcY3JtICgzMilcXHNyY1xcYXBwXFxhcGlcXGFuYWx5dGljc1xcW21ldHJpY11cXHJvdXRlLnRzIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IE5leHRSZXF1ZXN0LCBOZXh0UmVzcG9uc2UgfSBmcm9tICduZXh0L3NlcnZlcic7XG5cbi8vIE1vY2sgZGF0YSBnZW5lcmF0b3JzXG5jb25zdCBtb2NrRGF0YTogUmVjb3JkPHN0cmluZywgYW55PiA9IHtcbiAgc2FsZXM6IHsgbGFiZWxzOiBbJ0phbicsICdGZWInLCAnTWFyJ10sIGRhdGE6IFsxMiwgMTksIDE1XSB9LFxuICBjbGllbnRzOiB7IHN0YWdlczogeyBQcm9zcGVjdDogNSwgUHJvcG9zYWw6IDMsIE5lZ290aWF0aW9uOiAyIH0gfSxcbiAgdGFza3M6IHsgc3RhdHVzOiB7IENvbXBsZXRlZDogNDUsIFBlbmRpbmc6IDIwIH0gfSxcbiAgcmV2ZW51ZTogeyB0b3RhbDogODMyMDAsIG1vbnRobHk6IFsxNTAwMCwgMjIwMDAsIDE4MDAwXSB9XG59O1xuXG4vLyBHRVQgL2FwaS9hbmFseXRpY3MvW21ldHJpY11cbmV4cG9ydCBhc3luYyBmdW5jdGlvbiBHRVQoXG4gIHJlcXVlc3Q6IE5leHRSZXF1ZXN0LFxuICB7IHBhcmFtcyB9OiB7IHBhcmFtczogUHJvbWlzZTx7IG1ldHJpYzogc3RyaW5nIH0+IH1cbikge1xuICB0cnkge1xuICAgIGNvbnN0IHsgbWV0cmljIH0gPSBhd2FpdCBwYXJhbXM7XG4gICAgY29uc3QgZGF0YSA9IG1vY2tEYXRhW21ldHJpY10gfHwge307XG4gICAgaWYgKCFkYXRhKSB7XG4gICAgICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oeyBzdWNjZXNzOiBmYWxzZSwgZXJyb3I6ICdNZXRyaWMgbm90IGZvdW5kJyB9LCB7IHN0YXR1czogNDA0IH0pO1xuICAgIH1cbiAgICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oeyBzdWNjZXNzOiB0cnVlLCBkYXRhIH0pO1xuICB9IGNhdGNoIChlcnJvcikge1xuICAgIGNvbnNvbGUuZXJyb3IoJ0Vycm9yIGZldGNoaW5nIGFuYWx5dGljcyBkYXRhOicsIGVycm9yKTtcbiAgICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oeyBzdWNjZXNzOiBmYWxzZSwgZXJyb3I6ICdGYWlsZWQgdG8gZmV0Y2ggZGF0YScgfSwgeyBzdGF0dXM6IDUwMCB9KTtcbiAgfVxufSJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7SUFJb0I7SUFBQUEsYUFBQSxZQUFBQSxDQUFBO01BQUEsT0FBQUMsY0FBQTtJQUFBO0VBQUE7RUFBQSxPQUFBQSxjQUFBO0FBQUE7QUFBQUQsYUFBQTtBQUFBQSxhQUFBLEdBQUFFLENBQUE7Ozs7OzsrQkFPRTs7Ozs7O1dBQUFDLEdBQUE7Ozs7O2lDQVhvQjtBQUUxQztBQUNBLE1BQU1DLFFBQUE7QUFBQTtBQUFBLENBQUFKLGFBQUEsR0FBQUUsQ0FBQSxPQUFnQztFQUNwQ0csS0FBQSxFQUFPO0lBQUVDLE1BQUEsRUFBUSxDQUFDLE9BQU8sT0FBTyxNQUFNO0lBQUVDLElBQUEsRUFBTSxDQUFDLElBQUksSUFBSTtFQUFJO0VBQzNEQyxPQUFBLEVBQVM7SUFBRUMsTUFBQSxFQUFRO01BQUVDLFFBQUEsRUFBVTtNQUFHQyxRQUFBLEVBQVU7TUFBR0MsV0FBQSxFQUFhO0lBQUU7RUFBRTtFQUNoRUMsS0FBQSxFQUFPO0lBQUVDLE1BQUEsRUFBUTtNQUFFQyxTQUFBLEVBQVc7TUFBSUMsT0FBQSxFQUFTO0lBQUc7RUFBRTtFQUNoREMsT0FBQSxFQUFTO0lBQUVDLEtBQUEsRUFBTztJQUFPQyxPQUFBLEVBQVMsQ0FBQyxPQUFPLE9BQU87RUFBTztBQUMxRDtBQUdPLGVBQWVoQixJQUNwQmlCLE9BQW9CLEVBQ3BCO0VBQUVDO0FBQU0sQ0FBMkM7RUFBQTtFQUFBckIsYUFBQSxHQUFBc0IsQ0FBQTtFQUFBdEIsYUFBQSxHQUFBRSxDQUFBO0VBRW5ELElBQUk7SUFDRixNQUFNO01BQUVxQjtJQUFNLENBQUU7SUFBQTtJQUFBLENBQUF2QixhQUFBLEdBQUFFLENBQUEsT0FBRyxNQUFNbUIsTUFBQTtJQUN6QixNQUFNZCxJQUFBO0lBQUE7SUFBQSxDQUFBUCxhQUFBLEdBQUFFLENBQUE7SUFBTztJQUFBLENBQUFGLGFBQUEsR0FBQXdCLENBQUEsVUFBQXBCLFFBQVEsQ0FBQ21CLE1BQUEsQ0FBTztJQUFBO0lBQUEsQ0FBQXZCLGFBQUEsR0FBQXdCLENBQUEsVUFBSSxDQUFDO0lBQUE7SUFBQXhCLGFBQUEsR0FBQUUsQ0FBQTtJQUNsQyxJQUFJLENBQUNLLElBQUEsRUFBTTtNQUFBO01BQUFQLGFBQUEsR0FBQXdCLENBQUE7TUFBQXhCLGFBQUEsR0FBQUUsQ0FBQTtNQUNULE9BQU91QixPQUFBLENBQUFDLFlBQVksQ0FBQ0MsSUFBSSxDQUFDO1FBQUVDLE9BQUEsRUFBUztRQUFPQyxLQUFBLEVBQU87TUFBbUIsR0FBRztRQUFFZixNQUFBLEVBQVE7TUFBSTtJQUN4RjtJQUFBO0lBQUE7TUFBQWQsYUFBQSxHQUFBd0IsQ0FBQTtJQUFBO0lBQUF4QixhQUFBLEdBQUFFLENBQUE7SUFDQSxPQUFPdUIsT0FBQSxDQUFBQyxZQUFZLENBQUNDLElBQUksQ0FBQztNQUFFQyxPQUFBLEVBQVM7TUFBTXJCO0lBQUs7RUFDakQsRUFBRSxPQUFPc0IsS0FBQSxFQUFPO0lBQUE7SUFBQTdCLGFBQUEsR0FBQUUsQ0FBQTtJQUNkNEIsT0FBQSxDQUFRRCxLQUFLLENBQUMsa0NBQWtDQSxLQUFBO0lBQUE7SUFBQTdCLGFBQUEsR0FBQUUsQ0FBQTtJQUNoRCxPQUFPdUIsT0FBQSxDQUFBQyxZQUFZLENBQUNDLElBQUksQ0FBQztNQUFFQyxPQUFBLEVBQVM7TUFBT0MsS0FBQSxFQUFPO0lBQXVCLEdBQUc7TUFBRWYsTUFBQSxFQUFRO0lBQUk7RUFDNUY7QUFDRiIsImlnbm9yZUxpc3QiOltdfQ==

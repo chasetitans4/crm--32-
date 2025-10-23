@@ -1,0 +1,384 @@
+a52f6696e115500c0c50bfbd68ca55d1
+'use client';
+"use strict";
+
+/* istanbul ignore next */
+function cov_jbc12qoto() {
+  var path = "C:\\Users\\chase\\Downloads\\crm (32)\\src\\components\\layout\\Header.tsx";
+  var hash = "079a02c9f90fec6965fb66984dc879f320283c51";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "C:\\Users\\chase\\Downloads\\crm (32)\\src\\components\\layout\\Header.tsx",
+    statementMap: {
+      "0": {
+        start: {
+          line: 3,
+          column: 0
+        },
+        end: {
+          line: 5,
+          column: 3
+        }
+      },
+      "1": {
+        start: {
+          line: 6,
+          column: 0
+        },
+        end: {
+          line: 11,
+          column: 3
+        }
+      },
+      "2": {
+        start: {
+          line: 9,
+          column: 8
+        },
+        end: {
+          line: 9,
+          column: 24
+        }
+      },
+      "3": {
+        start: {
+          line: 12,
+          column: 20
+        },
+        end: {
+          line: 12,
+          column: 48
+        }
+      },
+      "4": {
+        start: {
+          line: 13,
+          column: 29
+        },
+        end: {
+          line: 13,
+          column: 71
+        }
+      },
+      "5": {
+        start: {
+          line: 15,
+          column: 4
+        },
+        end: {
+          line: 17,
+          column: 6
+        }
+      },
+      "6": {
+        start: {
+          line: 19,
+          column: 15
+        },
+        end: {
+          line: 42,
+          column: 1
+        }
+      },
+      "7": {
+        start: {
+          line: 20,
+          column: 4
+        },
+        end: {
+          line: 41,
+          column: 7
+        }
+      },
+      "8": {
+        start: {
+          line: 43,
+          column: 17
+        },
+        end: {
+          line: 43,
+          column: 23
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "(anonymous_0)",
+        decl: {
+          start: {
+            line: 8,
+            column: 9
+          },
+          end: {
+            line: 8,
+            column: 10
+          }
+        },
+        loc: {
+          start: {
+            line: 8,
+            column: 20
+          },
+          end: {
+            line: 10,
+            column: 5
+          }
+        },
+        line: 8
+      },
+      "1": {
+        name: "_interop_require_default",
+        decl: {
+          start: {
+            line: 14,
+            column: 9
+          },
+          end: {
+            line: 14,
+            column: 33
+          }
+        },
+        loc: {
+          start: {
+            line: 14,
+            column: 39
+          },
+          end: {
+            line: 18,
+            column: 1
+          }
+        },
+        line: 14
+      },
+      "2": {
+        name: "(anonymous_2)",
+        decl: {
+          start: {
+            line: 19,
+            column: 15
+          },
+          end: {
+            line: 19,
+            column: 16
+          }
+        },
+        loc: {
+          start: {
+            line: 19,
+            column: 37
+          },
+          end: {
+            line: 42,
+            column: 1
+          }
+        },
+        line: 19
+      }
+    },
+    branchMap: {
+      "0": {
+        loc: {
+          start: {
+            line: 15,
+            column: 11
+          },
+          end: {
+            line: 17,
+            column: 5
+          }
+        },
+        type: "cond-expr",
+        locations: [{
+          start: {
+            line: 15,
+            column: 35
+          },
+          end: {
+            line: 15,
+            column: 38
+          }
+        }, {
+          start: {
+            line: 15,
+            column: 41
+          },
+          end: {
+            line: 17,
+            column: 5
+          }
+        }],
+        line: 15
+      },
+      "1": {
+        loc: {
+          start: {
+            line: 15,
+            column: 11
+          },
+          end: {
+            line: 15,
+            column: 32
+          }
+        },
+        type: "binary-expr",
+        locations: [{
+          start: {
+            line: 15,
+            column: 11
+          },
+          end: {
+            line: 15,
+            column: 14
+          }
+        }, {
+          start: {
+            line: 15,
+            column: 18
+          },
+          end: {
+            line: 15,
+            column: 32
+          }
+        }],
+        line: 15
+      },
+      "2": {
+        loc: {
+          start: {
+            line: 19,
+            column: 18
+          },
+          end: {
+            line: 19,
+            column: 32
+          }
+        },
+        type: "default-arg",
+        locations: [{
+          start: {
+            line: 19,
+            column: 30
+          },
+          end: {
+            line: 19,
+            column: 32
+          }
+        }],
+        line: 19
+      }
+    },
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0
+    },
+    f: {
+      "0": 0,
+      "1": 0,
+      "2": 0
+    },
+    b: {
+      "0": [0, 0],
+      "1": [0, 0],
+      "2": [0]
+    },
+    inputSourceMap: {
+      version: 3,
+      sources: ["C:\\Users\\chase\\Downloads\\crm (32)\\src\\components\\layout\\Header.tsx"],
+      sourcesContent: ["'use client'\n\nimport React from 'react'\n\ninterface HeaderProps {\n  className?: string\n}\n\nconst Header: React.FC<HeaderProps> = ({ className = '' }) => {\n  return (\n    <header className={`bg-white border-b border-gray-200 px-6 py-4 ${className}`}>\n      <div className=\"flex items-center justify-between\">\n        <div className=\"flex items-center space-x-4\">\n          <h1 className=\"text-xl font-semibold text-gray-900\">CRM Dashboard</h1>\n        </div>\n        <div className=\"flex items-center space-x-4\">\n          <span className=\"text-sm text-gray-600\">Welcome back!</span>\n        </div>\n      </div>\n    </header>\n  )\n}\n\nexport default Header"],
+      names: ["Header", "className", "header", "div", "h1", "span"],
+      mappings: "AAAA;;;;;+BAuBA;;;eAAA;;;;8DArBkB;;;;;;AAMlB,MAAMA,SAAgC,CAAC,EAAEC,YAAY,EAAE,EAAE;IACvD,qBACE,qBAACC;QAAOD,WAAW,CAAC,4CAA4C,EAAEA,WAAW;kBAC3E,cAAA,sBAACE;YAAIF,WAAU;;8BACb,qBAACE;oBAAIF,WAAU;8BACb,cAAA,qBAACG;wBAAGH,WAAU;kCAAsC;;;8BAEtD,qBAACE;oBAAIF,WAAU;8BACb,cAAA,qBAACI;wBAAKJ,WAAU;kCAAwB;;;;;;AAKlD;MAEA,WAAeD"
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "079a02c9f90fec6965fb66984dc879f320283c51"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_jbc12qoto = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+cov_jbc12qoto();
+cov_jbc12qoto().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+/* istanbul ignore next */
+cov_jbc12qoto().s[1]++;
+Object.defineProperty(exports, "default", {
+  enumerable: true,
+  get: function () {
+    /* istanbul ignore next */
+    cov_jbc12qoto().f[0]++;
+    cov_jbc12qoto().s[2]++;
+    return _default;
+  }
+});
+const _jsxruntime =
+/* istanbul ignore next */
+(cov_jbc12qoto().s[3]++, require("react/jsx-runtime"));
+const _react =
+/* istanbul ignore next */
+(/*#__PURE__*/cov_jbc12qoto().s[4]++, _interop_require_default(require("react")));
+function _interop_require_default(obj) {
+  /* istanbul ignore next */
+  cov_jbc12qoto().f[1]++;
+  cov_jbc12qoto().s[5]++;
+  return /* istanbul ignore next */(cov_jbc12qoto().b[1][0]++, obj) &&
+  /* istanbul ignore next */
+  (cov_jbc12qoto().b[1][1]++, obj.__esModule) ?
+  /* istanbul ignore next */
+  (cov_jbc12qoto().b[0][0]++, obj) :
+  /* istanbul ignore next */
+  (cov_jbc12qoto().b[0][1]++, {
+    default: obj
+  });
+}
+/* istanbul ignore next */
+cov_jbc12qoto().s[6]++;
+const Header = ({
+  className =
+  /* istanbul ignore next */
+  (cov_jbc12qoto().b[2][0]++, '')
+}) => {
+  /* istanbul ignore next */
+  cov_jbc12qoto().f[2]++;
+  cov_jbc12qoto().s[7]++;
+  return /*#__PURE__*/(0, _jsxruntime.jsx)("header", {
+    className: `bg-white border-b border-gray-200 px-6 py-4 ${className}`,
+    children: /*#__PURE__*/(0, _jsxruntime.jsxs)("div", {
+      className: "flex items-center justify-between",
+      children: [/*#__PURE__*/(0, _jsxruntime.jsx)("div", {
+        className: "flex items-center space-x-4",
+        children: /*#__PURE__*/(0, _jsxruntime.jsx)("h1", {
+          className: "text-xl font-semibold text-gray-900",
+          children: "CRM Dashboard"
+        })
+      }), /*#__PURE__*/(0, _jsxruntime.jsx)("div", {
+        className: "flex items-center space-x-4",
+        children: /*#__PURE__*/(0, _jsxruntime.jsx)("span", {
+          className: "text-sm text-gray-600",
+          children: "Welcome back!"
+        })
+      })]
+    })
+  });
+};
+const _default =
+/* istanbul ignore next */
+(cov_jbc12qoto().s[8]++, Header);
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfZGVmYXVsdCIsIkhlYWRlciIsImNsYXNzTmFtZSIsImNvdl9qYmMxMnFvdG8iLCJiIiwiZiIsInMiLCJfanN4cnVudGltZSIsImpzeCIsImpzeHMiXSwic291cmNlcyI6WyJDOlxcVXNlcnNcXGNoYXNlXFxEb3dubG9hZHNcXGNybSAoMzIpXFxzcmNcXGNvbXBvbmVudHNcXGxheW91dFxcSGVhZGVyLnRzeCJdLCJzb3VyY2VzQ29udGVudCI6WyIndXNlIGNsaWVudCdcblxuaW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0J1xuXG5pbnRlcmZhY2UgSGVhZGVyUHJvcHMge1xuICBjbGFzc05hbWU/OiBzdHJpbmdcbn1cblxuY29uc3QgSGVhZGVyOiBSZWFjdC5GQzxIZWFkZXJQcm9wcz4gPSAoeyBjbGFzc05hbWUgPSAnJyB9KSA9PiB7XG4gIHJldHVybiAoXG4gICAgPGhlYWRlciBjbGFzc05hbWU9e2BiZy13aGl0ZSBib3JkZXItYiBib3JkZXItZ3JheS0yMDAgcHgtNiBweS00ICR7Y2xhc3NOYW1lfWB9PlxuICAgICAgPGRpdiBjbGFzc05hbWU9XCJmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWJldHdlZW5cIj5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJmbGV4IGl0ZW1zLWNlbnRlciBzcGFjZS14LTRcIj5cbiAgICAgICAgICA8aDEgY2xhc3NOYW1lPVwidGV4dC14bCBmb250LXNlbWlib2xkIHRleHQtZ3JheS05MDBcIj5DUk0gRGFzaGJvYXJkPC9oMT5cbiAgICAgICAgPC9kaXY+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZmxleCBpdGVtcy1jZW50ZXIgc3BhY2UteC00XCI+XG4gICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPVwidGV4dC1zbSB0ZXh0LWdyYXktNjAwXCI+V2VsY29tZSBiYWNrITwvc3Bhbj5cbiAgICAgICAgPC9kaXY+XG4gICAgICA8L2Rpdj5cbiAgICA8L2hlYWRlcj5cbiAgKVxufVxuXG5leHBvcnQgZGVmYXVsdCBIZWFkZXIiXSwibWFwcGluZ3MiOiJBQUFBOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OzsrQkF1QkE7Ozs7OztXQUFBQSxRQUFBOzs7Ozs7Ozt1RUFyQmtCOzs7Ozs7Ozs7Ozs7Ozs7OztBQU1sQixNQUFNQyxNQUFBLEdBQWdDQSxDQUFDO0VBQUVDLFNBQUE7RUFBQTtFQUFBLENBQUFDLGFBQUEsR0FBQUMsQ0FBQSxVQUFZLEVBQUU7QUFBQSxDQUFFO0VBQUE7RUFBQUQsYUFBQSxHQUFBRSxDQUFBO0VBQUFGLGFBQUEsR0FBQUcsQ0FBQTtFQUN2RCxvQkFDRSxJQUFBQyxXQUFBLENBQUFDLEdBQUEsRUFBQztJQUFPTixTQUFBLEVBQVcsK0NBQStDQSxTQUFBLEVBQVc7Y0FDM0UsaUJBQUFLLFdBQUEsQ0FBQUUsSUFBQSxFQUFDO01BQUlQLFNBQUEsRUFBVTs4QkFDYixJQUFBSyxXQUFBLENBQUFDLEdBQUEsRUFBQztRQUFJTixTQUFBLEVBQVU7a0JBQ2IsaUJBQUFLLFdBQUEsQ0FBQUMsR0FBQSxFQUFDO1VBQUdOLFNBQUEsRUFBVTtvQkFBc0M7O3VCQUV0RCxJQUFBSyxXQUFBLENBQUFDLEdBQUEsRUFBQztRQUFJTixTQUFBLEVBQVU7a0JBQ2IsaUJBQUFLLFdBQUEsQ0FBQUMsR0FBQSxFQUFDO1VBQUtOLFNBQUEsRUFBVTtvQkFBd0I7Ozs7O0FBS2xEO01BRUFGLFFBQUE7QUFBQTtBQUFBLENBQUFHLGFBQUEsR0FBQUcsQ0FBQSxPQUFlTCxNQUFBIiwiaWdub3JlTGlzdCI6W119

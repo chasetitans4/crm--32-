@@ -1,0 +1,360 @@
+ee10b15507b3d84b4f8041803e7e80a3
+// Temporary diagnostic file to isolate the cn function
+"use strict";
+
+/* istanbul ignore next */
+function cov_czj2gkov3() {
+  var path = "C:\\Users\\chase\\Downloads\\crm (32)\\src\\lib\\cn-utils.ts";
+  var hash = "31ca882a5f30ee7309418900f3255689bf8a4e50";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "C:\\Users\\chase\\Downloads\\crm (32)\\src\\lib\\cn-utils.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 3,
+          column: 0
+        },
+        end: {
+          line: 5,
+          column: 3
+        }
+      },
+      "1": {
+        start: {
+          line: 7,
+          column: 4
+        },
+        end: {
+          line: 10,
+          column: 7
+        }
+      },
+      "2": {
+        start: {
+          line: 7,
+          column: 24
+        },
+        end: {
+          line: 10,
+          column: 7
+        }
+      },
+      "3": {
+        start: {
+          line: 12,
+          column: 0
+        },
+        end: {
+          line: 19,
+          column: 3
+        }
+      },
+      "4": {
+        start: {
+          line: 14,
+          column: 8
+        },
+        end: {
+          line: 14,
+          column: 18
+        }
+      },
+      "5": {
+        start: {
+          line: 17,
+          column: 8
+        },
+        end: {
+          line: 17,
+          column: 30
+        }
+      },
+      "6": {
+        start: {
+          line: 20,
+          column: 14
+        },
+        end: {
+          line: 20,
+          column: 29
+        }
+      },
+      "7": {
+        start: {
+          line: 21,
+          column: 23
+        },
+        end: {
+          line: 21,
+          column: 48
+        }
+      },
+      "8": {
+        start: {
+          line: 23,
+          column: 4
+        },
+        end: {
+          line: 23,
+          column: 64
+        }
+      },
+      "9": {
+        start: {
+          line: 25,
+          column: 23
+        },
+        end: {
+          line: 28,
+          column: 1
+        }
+      },
+      "10": {
+        start: {
+          line: 26,
+          column: 4
+        },
+        end: {
+          line: 26,
+          column: 64
+        }
+      },
+      "11": {
+        start: {
+          line: 27,
+          column: 4
+        },
+        end: {
+          line: 27,
+          column: 50
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "_export",
+        decl: {
+          start: {
+            line: 6,
+            column: 9
+          },
+          end: {
+            line: 6,
+            column: 16
+          }
+        },
+        loc: {
+          start: {
+            line: 6,
+            column: 30
+          },
+          end: {
+            line: 11,
+            column: 1
+          }
+        },
+        line: 6
+      },
+      "1": {
+        name: "(anonymous_1)",
+        decl: {
+          start: {
+            line: 13,
+            column: 4
+          },
+          end: {
+            line: 13,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 13,
+            column: 14
+          },
+          end: {
+            line: 15,
+            column: 5
+          }
+        },
+        line: 13
+      },
+      "2": {
+        name: "(anonymous_2)",
+        decl: {
+          start: {
+            line: 16,
+            column: 4
+          },
+          end: {
+            line: 16,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 16,
+            column: 26
+          },
+          end: {
+            line: 18,
+            column: 5
+          }
+        },
+        line: 16
+      },
+      "3": {
+        name: "cn",
+        decl: {
+          start: {
+            line: 22,
+            column: 9
+          },
+          end: {
+            line: 22,
+            column: 11
+          }
+        },
+        loc: {
+          start: {
+            line: 22,
+            column: 23
+          },
+          end: {
+            line: 24,
+            column: 1
+          }
+        },
+        line: 22
+      },
+      "4": {
+        name: "(anonymous_4)",
+        decl: {
+          start: {
+            line: 25,
+            column: 23
+          },
+          end: {
+            line: 25,
+            column: 24
+          }
+        },
+        loc: {
+          start: {
+            line: 25,
+            column: 27
+          },
+          end: {
+            line: 28,
+            column: 1
+          }
+        },
+        line: 25
+      }
+    },
+    branchMap: {},
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0
+    },
+    f: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+    },
+    b: {},
+    inputSourceMap: {
+      version: 3,
+      sources: ["C:\\Users\\chase\\Downloads\\crm (32)\\src\\lib\\cn-utils.ts"],
+      sourcesContent: ["// Temporary diagnostic file to isolate the cn function\nimport { type ClassValue, clsx } from \"clsx\"\nimport { twMerge } from \"tailwind-merge\"\n\nexport function cn(...inputs: ClassValue[]): string {\n  return twMerge(clsx(inputs))\n}\n\n// Test export to verify it works\nexport const testCnFunction = () => {\n  console.log(\"cn function is working:\", cn(\"test\", \"class\"))\n  return cn(\"bg-blue-500\", \"text-white\", \"p-4\")\n}\n"],
+      names: ["cn", "testCnFunction", "inputs", "twMerge", "clsx", "console", "log"],
+      mappings: "AAAA,uDAAuD;;;;;;;;;;;;QAIvCA;eAAAA;;QAKHC;eAAAA;;;sBARyB;+BACd;AAEjB,SAASD,GAAG,GAAGE,MAAoB;IACxC,OAAOC,IAAAA,sBAAO,EAACC,IAAAA,UAAI,EAACF;AACtB;AAGO,MAAMD,iBAAiB;IAC5BI,QAAQC,GAAG,CAAC,2BAA2BN,GAAG,QAAQ;IAClD,OAAOA,GAAG,eAAe,cAAc;AACzC"
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "31ca882a5f30ee7309418900f3255689bf8a4e50"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_czj2gkov3 = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+cov_czj2gkov3();
+cov_czj2gkov3().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+function _export(target, all) {
+  /* istanbul ignore next */
+  cov_czj2gkov3().f[0]++;
+  cov_czj2gkov3().s[1]++;
+  for (var name in all) {
+    /* istanbul ignore next */
+    cov_czj2gkov3().s[2]++;
+    Object.defineProperty(target, name, {
+      enumerable: true,
+      get: Object.getOwnPropertyDescriptor(all, name).get
+    });
+  }
+}
+/* istanbul ignore next */
+cov_czj2gkov3().s[3]++;
+_export(exports, {
+  get cn() {
+    /* istanbul ignore next */
+    cov_czj2gkov3().f[1]++;
+    cov_czj2gkov3().s[4]++;
+    return cn;
+  },
+  get testCnFunction() {
+    /* istanbul ignore next */
+    cov_czj2gkov3().f[2]++;
+    cov_czj2gkov3().s[5]++;
+    return testCnFunction;
+  }
+});
+const _clsx =
+/* istanbul ignore next */
+(cov_czj2gkov3().s[6]++, require("clsx"));
+const _tailwindmerge =
+/* istanbul ignore next */
+(cov_czj2gkov3().s[7]++, require("tailwind-merge"));
+function cn(...inputs) {
+  /* istanbul ignore next */
+  cov_czj2gkov3().f[3]++;
+  cov_czj2gkov3().s[8]++;
+  return (0, _tailwindmerge.twMerge)((0, _clsx.clsx)(inputs));
+}
+/* istanbul ignore next */
+cov_czj2gkov3().s[9]++;
+const testCnFunction = () => {
+  /* istanbul ignore next */
+  cov_czj2gkov3().f[4]++;
+  cov_czj2gkov3().s[10]++;
+  console.log("cn function is working:", cn("test", "class"));
+  /* istanbul ignore next */
+  cov_czj2gkov3().s[11]++;
+  return cn("bg-blue-500", "text-white", "p-4");
+};
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJjb3ZfY3pqMmdrb3YzIiwiYWN0dWFsQ292ZXJhZ2UiLCJzIiwiY24iLCJmIiwidGVzdENuRnVuY3Rpb24iLCJpbnB1dHMiLCJfdGFpbHdpbmRtZXJnZSIsInR3TWVyZ2UiLCJfY2xzeCIsImNsc3giLCJjb25zb2xlIiwibG9nIl0sInNvdXJjZXMiOlsiQzpcXFVzZXJzXFxjaGFzZVxcRG93bmxvYWRzXFxjcm0gKDMyKVxcc3JjXFxsaWJcXGNuLXV0aWxzLnRzIl0sInNvdXJjZXNDb250ZW50IjpbIi8vIFRlbXBvcmFyeSBkaWFnbm9zdGljIGZpbGUgdG8gaXNvbGF0ZSB0aGUgY24gZnVuY3Rpb25cbmltcG9ydCB7IHR5cGUgQ2xhc3NWYWx1ZSwgY2xzeCB9IGZyb20gXCJjbHN4XCJcbmltcG9ydCB7IHR3TWVyZ2UgfSBmcm9tIFwidGFpbHdpbmQtbWVyZ2VcIlxuXG5leHBvcnQgZnVuY3Rpb24gY24oLi4uaW5wdXRzOiBDbGFzc1ZhbHVlW10pOiBzdHJpbmcge1xuICByZXR1cm4gdHdNZXJnZShjbHN4KGlucHV0cykpXG59XG5cbi8vIFRlc3QgZXhwb3J0IHRvIHZlcmlmeSBpdCB3b3Jrc1xuZXhwb3J0IGNvbnN0IHRlc3RDbkZ1bmN0aW9uID0gKCkgPT4ge1xuICBjb25zb2xlLmxvZyhcImNuIGZ1bmN0aW9uIGlzIHdvcmtpbmc6XCIsIGNuKFwidGVzdFwiLCBcImNsYXNzXCIpKVxuICByZXR1cm4gY24oXCJiZy1ibHVlLTUwMFwiLCBcInRleHQtd2hpdGVcIiwgXCJwLTRcIilcbn1cbiJdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztJQVNhO0lBQUFBLGFBQUEsWUFBQUEsQ0FBQTtNQUFBLE9BQUFDLGNBQUE7SUFBQTtFQUFBO0VBQUEsT0FBQUEsY0FBQTtBQUFBO0FBQUFELGFBQUE7QUFBQUEsYUFBQSxHQUFBRSxDQUFBOzs7Ozs7Ozs7Ozs7Ozs7Ozs7OztNQUxHQyxHQUFBO0lBQUE7SUFBQUgsYUFBQSxHQUFBSSxDQUFBO0lBQUFKLGFBQUEsR0FBQUUsQ0FBQTtXQUFBQyxFQUFBOztNQUtIRSxlQUFBO0lBQUE7SUFBQUwsYUFBQSxHQUFBSSxDQUFBO0lBQUFKLGFBQUEsR0FBQUUsQ0FBQTtXQUFBRyxjQUFBOzs7OztpQ0FSeUI7OztpQ0FDZDtBQUVqQixTQUFTRixHQUFHLEdBQUdHLE1BQW9CO0VBQUE7RUFBQU4sYUFBQSxHQUFBSSxDQUFBO0VBQUFKLGFBQUEsR0FBQUUsQ0FBQTtFQUN4QyxPQUFPLElBQUFLLGNBQUEsQ0FBQUMsT0FBTyxFQUFDLElBQUFDLEtBQUEsQ0FBQUMsSUFBSSxFQUFDSixNQUFBO0FBQ3RCO0FBQUE7QUFBQU4sYUFBQSxHQUFBRSxDQUFBO0FBR08sTUFBTUcsY0FBQSxHQUFpQkEsQ0FBQTtFQUFBO0VBQUFMLGFBQUEsR0FBQUksQ0FBQTtFQUFBSixhQUFBLEdBQUFFLENBQUE7RUFDNUJTLE9BQUEsQ0FBUUMsR0FBRyxDQUFDLDJCQUEyQlQsRUFBQSxDQUFHLFFBQVE7RUFBQTtFQUFBSCxhQUFBLEdBQUFFLENBQUE7RUFDbEQsT0FBT0MsRUFBQSxDQUFHLGVBQWUsY0FBYztBQUN6QyIsImlnbm9yZUxpc3QiOltdfQ==

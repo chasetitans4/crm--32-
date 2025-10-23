@@ -1,0 +1,507 @@
+397c30801fb5cee0164bb4ee7c8adaf6
+"use client";
+"use strict";
+
+/* istanbul ignore next */
+function cov_eho37rpwg() {
+  var path = "C:\\Users\\chase\\Downloads\\crm (32)\\src\\hooks\\useRoleAccess.ts";
+  var hash = "883b7ba386b80cd25f6727501fb1b3988e704f64";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "C:\\Users\\chase\\Downloads\\crm (32)\\src\\hooks\\useRoleAccess.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 3,
+          column: 0
+        },
+        end: {
+          line: 5,
+          column: 3
+        }
+      },
+      "1": {
+        start: {
+          line: 7,
+          column: 4
+        },
+        end: {
+          line: 10,
+          column: 7
+        }
+      },
+      "2": {
+        start: {
+          line: 7,
+          column: 24
+        },
+        end: {
+          line: 10,
+          column: 7
+        }
+      },
+      "3": {
+        start: {
+          line: 12,
+          column: 0
+        },
+        end: {
+          line: 19,
+          column: 3
+        }
+      },
+      "4": {
+        start: {
+          line: 14,
+          column: 8
+        },
+        end: {
+          line: 14,
+          column: 24
+        }
+      },
+      "5": {
+        start: {
+          line: 17,
+          column: 8
+        },
+        end: {
+          line: 17,
+          column: 29
+        }
+      },
+      "6": {
+        start: {
+          line: 20,
+          column: 21
+        },
+        end: {
+          line: 20,
+          column: 54
+        }
+      },
+      "7": {
+        start: {
+          line: 21,
+          column: 22
+        },
+        end: {
+          line: 52,
+          column: 1
+        }
+      },
+      "8": {
+        start: {
+          line: 22,
+          column: 30
+        },
+        end: {
+          line: 22,
+          column: 57
+        }
+      },
+      "9": {
+        start: {
+          line: 24,
+          column: 31
+        },
+        end: {
+          line: 43,
+          column: 5
+        }
+      },
+      "10": {
+        start: {
+          line: 45,
+          column: 25
+        },
+        end: {
+          line: 45,
+          column: 57
+        }
+      },
+      "11": {
+        start: {
+          line: 46,
+          column: 22
+        },
+        end: {
+          line: 46,
+          column: 101
+        }
+      },
+      "12": {
+        start: {
+          line: 46,
+          column: 63
+        },
+        end: {
+          line: 46,
+          column: 76
+        }
+      },
+      "13": {
+        start: {
+          line: 47,
+          column: 21
+        },
+        end: {
+          line: 47,
+          column: 39
+        }
+      },
+      "14": {
+        start: {
+          line: 48,
+          column: 4
+        },
+        end: {
+          line: 51,
+          column: 6
+        }
+      },
+      "15": {
+        start: {
+          line: 53,
+          column: 17
+        },
+        end: {
+          line: 53,
+          column: 30
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "_export",
+        decl: {
+          start: {
+            line: 6,
+            column: 9
+          },
+          end: {
+            line: 6,
+            column: 16
+          }
+        },
+        loc: {
+          start: {
+            line: 6,
+            column: 30
+          },
+          end: {
+            line: 11,
+            column: 1
+          }
+        },
+        line: 6
+      },
+      "1": {
+        name: "(anonymous_1)",
+        decl: {
+          start: {
+            line: 13,
+            column: 4
+          },
+          end: {
+            line: 13,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 13,
+            column: 19
+          },
+          end: {
+            line: 15,
+            column: 5
+          }
+        },
+        line: 13
+      },
+      "2": {
+        name: "(anonymous_2)",
+        decl: {
+          start: {
+            line: 16,
+            column: 4
+          },
+          end: {
+            line: 16,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 16,
+            column: 25
+          },
+          end: {
+            line: 18,
+            column: 5
+          }
+        },
+        line: 16
+      },
+      "3": {
+        name: "(anonymous_3)",
+        decl: {
+          start: {
+            line: 21,
+            column: 22
+          },
+          end: {
+            line: 21,
+            column: 23
+          }
+        },
+        loc: {
+          start: {
+            line: 21,
+            column: 38
+          },
+          end: {
+            line: 52,
+            column: 1
+          }
+        },
+        line: 21
+      },
+      "4": {
+        name: "(anonymous_4)",
+        decl: {
+          start: {
+            line: 46,
+            column: 55
+          },
+          end: {
+            line: 46,
+            column: 56
+          }
+        },
+        loc: {
+          start: {
+            line: 46,
+            column: 63
+          },
+          end: {
+            line: 46,
+            column: 76
+          }
+        },
+        line: 46
+      }
+    },
+    branchMap: {
+      "0": {
+        loc: {
+          start: {
+            line: 46,
+            column: 22
+          },
+          end: {
+            line: 46,
+            column: 101
+          }
+        },
+        type: "cond-expr",
+        locations: [{
+          start: {
+            line: 46,
+            column: 37
+          },
+          end: {
+            line: 46,
+            column: 77
+          }
+        }, {
+          start: {
+            line: 46,
+            column: 80
+          },
+          end: {
+            line: 46,
+            column: 101
+          }
+        }],
+        line: 46
+      },
+      "1": {
+        loc: {
+          start: {
+            line: 47,
+            column: 21
+          },
+          end: {
+            line: 47,
+            column: 39
+          }
+        },
+        type: "binary-expr",
+        locations: [{
+          start: {
+            line: 47,
+            column: 21
+          },
+          end: {
+            line: 47,
+            column: 31
+          }
+        }, {
+          start: {
+            line: 47,
+            column: 35
+          },
+          end: {
+            line: 47,
+            column: 39
+          }
+        }],
+        line: 47
+      }
+    },
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    },
+    f: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+    },
+    b: {
+      "0": [0, 0],
+      "1": [0, 0]
+    },
+    inputSourceMap: {
+      version: 3,
+      sources: ["C:\\Users\\chase\\Downloads\\crm (32)\\src\\hooks\\useRoleAccess.ts"],
+      sourcesContent: ["\"use client\"\n\nimport { useAuth } from '../context/AuthContext'\n\n/**\n * Hook for role-based access control\n * @param requiredRole - The role required to access a feature\n * @returns Object with hasAccess boolean and userRole\n */\nexport const useRoleAccess = (requiredRole: string) => {\n  const { user, hasRole } = useAuth()\n  \n  // Define permission mappings for specific actions\n  const permissionMappings: Record<string, string[]> = {\n    'contracts:write': ['admin', 'agent'],\n    'invoices:write': ['admin', 'agent'],\n    'contracts:read': ['admin', 'agent', 'user'],\n    'invoices:read': ['admin', 'agent', 'user'],\n  }\n  \n  // Check if the required role is a specific permission\n  const allowedRoles = permissionMappings[requiredRole]\n  const hasAccess = allowedRoles \n    ? allowedRoles.some(role => hasRole(role))\n    : hasRole(requiredRole)\n  \n  const userRole = user?.role || null\n  \n  return {\n    hasAccess,\n    userRole\n  }\n}\n\nexport default useRoleAccess\n"],
+      names: ["useRoleAccess", "requiredRole", "user", "hasRole", "useAuth", "permissionMappings", "allowedRoles", "hasAccess", "some", "role", "userRole"],
+      mappings: "AAAA;;;;;;;;;;;;QAkCA;eAAA;;QAzBaA;eAAAA;;;6BAPW;AAOjB,MAAMA,gBAAgB,CAACC;IAC5B,MAAM,EAAEC,IAAI,EAAEC,OAAO,EAAE,GAAGC,IAAAA,oBAAO;IAEjC,kDAAkD;IAClD,MAAMC,qBAA+C;QACnD,mBAAmB;YAAC;YAAS;SAAQ;QACrC,kBAAkB;YAAC;YAAS;SAAQ;QACpC,kBAAkB;YAAC;YAAS;YAAS;SAAO;QAC5C,iBAAiB;YAAC;YAAS;YAAS;SAAO;IAC7C;IAEA,sDAAsD;IACtD,MAAMC,eAAeD,kBAAkB,CAACJ,aAAa;IACrD,MAAMM,YAAYD,eACdA,aAAaE,IAAI,CAACC,CAAAA,OAAQN,QAAQM,SAClCN,QAAQF;IAEZ,MAAMS,WAAWR,MAAMO,QAAQ;IAE/B,OAAO;QACLF;QACAG;IACF;AACF;MAEA,WAAeV"
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "883b7ba386b80cd25f6727501fb1b3988e704f64"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_eho37rpwg = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+cov_eho37rpwg();
+cov_eho37rpwg().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+function _export(target, all) {
+  /* istanbul ignore next */
+  cov_eho37rpwg().f[0]++;
+  cov_eho37rpwg().s[1]++;
+  for (var name in all) {
+    /* istanbul ignore next */
+    cov_eho37rpwg().s[2]++;
+    Object.defineProperty(target, name, {
+      enumerable: true,
+      get: Object.getOwnPropertyDescriptor(all, name).get
+    });
+  }
+}
+/* istanbul ignore next */
+cov_eho37rpwg().s[3]++;
+_export(exports, {
+  get default() {
+    /* istanbul ignore next */
+    cov_eho37rpwg().f[1]++;
+    cov_eho37rpwg().s[4]++;
+    return _default;
+  },
+  get useRoleAccess() {
+    /* istanbul ignore next */
+    cov_eho37rpwg().f[2]++;
+    cov_eho37rpwg().s[5]++;
+    return useRoleAccess;
+  }
+});
+const _AuthContext =
+/* istanbul ignore next */
+(cov_eho37rpwg().s[6]++, require("../context/AuthContext"));
+/* istanbul ignore next */
+cov_eho37rpwg().s[7]++;
+const useRoleAccess = requiredRole => {
+  /* istanbul ignore next */
+  cov_eho37rpwg().f[3]++;
+  const {
+    user,
+    hasRole
+  } =
+  /* istanbul ignore next */
+  (cov_eho37rpwg().s[8]++, (0, _AuthContext.useAuth)());
+  // Define permission mappings for specific actions
+  const permissionMappings =
+  /* istanbul ignore next */
+  (cov_eho37rpwg().s[9]++, {
+    'contracts:write': ['admin', 'agent'],
+    'invoices:write': ['admin', 'agent'],
+    'contracts:read': ['admin', 'agent', 'user'],
+    'invoices:read': ['admin', 'agent', 'user']
+  });
+  // Check if the required role is a specific permission
+  const allowedRoles =
+  /* istanbul ignore next */
+  (cov_eho37rpwg().s[10]++, permissionMappings[requiredRole]);
+  const hasAccess =
+  /* istanbul ignore next */
+  (cov_eho37rpwg().s[11]++, allowedRoles ?
+  /* istanbul ignore next */
+  (cov_eho37rpwg().b[0][0]++, allowedRoles.some(role => {
+    /* istanbul ignore next */
+    cov_eho37rpwg().f[4]++;
+    cov_eho37rpwg().s[12]++;
+    return hasRole(role);
+  })) :
+  /* istanbul ignore next */
+  (cov_eho37rpwg().b[0][1]++, hasRole(requiredRole)));
+  const userRole =
+  /* istanbul ignore next */
+  (cov_eho37rpwg().s[13]++,
+  /* istanbul ignore next */
+  (cov_eho37rpwg().b[1][0]++, user?.role) ||
+  /* istanbul ignore next */
+  (cov_eho37rpwg().b[1][1]++, null));
+  /* istanbul ignore next */
+  cov_eho37rpwg().s[14]++;
+  return {
+    hasAccess,
+    userRole
+  };
+};
+const _default =
+/* istanbul ignore next */
+(cov_eho37rpwg().s[15]++, useRoleAccess);
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJjb3ZfZWhvMzdycHdnIiwiYWN0dWFsQ292ZXJhZ2UiLCJzIiwiZGVmYXVsdCIsImYiLCJfZGVmYXVsdCIsInVzZVJvbGVBY2Nlc3MiLCJyZXF1aXJlZFJvbGUiLCJ1c2VyIiwiaGFzUm9sZSIsIl9BdXRoQ29udGV4dCIsInVzZUF1dGgiLCJwZXJtaXNzaW9uTWFwcGluZ3MiLCJhbGxvd2VkUm9sZXMiLCJoYXNBY2Nlc3MiLCJiIiwic29tZSIsInJvbGUiLCJ1c2VyUm9sZSJdLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xcY2hhc2VcXERvd25sb2Fkc1xcY3JtICgzMilcXHNyY1xcaG9va3NcXHVzZVJvbGVBY2Nlc3MudHMiXSwic291cmNlc0NvbnRlbnQiOlsiXCJ1c2UgY2xpZW50XCJcblxuaW1wb3J0IHsgdXNlQXV0aCB9IGZyb20gJy4uL2NvbnRleHQvQXV0aENvbnRleHQnXG5cbi8qKlxuICogSG9vayBmb3Igcm9sZS1iYXNlZCBhY2Nlc3MgY29udHJvbFxuICogQHBhcmFtIHJlcXVpcmVkUm9sZSAtIFRoZSByb2xlIHJlcXVpcmVkIHRvIGFjY2VzcyBhIGZlYXR1cmVcbiAqIEByZXR1cm5zIE9iamVjdCB3aXRoIGhhc0FjY2VzcyBib29sZWFuIGFuZCB1c2VyUm9sZVxuICovXG5leHBvcnQgY29uc3QgdXNlUm9sZUFjY2VzcyA9IChyZXF1aXJlZFJvbGU6IHN0cmluZykgPT4ge1xuICBjb25zdCB7IHVzZXIsIGhhc1JvbGUgfSA9IHVzZUF1dGgoKVxuICBcbiAgLy8gRGVmaW5lIHBlcm1pc3Npb24gbWFwcGluZ3MgZm9yIHNwZWNpZmljIGFjdGlvbnNcbiAgY29uc3QgcGVybWlzc2lvbk1hcHBpbmdzOiBSZWNvcmQ8c3RyaW5nLCBzdHJpbmdbXT4gPSB7XG4gICAgJ2NvbnRyYWN0czp3cml0ZSc6IFsnYWRtaW4nLCAnYWdlbnQnXSxcbiAgICAnaW52b2ljZXM6d3JpdGUnOiBbJ2FkbWluJywgJ2FnZW50J10sXG4gICAgJ2NvbnRyYWN0czpyZWFkJzogWydhZG1pbicsICdhZ2VudCcsICd1c2VyJ10sXG4gICAgJ2ludm9pY2VzOnJlYWQnOiBbJ2FkbWluJywgJ2FnZW50JywgJ3VzZXInXSxcbiAgfVxuICBcbiAgLy8gQ2hlY2sgaWYgdGhlIHJlcXVpcmVkIHJvbGUgaXMgYSBzcGVjaWZpYyBwZXJtaXNzaW9uXG4gIGNvbnN0IGFsbG93ZWRSb2xlcyA9IHBlcm1pc3Npb25NYXBwaW5nc1tyZXF1aXJlZFJvbGVdXG4gIGNvbnN0IGhhc0FjY2VzcyA9IGFsbG93ZWRSb2xlcyBcbiAgICA/IGFsbG93ZWRSb2xlcy5zb21lKHJvbGUgPT4gaGFzUm9sZShyb2xlKSlcbiAgICA6IGhhc1JvbGUocmVxdWlyZWRSb2xlKVxuICBcbiAgY29uc3QgdXNlclJvbGUgPSB1c2VyPy5yb2xlIHx8IG51bGxcbiAgXG4gIHJldHVybiB7XG4gICAgaGFzQWNjZXNzLFxuICAgIHVzZXJSb2xlXG4gIH1cbn1cblxuZXhwb3J0IGRlZmF1bHQgdXNlUm9sZUFjY2Vzc1xuIl0sIm1hcHBpbmdzIjoiQUFBQTs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0lBU2E7SUFBQUEsYUFBQSxZQUFBQSxDQUFBO01BQUEsT0FBQUMsY0FBQTtJQUFBO0VBQUE7RUFBQSxPQUFBQSxjQUFBO0FBQUE7QUFBQUQsYUFBQTtBQUFBQSxhQUFBLEdBQUFFLENBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O01BeUJiQyxRQUFBO0lBQUE7SUFBQUgsYUFBQSxHQUFBSSxDQUFBO0lBQUFKLGFBQUEsR0FBQUUsQ0FBQTtXQUFBRyxRQUFBOztNQXpCYUMsY0FBQTtJQUFBO0lBQUFOLGFBQUEsR0FBQUksQ0FBQTtJQUFBSixhQUFBLEdBQUFFLENBQUE7V0FBQUksYUFBQTs7Ozs7aUNBUFc7QUFBQTtBQUFBTixhQUFBLEdBQUFFLENBQUE7QUFPakIsTUFBTUksYUFBQSxHQUFpQkMsWUFBQTtFQUFBO0VBQUFQLGFBQUEsR0FBQUksQ0FBQTtFQUM1QixNQUFNO0lBQUVJLElBQUk7SUFBRUM7RUFBTyxDQUFFO0VBQUE7RUFBQSxDQUFBVCxhQUFBLEdBQUFFLENBQUEsT0FBRyxJQUFBUSxZQUFBLENBQUFDLE9BQU87RUFFakM7RUFDQSxNQUFNQyxrQkFBQTtFQUFBO0VBQUEsQ0FBQVosYUFBQSxHQUFBRSxDQUFBLE9BQStDO0lBQ25ELG1CQUFtQixDQUFDLFNBQVMsUUFBUTtJQUNyQyxrQkFBa0IsQ0FBQyxTQUFTLFFBQVE7SUFDcEMsa0JBQWtCLENBQUMsU0FBUyxTQUFTLE9BQU87SUFDNUMsaUJBQWlCLENBQUMsU0FBUyxTQUFTO0VBQ3RDO0VBRUE7RUFDQSxNQUFNVyxZQUFBO0VBQUE7RUFBQSxDQUFBYixhQUFBLEdBQUFFLENBQUEsUUFBZVUsa0JBQWtCLENBQUNMLFlBQUEsQ0FBYTtFQUNyRCxNQUFNTyxTQUFBO0VBQUE7RUFBQSxDQUFBZCxhQUFBLEdBQUFFLENBQUEsUUFBWVcsWUFBQTtFQUFBO0VBQUEsQ0FBQWIsYUFBQSxHQUFBZSxDQUFBLFVBQ2RGLFlBQUEsQ0FBYUcsSUFBSSxDQUFDQyxJQUFBLElBQVE7SUFBQTtJQUFBakIsYUFBQSxHQUFBSSxDQUFBO0lBQUFKLGFBQUEsR0FBQUUsQ0FBQTtJQUFBLE9BQUFPLE9BQUEsQ0FBUVEsSUFBQTtFQUFBO0VBQUE7RUFBQSxDQUFBakIsYUFBQSxHQUFBZSxDQUFBLFVBQ2xDTixPQUFBLENBQVFGLFlBQUE7RUFFWixNQUFNVyxRQUFBO0VBQUE7RUFBQSxDQUFBbEIsYUFBQSxHQUFBRSxDQUFBO0VBQVc7RUFBQSxDQUFBRixhQUFBLEdBQUFlLENBQUEsVUFBQVAsSUFBQSxFQUFNUyxJQUFBO0VBQUE7RUFBQSxDQUFBakIsYUFBQSxHQUFBZSxDQUFBLFVBQVE7RUFBQTtFQUFBZixhQUFBLEdBQUFFLENBQUE7RUFFL0IsT0FBTztJQUNMWSxTQUFBO0lBQ0FJO0VBQ0Y7QUFDRjtNQUVBYixRQUFBO0FBQUE7QUFBQSxDQUFBTCxhQUFBLEdBQUFFLENBQUEsUUFBZUksYUFBQSIsImlnbm9yZUxpc3QiOltdfQ==

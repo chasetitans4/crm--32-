@@ -1,0 +1,30 @@
+e163dff274564f79fb0b479d89209d40
+/**
+ * Global Jest setup file
+ * Runs once before all test suites
+ */ // const { server } = require('../mocks/server');
+"use strict";
+module.exports = async ()=>{
+    // Start MSW server for API mocking
+    // server.listen({
+    //   onUnhandledRequest: 'warn'
+    // });
+    // Set up global test environment variables
+    process.env.NODE_ENV = 'test';
+    process.env.NEXT_PUBLIC_API_URL = 'http://localhost:3000/api';
+    // Mock console methods to reduce noise in tests
+    global.console = {
+        ...console,
+        // Uncomment to silence console.log in tests
+        // log: () => {},
+        debug: ()=>{},
+        info: ()=>{},
+        warn: ()=>{},
+        error: ()=>{}
+    };
+    // Set up global test utilities
+    global.testTimeout = 10000;
+    console.log('🧪 Global test setup completed');
+};
+
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xcY2hhc2VcXERvd25sb2Fkc1xcY3JtICgzMilcXHRlc3RzXFxzZXR1cFxcZ2xvYmFsU2V0dXAuanMiXSwic291cmNlc0NvbnRlbnQiOlsiLyoqXG4gKiBHbG9iYWwgSmVzdCBzZXR1cCBmaWxlXG4gKiBSdW5zIG9uY2UgYmVmb3JlIGFsbCB0ZXN0IHN1aXRlc1xuICovXG5cbi8vIGNvbnN0IHsgc2VydmVyIH0gPSByZXF1aXJlKCcuLi9tb2Nrcy9zZXJ2ZXInKTtcblxubW9kdWxlLmV4cG9ydHMgPSBhc3luYyAoKSA9PiB7XG4gIC8vIFN0YXJ0IE1TVyBzZXJ2ZXIgZm9yIEFQSSBtb2NraW5nXG4gIC8vIHNlcnZlci5saXN0ZW4oe1xuICAvLyAgIG9uVW5oYW5kbGVkUmVxdWVzdDogJ3dhcm4nXG4gIC8vIH0pO1xuICBcbiAgLy8gU2V0IHVwIGdsb2JhbCB0ZXN0IGVudmlyb25tZW50IHZhcmlhYmxlc1xuICBwcm9jZXNzLmVudi5OT0RFX0VOViA9ICd0ZXN0JztcbiAgcHJvY2Vzcy5lbnYuTkVYVF9QVUJMSUNfQVBJX1VSTCA9ICdodHRwOi8vbG9jYWxob3N0OjMwMDAvYXBpJztcbiAgXG4gIC8vIE1vY2sgY29uc29sZSBtZXRob2RzIHRvIHJlZHVjZSBub2lzZSBpbiB0ZXN0c1xuICBnbG9iYWwuY29uc29sZSA9IHtcbiAgICAuLi5jb25zb2xlLFxuICAgIC8vIFVuY29tbWVudCB0byBzaWxlbmNlIGNvbnNvbGUubG9nIGluIHRlc3RzXG4gICAgLy8gbG9nOiAoKSA9PiB7fSxcbiAgICBkZWJ1ZzogKCkgPT4ge30sXG4gICAgaW5mbzogKCkgPT4ge30sXG4gICAgd2FybjogKCkgPT4ge30sXG4gICAgZXJyb3I6ICgpID0+IHt9LFxuICB9O1xuICBcbiAgLy8gU2V0IHVwIGdsb2JhbCB0ZXN0IHV0aWxpdGllc1xuICBnbG9iYWwudGVzdFRpbWVvdXQgPSAxMDAwMDtcbiAgXG4gIGNvbnNvbGUubG9nKCfwn6eqIEdsb2JhbCB0ZXN0IHNldHVwIGNvbXBsZXRlZCcpO1xufTsiXSwibmFtZXMiOlsibW9kdWxlIiwiZXhwb3J0cyIsInByb2Nlc3MiLCJlbnYiLCJOT0RFX0VOViIsIk5FWFRfUFVCTElDX0FQSV9VUkwiLCJnbG9iYWwiLCJjb25zb2xlIiwiZGVidWciLCJpbmZvIiwid2FybiIsImVycm9yIiwidGVzdFRpbWVvdXQiLCJsb2ciXSwibWFwcGluZ3MiOiJBQUFBOzs7Q0FHQyxHQUVELGlEQUFpRDs7QUFFakRBLE9BQU9DLE9BQU8sR0FBRztJQUNmLG1DQUFtQztJQUNuQyxrQkFBa0I7SUFDbEIsK0JBQStCO0lBQy9CLE1BQU07SUFFTiwyQ0FBMkM7SUFDM0NDLFFBQVFDLEdBQUcsQ0FBQ0MsUUFBUSxHQUFHO0lBQ3ZCRixRQUFRQyxHQUFHLENBQUNFLG1CQUFtQixHQUFHO0lBRWxDLGdEQUFnRDtJQUNoREMsT0FBT0MsT0FBTyxHQUFHO1FBQ2YsR0FBR0EsT0FBTztRQUNWLDRDQUE0QztRQUM1QyxpQkFBaUI7UUFDakJDLE9BQU8sS0FBTztRQUNkQyxNQUFNLEtBQU87UUFDYkMsTUFBTSxLQUFPO1FBQ2JDLE9BQU8sS0FBTztJQUNoQjtJQUVBLCtCQUErQjtJQUMvQkwsT0FBT00sV0FBVyxHQUFHO0lBRXJCTCxRQUFRTSxHQUFHLENBQUM7QUFDZCJ9

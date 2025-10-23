@@ -1,0 +1,60 @@
+6c19476daaac603fdf18a12d94ac82be
+// Types and interfaces for WebDesignQuote component
+"use strict";
+
+/* istanbul ignore next */
+function cov_plcn1c7xq() {
+  var path = "C:\\Users\\chase\\Downloads\\crm (32)\\src\\components\\WebDesignQuote\\types.ts";
+  var hash = "d241056b07be1a1ca2e02df7f90f2e20cd9e0f35";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "C:\\Users\\chase\\Downloads\\crm (32)\\src\\components\\WebDesignQuote\\types.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 3,
+          column: 0
+        },
+        end: {
+          line: 5,
+          column: 3
+        }
+      }
+    },
+    fnMap: {},
+    branchMap: {},
+    s: {
+      "0": 0
+    },
+    f: {},
+    b: {},
+    inputSourceMap: {
+      version: 3,
+      sources: ["C:\\Users\\chase\\Downloads\\crm (32)\\src\\components\\WebDesignQuote\\types.ts"],
+      sourcesContent: ["// Types and interfaces for WebDesignQuote component\n\nexport interface Feature {\n  name: string\n  price: number\n  description: string\n  category: string\n}\n\nexport interface Service {\n  name: string\n  price: number\n  description: string\n}\n\nexport interface QuoteDetails {\n  basePrice: number\n  features: Feature[]\n  services: Service[]\n  timeline: string\n  total: number\n}\n\nexport interface QuoteResult {\n  details: QuoteDetails\n  clientName: string\n  projectName: string\n  date: string\n}\n\nexport interface QuestionnaireState {\n  currentStep: number\n  industry: string\n  subIndustry: string\n  goals: string[]\n  features: string[]\n  pages: number\n  timeline: string\n  isCompleted: boolean\n  quoteResult: QuoteResult | null\n  answers: any\n  quickMode: boolean\n  historyIndex: number\n  history: QuestionnaireState[]\n  isComplete: boolean\n}\n\nexport type QuestionnaireAction =\n  | { type: \"SET_INDUSTRY\"; payload: string }\n  | { type: \"SET_SUB_INDUSTRY\"; payload: string }\n  | { type: \"SET_GOALS\"; payload: string[] }\n  | { type: \"SET_FEATURES\"; payload: string[] }\n  | { type: \"SET_PAGES\"; payload: number }\n  | { type: \"SET_TIMELINE\"; payload: string }\n  | { type: \"NEXT_STEP\" }\n  | { type: \"PREV_STEP\" }\n  | { type: \"COMPLETE\"; payload: QuoteResult }\n  | { type: \"RESET\" }\n  | { type: \"LOAD_STATE\"; payload: QuestionnaireState }\n  | { type: \"SET_ANSWER\"; payload: { id: string; value: any } }\n  | { type: \"SAVE_PROGRESS\" }\n  | { type: \"UNDO\" }\n  | { type: \"REDO\" }\n  | { type: \"SET_QUICK_MODE\"; payload: boolean }\n\nexport interface Task {\n  id: number\n  // Add other task properties as needed\n}\n\nexport interface Client {\n  id: number\n  name?: string\n  notes?: { id: number; text: string; timestamp: string; type: string }[]\n  // Add other client properties as needed\n}\n\nexport interface Event {\n  id: string\n  // Add other event properties as needed\n}\n\nexport interface SalesStage {\n  // Add sales stage properties as needed\n}\n\nexport interface SavedQuote {\n  id: string\n  clientName: string\n  answers: any\n  pricing: any\n  v0Hours: any\n  leadScore: number\n  createdAt: string\n  expiresAt: string\n  daysRemaining: number\n  isExtended: boolean\n  timeline: string\n}\n\nexport interface SavedProposal {\n  id: number\n  timeline: {\n    endDate: string\n  }\n  // Add other proposal properties as needed\n}\n\nexport interface Invoice {\n  id: number\n  // Add other invoice properties as needed\n}\n\nexport interface AdminSettings {\n  vacationMode?: boolean\n  // Add other admin settings as needed\n}\n\n\n\nexport interface NavigationControlsProps {\n  currentStep: number\n  answers: any\n  onPrevStep: () => void\n  onNextStep: () => void\n  onSave: () => void\n  onReset: () => void\n  quickMode: boolean\n  onToggleQuickMode: () => void\n  canUndo: boolean\n  canRedo: boolean\n  onUndo: () => void\n  onRedo: () => void\n  isComplete: boolean\n}\n\nexport interface ReportSummaryProps {\n  answers: any\n  quickMode: boolean\n  startTime: number\n  onStartOver: () => void\n  onGenerateTextReport: () => void\n  currentSavedQuote: any\n}"],
+      names: [],
+      mappings: "AAAA,oDAAoD"
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "d241056b07be1a1ca2e02df7f90f2e20cd9e0f35"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_plcn1c7xq = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+cov_plcn1c7xq();
+cov_plcn1c7xq().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6W10sInNvdXJjZXMiOlsiQzpcXFVzZXJzXFxjaGFzZVxcRG93bmxvYWRzXFxjcm0gKDMyKVxcc3JjXFxjb21wb25lbnRzXFxXZWJEZXNpZ25RdW90ZVxcdHlwZXMudHMiXSwic291cmNlc0NvbnRlbnQiOlsiLy8gVHlwZXMgYW5kIGludGVyZmFjZXMgZm9yIFdlYkRlc2lnblF1b3RlIGNvbXBvbmVudFxuXG5leHBvcnQgaW50ZXJmYWNlIEZlYXR1cmUge1xuICBuYW1lOiBzdHJpbmdcbiAgcHJpY2U6IG51bWJlclxuICBkZXNjcmlwdGlvbjogc3RyaW5nXG4gIGNhdGVnb3J5OiBzdHJpbmdcbn1cblxuZXhwb3J0IGludGVyZmFjZSBTZXJ2aWNlIHtcbiAgbmFtZTogc3RyaW5nXG4gIHByaWNlOiBudW1iZXJcbiAgZGVzY3JpcHRpb246IHN0cmluZ1xufVxuXG5leHBvcnQgaW50ZXJmYWNlIFF1b3RlRGV0YWlscyB7XG4gIGJhc2VQcmljZTogbnVtYmVyXG4gIGZlYXR1cmVzOiBGZWF0dXJlW11cbiAgc2VydmljZXM6IFNlcnZpY2VbXVxuICB0aW1lbGluZTogc3RyaW5nXG4gIHRvdGFsOiBudW1iZXJcbn1cblxuZXhwb3J0IGludGVyZmFjZSBRdW90ZVJlc3VsdCB7XG4gIGRldGFpbHM6IFF1b3RlRGV0YWlsc1xuICBjbGllbnROYW1lOiBzdHJpbmdcbiAgcHJvamVjdE5hbWU6IHN0cmluZ1xuICBkYXRlOiBzdHJpbmdcbn1cblxuZXhwb3J0IGludGVyZmFjZSBRdWVzdGlvbm5haXJlU3RhdGUge1xuICBjdXJyZW50U3RlcDogbnVtYmVyXG4gIGluZHVzdHJ5OiBzdHJpbmdcbiAgc3ViSW5kdXN0cnk6IHN0cmluZ1xuICBnb2Fsczogc3RyaW5nW11cbiAgZmVhdHVyZXM6IHN0cmluZ1tdXG4gIHBhZ2VzOiBudW1iZXJcbiAgdGltZWxpbmU6IHN0cmluZ1xuICBpc0NvbXBsZXRlZDogYm9vbGVhblxuICBxdW90ZVJlc3VsdDogUXVvdGVSZXN1bHQgfCBudWxsXG4gIGFuc3dlcnM6IGFueVxuICBxdWlja01vZGU6IGJvb2xlYW5cbiAgaGlzdG9yeUluZGV4OiBudW1iZXJcbiAgaGlzdG9yeTogUXVlc3Rpb25uYWlyZVN0YXRlW11cbiAgaXNDb21wbGV0ZTogYm9vbGVhblxufVxuXG5leHBvcnQgdHlwZSBRdWVzdGlvbm5haXJlQWN0aW9uID1cbiAgfCB7IHR5cGU6IFwiU0VUX0lORFVTVFJZXCI7IHBheWxvYWQ6IHN0cmluZyB9XG4gIHwgeyB0eXBlOiBcIlNFVF9TVUJfSU5EVVNUUllcIjsgcGF5bG9hZDogc3RyaW5nIH1cbiAgfCB7IHR5cGU6IFwiU0VUX0dPQUxTXCI7IHBheWxvYWQ6IHN0cmluZ1tdIH1cbiAgfCB7IHR5cGU6IFwiU0VUX0ZFQVRVUkVTXCI7IHBheWxvYWQ6IHN0cmluZ1tdIH1cbiAgfCB7IHR5cGU6IFwiU0VUX1BBR0VTXCI7IHBheWxvYWQ6IG51bWJlciB9XG4gIHwgeyB0eXBlOiBcIlNFVF9USU1FTElORVwiOyBwYXlsb2FkOiBzdHJpbmcgfVxuICB8IHsgdHlwZTogXCJORVhUX1NURVBcIiB9XG4gIHwgeyB0eXBlOiBcIlBSRVZfU1RFUFwiIH1cbiAgfCB7IHR5cGU6IFwiQ09NUExFVEVcIjsgcGF5bG9hZDogUXVvdGVSZXN1bHQgfVxuICB8IHsgdHlwZTogXCJSRVNFVFwiIH1cbiAgfCB7IHR5cGU6IFwiTE9BRF9TVEFURVwiOyBwYXlsb2FkOiBRdWVzdGlvbm5haXJlU3RhdGUgfVxuICB8IHsgdHlwZTogXCJTRVRfQU5TV0VSXCI7IHBheWxvYWQ6IHsgaWQ6IHN0cmluZzsgdmFsdWU6IGFueSB9IH1cbiAgfCB7IHR5cGU6IFwiU0FWRV9QUk9HUkVTU1wiIH1cbiAgfCB7IHR5cGU6IFwiVU5ET1wiIH1cbiAgfCB7IHR5cGU6IFwiUkVET1wiIH1cbiAgfCB7IHR5cGU6IFwiU0VUX1FVSUNLX01PREVcIjsgcGF5bG9hZDogYm9vbGVhbiB9XG5cbmV4cG9ydCBpbnRlcmZhY2UgVGFzayB7XG4gIGlkOiBudW1iZXJcbiAgLy8gQWRkIG90aGVyIHRhc2sgcHJvcGVydGllcyBhcyBuZWVkZWRcbn1cblxuZXhwb3J0IGludGVyZmFjZSBDbGllbnQge1xuICBpZDogbnVtYmVyXG4gIG5hbWU/OiBzdHJpbmdcbiAgbm90ZXM/OiB7IGlkOiBudW1iZXI7IHRleHQ6IHN0cmluZzsgdGltZXN0YW1wOiBzdHJpbmc7IHR5cGU6IHN0cmluZyB9W11cbiAgLy8gQWRkIG90aGVyIGNsaWVudCBwcm9wZXJ0aWVzIGFzIG5lZWRlZFxufVxuXG5leHBvcnQgaW50ZXJmYWNlIEV2ZW50IHtcbiAgaWQ6IHN0cmluZ1xuICAvLyBBZGQgb3RoZXIgZXZlbnQgcHJvcGVydGllcyBhcyBuZWVkZWRcbn1cblxuZXhwb3J0IGludGVyZmFjZSBTYWxlc1N0YWdlIHtcbiAgLy8gQWRkIHNhbGVzIHN0YWdlIHByb3BlcnRpZXMgYXMgbmVlZGVkXG59XG5cbmV4cG9ydCBpbnRlcmZhY2UgU2F2ZWRRdW90ZSB7XG4gIGlkOiBzdHJpbmdcbiAgY2xpZW50TmFtZTogc3RyaW5nXG4gIGFuc3dlcnM6IGFueVxuICBwcmljaW5nOiBhbnlcbiAgdjBIb3VyczogYW55XG4gIGxlYWRTY29yZTogbnVtYmVyXG4gIGNyZWF0ZWRBdDogc3RyaW5nXG4gIGV4cGlyZXNBdDogc3RyaW5nXG4gIGRheXNSZW1haW5pbmc6IG51bWJlclxuICBpc0V4dGVuZGVkOiBib29sZWFuXG4gIHRpbWVsaW5lOiBzdHJpbmdcbn1cblxuZXhwb3J0IGludGVyZmFjZSBTYXZlZFByb3Bvc2FsIHtcbiAgaWQ6IG51bWJlclxuICB0aW1lbGluZToge1xuICAgIGVuZERhdGU6IHN0cmluZ1xuICB9XG4gIC8vIEFkZCBvdGhlciBwcm9wb3NhbCBwcm9wZXJ0aWVzIGFzIG5lZWRlZFxufVxuXG5leHBvcnQgaW50ZXJmYWNlIEludm9pY2Uge1xuICBpZDogbnVtYmVyXG4gIC8vIEFkZCBvdGhlciBpbnZvaWNlIHByb3BlcnRpZXMgYXMgbmVlZGVkXG59XG5cbmV4cG9ydCBpbnRlcmZhY2UgQWRtaW5TZXR0aW5ncyB7XG4gIHZhY2F0aW9uTW9kZT86IGJvb2xlYW5cbiAgLy8gQWRkIG90aGVyIGFkbWluIHNldHRpbmdzIGFzIG5lZWRlZFxufVxuXG5cblxuZXhwb3J0IGludGVyZmFjZSBOYXZpZ2F0aW9uQ29udHJvbHNQcm9wcyB7XG4gIGN1cnJlbnRTdGVwOiBudW1iZXJcbiAgYW5zd2VyczogYW55XG4gIG9uUHJldlN0ZXA6ICgpID0+IHZvaWRcbiAgb25OZXh0U3RlcDogKCkgPT4gdm9pZFxuICBvblNhdmU6ICgpID0+IHZvaWRcbiAgb25SZXNldDogKCkgPT4gdm9pZFxuICBxdWlja01vZGU6IGJvb2xlYW5cbiAgb25Ub2dnbGVRdWlja01vZGU6ICgpID0+IHZvaWRcbiAgY2FuVW5kbzogYm9vbGVhblxuICBjYW5SZWRvOiBib29sZWFuXG4gIG9uVW5kbzogKCkgPT4gdm9pZFxuICBvblJlZG86ICgpID0+IHZvaWRcbiAgaXNDb21wbGV0ZTogYm9vbGVhblxufVxuXG5leHBvcnQgaW50ZXJmYWNlIFJlcG9ydFN1bW1hcnlQcm9wcyB7XG4gIGFuc3dlcnM6IGFueVxuICBxdWlja01vZGU6IGJvb2xlYW5cbiAgc3RhcnRUaW1lOiBudW1iZXJcbiAgb25TdGFydE92ZXI6ICgpID0+IHZvaWRcbiAgb25HZW5lcmF0ZVRleHRSZXBvcnQ6ICgpID0+IHZvaWRcbiAgY3VycmVudFNhdmVkUXVvdGU6IGFueVxufSJdLCJtYXBwaW5ncyI6IkFBQUEiLCJpZ25vcmVMaXN0IjpbXX0=

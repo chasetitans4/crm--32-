@@ -1,0 +1,511 @@
+1e12f63421d355cd42b3fc24a6e5f60d
+// Configuration service for managing application settings
+// Mock configuration service for feature flags
+"use strict";
+
+/* istanbul ignore next */
+function cov_2md4ykpj89() {
+  var path = "C:\\Users\\chase\\Downloads\\crm (32)\\src\\services\\configService.ts";
+  var hash = "2a9d816ae5859885ce02f450c99ecf16464c0419";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "C:\\Users\\chase\\Downloads\\crm (32)\\src\\services\\configService.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 4,
+          column: 0
+        },
+        end: {
+          line: 6,
+          column: 3
+        }
+      },
+      "1": {
+        start: {
+          line: 8,
+          column: 4
+        },
+        end: {
+          line: 11,
+          column: 7
+        }
+      },
+      "2": {
+        start: {
+          line: 8,
+          column: 24
+        },
+        end: {
+          line: 11,
+          column: 7
+        }
+      },
+      "3": {
+        start: {
+          line: 13,
+          column: 0
+        },
+        end: {
+          line: 20,
+          column: 3
+        }
+      },
+      "4": {
+        start: {
+          line: 15,
+          column: 8
+        },
+        end: {
+          line: 15,
+          column: 29
+        }
+      },
+      "5": {
+        start: {
+          line: 18,
+          column: 8
+        },
+        end: {
+          line: 18,
+          column: 24
+        }
+      },
+      "6": {
+        start: {
+          line: 23,
+          column: 8
+        },
+        end: {
+          line: 23,
+          column: 51
+        }
+      },
+      "7": {
+        start: {
+          line: 26,
+          column: 8
+        },
+        end: {
+          line: 26,
+          column: 45
+        }
+      },
+      "8": {
+        start: {
+          line: 29,
+          column: 8
+        },
+        end: {
+          line: 31,
+          column: 10
+        }
+      },
+      "9": {
+        start: {
+          line: 34,
+          column: 8
+        },
+        end: {
+          line: 34,
+          column: 54
+        }
+      },
+      "10": {
+        start: {
+          line: 37,
+          column: 8
+        },
+        end: {
+          line: 46,
+          column: 10
+        }
+      },
+      "11": {
+        start: {
+          line: 49,
+          column: 22
+        },
+        end: {
+          line: 49,
+          column: 45
+        }
+      },
+      "12": {
+        start: {
+          line: 50,
+          column: 17
+        },
+        end: {
+          line: 50,
+          column: 30
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "_export",
+        decl: {
+          start: {
+            line: 7,
+            column: 9
+          },
+          end: {
+            line: 7,
+            column: 16
+          }
+        },
+        loc: {
+          start: {
+            line: 7,
+            column: 30
+          },
+          end: {
+            line: 12,
+            column: 1
+          }
+        },
+        line: 7
+      },
+      "1": {
+        name: "(anonymous_1)",
+        decl: {
+          start: {
+            line: 14,
+            column: 4
+          },
+          end: {
+            line: 14,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 14,
+            column: 25
+          },
+          end: {
+            line: 16,
+            column: 5
+          }
+        },
+        line: 14
+      },
+      "2": {
+        name: "(anonymous_2)",
+        decl: {
+          start: {
+            line: 17,
+            column: 4
+          },
+          end: {
+            line: 17,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 17,
+            column: 19
+          },
+          end: {
+            line: 19,
+            column: 5
+          }
+        },
+        line: 17
+      },
+      "3": {
+        name: "(anonymous_3)",
+        decl: {
+          start: {
+            line: 22,
+            column: 4
+          },
+          end: {
+            line: 22,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 22,
+            column: 28
+          },
+          end: {
+            line: 24,
+            column: 5
+          }
+        },
+        line: 22
+      },
+      "4": {
+        name: "(anonymous_4)",
+        decl: {
+          start: {
+            line: 25,
+            column: 4
+          },
+          end: {
+            line: 25,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 25,
+            column: 37
+          },
+          end: {
+            line: 27,
+            column: 5
+          }
+        },
+        line: 25
+      },
+      "5": {
+        name: "(anonymous_5)",
+        decl: {
+          start: {
+            line: 28,
+            column: 4
+          },
+          end: {
+            line: 28,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 28,
+            column: 21
+          },
+          end: {
+            line: 32,
+            column: 5
+          }
+        },
+        line: 28
+      },
+      "6": {
+        name: "(anonymous_6)",
+        decl: {
+          start: {
+            line: 33,
+            column: 4
+          },
+          end: {
+            line: 33,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 33,
+            column: 20
+          },
+          end: {
+            line: 35,
+            column: 5
+          }
+        },
+        line: 33
+      },
+      "7": {
+        name: "(anonymous_7)",
+        decl: {
+          start: {
+            line: 36,
+            column: 4
+          },
+          end: {
+            line: 36,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 36,
+            column: 17
+          },
+          end: {
+            line: 47,
+            column: 5
+          }
+        },
+        line: 36
+      }
+    },
+    branchMap: {
+      "0": {
+        loc: {
+          start: {
+            line: 23,
+            column: 15
+          },
+          end: {
+            line: 23,
+            column: 50
+          }
+        },
+        type: "binary-expr",
+        locations: [{
+          start: {
+            line: 23,
+            column: 15
+          },
+          end: {
+            line: 23,
+            column: 41
+          }
+        }, {
+          start: {
+            line: 23,
+            column: 45
+          },
+          end: {
+            line: 23,
+            column: 50
+          }
+        }],
+        line: 23
+      }
+    },
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0
+    },
+    f: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0
+    },
+    b: {
+      "0": [0, 0]
+    },
+    inputSourceMap: {
+      version: 3,
+      sources: ["C:\\Users\\chase\\Downloads\\crm (32)\\src\\services\\configService.ts"],
+      sourcesContent: ["// Configuration service for managing application settings\n// Mock configuration service for feature flags\nexport interface ConfigService {\n  getFeature: (featureName: string) => boolean\n  setFeature: (featureName: string, enabled: boolean) => void\n  getAllFeatures: () => Record<string, boolean>\n}\n\nexport interface DatabaseConfig {\n  supabaseUrl: string\n  supabaseAnonKey: string\n  supabaseServiceKey?: string\n}\n\nexport interface EmailConfig {\n  provider: \"mailjet\" | \"outlook\" | \"smtp\"\n  mailjet?: {\n    clientId: string\n    clientSecret: string\n    redirectUri: string\n  }\n  outlook?: {\n    clientId: string\n    clientSecret: string\n    redirectUri: string\n    tenantId: string\n  }\n  smtp?: {\n    host: string\n    port: number\n    secure: boolean\n    user: string\n    password: string\n  }\n}\n\nexport interface NotificationConfig {\n  enablePush: boolean\n  enableEmail: boolean\n  enableSMS: boolean\n  defaultDuration: number\n  maxNotifications: number\n}\n\nexport interface ThemeConfig {\n  defaultTheme: \"light\" | \"dark\" | \"system\"\n  allowUserThemeChange: boolean\n  customColors?: {\n    primary: string\n    secondary: string\n    accent: string\n  }\n}\n\nexport interface SecurityConfig {\n  sessionTimeout: number // minutes\n  maxLoginAttempts: number\n  passwordMinLength: number\n  requireTwoFactor: boolean\n  allowedDomains?: string[]\n}\n\nexport interface PerformanceConfig {\n  enableCaching: boolean\n  cacheTimeout: number // minutes\n  maxCacheSize: number // MB\n  enableOfflineMode: boolean\n  syncInterval: number // minutes\n  enableAnalytics: boolean\n}\n\nexport interface FeatureFlags {\n  enableAdvancedAnalytics: boolean\n  enableEmailIntegration: boolean\n  enableRealTimeUpdates: boolean\n  enableOfflineMode: boolean\n  enableRoleBasedAccess: boolean\n  enableAuditLog: boolean\n  enableDataExport: boolean\n  enableCustomFields: boolean\n  enableAutomations: boolean\n  enableIntegrations: boolean\n}\n\nexport interface AppConfig {\n  app: {\n    name: string\n    version: string\n    environment: \"development\" | \"staging\" | \"production\"\n    debug: boolean\n    apiUrl: string\n  }\n  database: DatabaseConfig\n  email: EmailConfig\n  notifications: NotificationConfig\n  theme: ThemeConfig\n  security: SecurityConfig\n  performance: PerformanceConfig\n  features: FeatureFlags\n}\n\nclass ConfigServiceImpl implements ConfigService {\n  private features: Record<string, boolean> = {\n    enableDataExport: true,\n    enableCustomFields: true,\n    enableAutomations: true,\n    enableAdvancedAnalytics: true,\n    enableEnhancedSearch: true,\n    enableEmailTemplates: true,\n    enableNotifications: true,\n    enableReporting: true,\n  }\n\n  getFeature(featureName: string): boolean {\n    return this.features[featureName] ?? false\n  }\n\n  setFeature(featureName: string, enabled: boolean): void {\n    this.features[featureName] = enabled\n  }\n\n  getAllFeatures(): Record<string, boolean> {\n    return { ...this.features }\n  }\n\n  isDevelopment(): boolean {\n    return process.env.NODE_ENV === 'development'\n  }\n}\n\n// Create and export singleton instance\nexport const configService = new ConfigServiceImpl()\nexport default configService\n"],
+      names: ["configService", "ConfigServiceImpl", "getFeature", "featureName", "features", "setFeature", "enabled", "getAllFeatures", "isDevelopment", "process", "env", "NODE_ENV", "enableDataExport", "enableCustomFields", "enableAutomations", "enableAdvancedAnalytics", "enableEnhancedSearch", "enableEmailTemplates", "enableNotifications", "enableReporting"],
+      mappings: "AAAA,0DAA0D;AAC1D,+CAA+C;;;;;;;;;;;;QAkIlCA;eAAAA;;QACb;eAAA;;;AA/BA,MAAMC;IAYJC,WAAWC,WAAmB,EAAW;QACvC,OAAO,IAAI,CAACC,QAAQ,CAACD,YAAY,IAAI;IACvC;IAEAE,WAAWF,WAAmB,EAAEG,OAAgB,EAAQ;QACtD,IAAI,CAACF,QAAQ,CAACD,YAAY,GAAGG;IAC/B;IAEAC,iBAA0C;QACxC,OAAO;YAAE,GAAG,IAAI,CAACH,QAAQ;QAAC;IAC5B;IAEAI,gBAAyB;QACvB,OAAOC,QAAQC,GAAG,CAACC,QAAQ,KAAK;IAClC;;aAzBQP,WAAoC;YAC1CQ,kBAAkB;YAClBC,oBAAoB;YACpBC,mBAAmB;YACnBC,yBAAyB;YACzBC,sBAAsB;YACtBC,sBAAsB;YACtBC,qBAAqB;YACrBC,iBAAiB;QACnB;;AAiBF;AAGO,MAAMnB,gBAAgB,IAAIC;MACjC,WAAeD"
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "2a9d816ae5859885ce02f450c99ecf16464c0419"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_2md4ykpj89 = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+cov_2md4ykpj89();
+cov_2md4ykpj89().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+function _export(target, all) {
+  /* istanbul ignore next */
+  cov_2md4ykpj89().f[0]++;
+  cov_2md4ykpj89().s[1]++;
+  for (var name in all) {
+    /* istanbul ignore next */
+    cov_2md4ykpj89().s[2]++;
+    Object.defineProperty(target, name, {
+      enumerable: true,
+      get: Object.getOwnPropertyDescriptor(all, name).get
+    });
+  }
+}
+/* istanbul ignore next */
+cov_2md4ykpj89().s[3]++;
+_export(exports, {
+  get configService() {
+    /* istanbul ignore next */
+    cov_2md4ykpj89().f[1]++;
+    cov_2md4ykpj89().s[4]++;
+    return configService;
+  },
+  get default() {
+    /* istanbul ignore next */
+    cov_2md4ykpj89().f[2]++;
+    cov_2md4ykpj89().s[5]++;
+    return _default;
+  }
+});
+class ConfigServiceImpl {
+  getFeature(featureName) {
+    /* istanbul ignore next */
+    cov_2md4ykpj89().f[3]++;
+    cov_2md4ykpj89().s[6]++;
+    return /* istanbul ignore next */(cov_2md4ykpj89().b[0][0]++, this.features[featureName]) ??
+    /* istanbul ignore next */
+    (cov_2md4ykpj89().b[0][1]++, false);
+  }
+  setFeature(featureName, enabled) {
+    /* istanbul ignore next */
+    cov_2md4ykpj89().f[4]++;
+    cov_2md4ykpj89().s[7]++;
+    this.features[featureName] = enabled;
+  }
+  getAllFeatures() {
+    /* istanbul ignore next */
+    cov_2md4ykpj89().f[5]++;
+    cov_2md4ykpj89().s[8]++;
+    return {
+      ...this.features
+    };
+  }
+  isDevelopment() {
+    /* istanbul ignore next */
+    cov_2md4ykpj89().f[6]++;
+    cov_2md4ykpj89().s[9]++;
+    return process.env.NODE_ENV === 'development';
+  }
+  constructor() {
+    /* istanbul ignore next */
+    cov_2md4ykpj89().f[7]++;
+    cov_2md4ykpj89().s[10]++;
+    this.features = {
+      enableDataExport: true,
+      enableCustomFields: true,
+      enableAutomations: true,
+      enableAdvancedAnalytics: true,
+      enableEnhancedSearch: true,
+      enableEmailTemplates: true,
+      enableNotifications: true,
+      enableReporting: true
+    };
+  }
+}
+const configService =
+/* istanbul ignore next */
+(cov_2md4ykpj89().s[11]++, new ConfigServiceImpl());
+const _default =
+/* istanbul ignore next */
+(cov_2md4ykpj89().s[12]++, configService);
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJjb25maWdTZXJ2aWNlIiwiY292XzJtZDR5a3BqODkiLCJmIiwicyIsImRlZmF1bHQiLCJfZGVmYXVsdCIsIkNvbmZpZ1NlcnZpY2VJbXBsIiwiZ2V0RmVhdHVyZSIsImZlYXR1cmVOYW1lIiwiYiIsImZlYXR1cmVzIiwic2V0RmVhdHVyZSIsImVuYWJsZWQiLCJnZXRBbGxGZWF0dXJlcyIsImlzRGV2ZWxvcG1lbnQiLCJwcm9jZXNzIiwiZW52IiwiTk9ERV9FTlYiLCJlbmFibGVEYXRhRXhwb3J0IiwiZW5hYmxlQ3VzdG9tRmllbGRzIiwiZW5hYmxlQXV0b21hdGlvbnMiLCJlbmFibGVBZHZhbmNlZEFuYWx5dGljcyIsImVuYWJsZUVuaGFuY2VkU2VhcmNoIiwiZW5hYmxlRW1haWxUZW1wbGF0ZXMiLCJlbmFibGVOb3RpZmljYXRpb25zIiwiZW5hYmxlUmVwb3J0aW5nIl0sInNvdXJjZXMiOlsiQzpcXFVzZXJzXFxjaGFzZVxcRG93bmxvYWRzXFxjcm0gKDMyKVxcc3JjXFxzZXJ2aWNlc1xcY29uZmlnU2VydmljZS50cyJdLCJzb3VyY2VzQ29udGVudCI6WyIvLyBDb25maWd1cmF0aW9uIHNlcnZpY2UgZm9yIG1hbmFnaW5nIGFwcGxpY2F0aW9uIHNldHRpbmdzXG4vLyBNb2NrIGNvbmZpZ3VyYXRpb24gc2VydmljZSBmb3IgZmVhdHVyZSBmbGFnc1xuZXhwb3J0IGludGVyZmFjZSBDb25maWdTZXJ2aWNlIHtcbiAgZ2V0RmVhdHVyZTogKGZlYXR1cmVOYW1lOiBzdHJpbmcpID0+IGJvb2xlYW5cbiAgc2V0RmVhdHVyZTogKGZlYXR1cmVOYW1lOiBzdHJpbmcsIGVuYWJsZWQ6IGJvb2xlYW4pID0+IHZvaWRcbiAgZ2V0QWxsRmVhdHVyZXM6ICgpID0+IFJlY29yZDxzdHJpbmcsIGJvb2xlYW4+XG59XG5cbmV4cG9ydCBpbnRlcmZhY2UgRGF0YWJhc2VDb25maWcge1xuICBzdXBhYmFzZVVybDogc3RyaW5nXG4gIHN1cGFiYXNlQW5vbktleTogc3RyaW5nXG4gIHN1cGFiYXNlU2VydmljZUtleT86IHN0cmluZ1xufVxuXG5leHBvcnQgaW50ZXJmYWNlIEVtYWlsQ29uZmlnIHtcbiAgcHJvdmlkZXI6IFwibWFpbGpldFwiIHwgXCJvdXRsb29rXCIgfCBcInNtdHBcIlxuICBtYWlsamV0Pzoge1xuICAgIGNsaWVudElkOiBzdHJpbmdcbiAgICBjbGllbnRTZWNyZXQ6IHN0cmluZ1xuICAgIHJlZGlyZWN0VXJpOiBzdHJpbmdcbiAgfVxuICBvdXRsb29rPzoge1xuICAgIGNsaWVudElkOiBzdHJpbmdcbiAgICBjbGllbnRTZWNyZXQ6IHN0cmluZ1xuICAgIHJlZGlyZWN0VXJpOiBzdHJpbmdcbiAgICB0ZW5hbnRJZDogc3RyaW5nXG4gIH1cbiAgc210cD86IHtcbiAgICBob3N0OiBzdHJpbmdcbiAgICBwb3J0OiBudW1iZXJcbiAgICBzZWN1cmU6IGJvb2xlYW5cbiAgICB1c2VyOiBzdHJpbmdcbiAgICBwYXNzd29yZDogc3RyaW5nXG4gIH1cbn1cblxuZXhwb3J0IGludGVyZmFjZSBOb3RpZmljYXRpb25Db25maWcge1xuICBlbmFibGVQdXNoOiBib29sZWFuXG4gIGVuYWJsZUVtYWlsOiBib29sZWFuXG4gIGVuYWJsZVNNUzogYm9vbGVhblxuICBkZWZhdWx0RHVyYXRpb246IG51bWJlclxuICBtYXhOb3RpZmljYXRpb25zOiBudW1iZXJcbn1cblxuZXhwb3J0IGludGVyZmFjZSBUaGVtZUNvbmZpZyB7XG4gIGRlZmF1bHRUaGVtZTogXCJsaWdodFwiIHwgXCJkYXJrXCIgfCBcInN5c3RlbVwiXG4gIGFsbG93VXNlclRoZW1lQ2hhbmdlOiBib29sZWFuXG4gIGN1c3RvbUNvbG9ycz86IHtcbiAgICBwcmltYXJ5OiBzdHJpbmdcbiAgICBzZWNvbmRhcnk6IHN0cmluZ1xuICAgIGFjY2VudDogc3RyaW5nXG4gIH1cbn1cblxuZXhwb3J0IGludGVyZmFjZSBTZWN1cml0eUNvbmZpZyB7XG4gIHNlc3Npb25UaW1lb3V0OiBudW1iZXIgLy8gbWludXRlc1xuICBtYXhMb2dpbkF0dGVtcHRzOiBudW1iZXJcbiAgcGFzc3dvcmRNaW5MZW5ndGg6IG51bWJlclxuICByZXF1aXJlVHdvRmFjdG9yOiBib29sZWFuXG4gIGFsbG93ZWREb21haW5zPzogc3RyaW5nW11cbn1cblxuZXhwb3J0IGludGVyZmFjZSBQZXJmb3JtYW5jZUNvbmZpZyB7XG4gIGVuYWJsZUNhY2hpbmc6IGJvb2xlYW5cbiAgY2FjaGVUaW1lb3V0OiBudW1iZXIgLy8gbWludXRlc1xuICBtYXhDYWNoZVNpemU6IG51bWJlciAvLyBNQlxuICBlbmFibGVPZmZsaW5lTW9kZTogYm9vbGVhblxuICBzeW5jSW50ZXJ2YWw6IG51bWJlciAvLyBtaW51dGVzXG4gIGVuYWJsZUFuYWx5dGljczogYm9vbGVhblxufVxuXG5leHBvcnQgaW50ZXJmYWNlIEZlYXR1cmVGbGFncyB7XG4gIGVuYWJsZUFkdmFuY2VkQW5hbHl0aWNzOiBib29sZWFuXG4gIGVuYWJsZUVtYWlsSW50ZWdyYXRpb246IGJvb2xlYW5cbiAgZW5hYmxlUmVhbFRpbWVVcGRhdGVzOiBib29sZWFuXG4gIGVuYWJsZU9mZmxpbmVNb2RlOiBib29sZWFuXG4gIGVuYWJsZVJvbGVCYXNlZEFjY2VzczogYm9vbGVhblxuICBlbmFibGVBdWRpdExvZzogYm9vbGVhblxuICBlbmFibGVEYXRhRXhwb3J0OiBib29sZWFuXG4gIGVuYWJsZUN1c3RvbUZpZWxkczogYm9vbGVhblxuICBlbmFibGVBdXRvbWF0aW9uczogYm9vbGVhblxuICBlbmFibGVJbnRlZ3JhdGlvbnM6IGJvb2xlYW5cbn1cblxuZXhwb3J0IGludGVyZmFjZSBBcHBDb25maWcge1xuICBhcHA6IHtcbiAgICBuYW1lOiBzdHJpbmdcbiAgICB2ZXJzaW9uOiBzdHJpbmdcbiAgICBlbnZpcm9ubWVudDogXCJkZXZlbG9wbWVudFwiIHwgXCJzdGFnaW5nXCIgfCBcInByb2R1Y3Rpb25cIlxuICAgIGRlYnVnOiBib29sZWFuXG4gICAgYXBpVXJsOiBzdHJpbmdcbiAgfVxuICBkYXRhYmFzZTogRGF0YWJhc2VDb25maWdcbiAgZW1haWw6IEVtYWlsQ29uZmlnXG4gIG5vdGlmaWNhdGlvbnM6IE5vdGlmaWNhdGlvbkNvbmZpZ1xuICB0aGVtZTogVGhlbWVDb25maWdcbiAgc2VjdXJpdHk6IFNlY3VyaXR5Q29uZmlnXG4gIHBlcmZvcm1hbmNlOiBQZXJmb3JtYW5jZUNvbmZpZ1xuICBmZWF0dXJlczogRmVhdHVyZUZsYWdzXG59XG5cbmNsYXNzIENvbmZpZ1NlcnZpY2VJbXBsIGltcGxlbWVudHMgQ29uZmlnU2VydmljZSB7XG4gIHByaXZhdGUgZmVhdHVyZXM6IFJlY29yZDxzdHJpbmcsIGJvb2xlYW4+ID0ge1xuICAgIGVuYWJsZURhdGFFeHBvcnQ6IHRydWUsXG4gICAgZW5hYmxlQ3VzdG9tRmllbGRzOiB0cnVlLFxuICAgIGVuYWJsZUF1dG9tYXRpb25zOiB0cnVlLFxuICAgIGVuYWJsZUFkdmFuY2VkQW5hbHl0aWNzOiB0cnVlLFxuICAgIGVuYWJsZUVuaGFuY2VkU2VhcmNoOiB0cnVlLFxuICAgIGVuYWJsZUVtYWlsVGVtcGxhdGVzOiB0cnVlLFxuICAgIGVuYWJsZU5vdGlmaWNhdGlvbnM6IHRydWUsXG4gICAgZW5hYmxlUmVwb3J0aW5nOiB0cnVlLFxuICB9XG5cbiAgZ2V0RmVhdHVyZShmZWF0dXJlTmFtZTogc3RyaW5nKTogYm9vbGVhbiB7XG4gICAgcmV0dXJuIHRoaXMuZmVhdHVyZXNbZmVhdHVyZU5hbWVdID8/IGZhbHNlXG4gIH1cblxuICBzZXRGZWF0dXJlKGZlYXR1cmVOYW1lOiBzdHJpbmcsIGVuYWJsZWQ6IGJvb2xlYW4pOiB2b2lkIHtcbiAgICB0aGlzLmZlYXR1cmVzW2ZlYXR1cmVOYW1lXSA9IGVuYWJsZWRcbiAgfVxuXG4gIGdldEFsbEZlYXR1cmVzKCk6IFJlY29yZDxzdHJpbmcsIGJvb2xlYW4+IHtcbiAgICByZXR1cm4geyAuLi50aGlzLmZlYXR1cmVzIH1cbiAgfVxuXG4gIGlzRGV2ZWxvcG1lbnQoKTogYm9vbGVhbiB7XG4gICAgcmV0dXJuIHByb2Nlc3MuZW52Lk5PREVfRU5WID09PSAnZGV2ZWxvcG1lbnQnXG4gIH1cbn1cblxuLy8gQ3JlYXRlIGFuZCBleHBvcnQgc2luZ2xldG9uIGluc3RhbmNlXG5leHBvcnQgY29uc3QgY29uZmlnU2VydmljZSA9IG5ldyBDb25maWdTZXJ2aWNlSW1wbCgpXG5leHBvcnQgZGVmYXVsdCBjb25maWdTZXJ2aWNlXG4iXSwibWFwcGluZ3MiOiJBQUFBO0FBQ0E7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztNQWtJYUEsY0FBQTtJQUFBO0lBQUFDLGNBQUEsR0FBQUMsQ0FBQTtJQUFBRCxjQUFBLEdBQUFFLENBQUE7V0FBQUgsYUFBQTs7TUFDYkksUUFBQTtJQUFBO0lBQUFILGNBQUEsR0FBQUMsQ0FBQTtJQUFBRCxjQUFBLEdBQUFFLENBQUE7V0FBQUUsUUFBQTs7O0FBL0JBLE1BQU1DLGlCQUFBO0VBWUpDLFdBQVdDLFdBQW1CLEVBQVc7SUFBQTtJQUFBUCxjQUFBLEdBQUFDLENBQUE7SUFBQUQsY0FBQSxHQUFBRSxDQUFBO0lBQ3ZDLE9BQU8sMkJBQUFGLGNBQUEsR0FBQVEsQ0FBQSxjQUFJLENBQUNDLFFBQVEsQ0FBQ0YsV0FBQSxDQUFZO0lBQUE7SUFBQSxDQUFBUCxjQUFBLEdBQUFRLENBQUEsVUFBSTtFQUN2QztFQUVBRSxXQUFXSCxXQUFtQixFQUFFSSxPQUFnQixFQUFRO0lBQUE7SUFBQVgsY0FBQSxHQUFBQyxDQUFBO0lBQUFELGNBQUEsR0FBQUUsQ0FBQTtJQUN0RCxJQUFJLENBQUNPLFFBQVEsQ0FBQ0YsV0FBQSxDQUFZLEdBQUdJLE9BQUE7RUFDL0I7RUFFQUMsZUFBQSxFQUEwQztJQUFBO0lBQUFaLGNBQUEsR0FBQUMsQ0FBQTtJQUFBRCxjQUFBLEdBQUFFLENBQUE7SUFDeEMsT0FBTztNQUFFLEdBQUcsSUFBSSxDQUFDTztJQUFTO0VBQzVCO0VBRUFJLGNBQUEsRUFBeUI7SUFBQTtJQUFBYixjQUFBLEdBQUFDLENBQUE7SUFBQUQsY0FBQSxHQUFBRSxDQUFBO0lBQ3ZCLE9BQU9ZLE9BQUEsQ0FBUUMsR0FBRyxDQUFDQyxRQUFRLEtBQUs7RUFDbEM7Ozs7O1NBekJRUCxRQUFBLEdBQW9DO01BQzFDUSxnQkFBQSxFQUFrQjtNQUNsQkMsa0JBQUEsRUFBb0I7TUFDcEJDLGlCQUFBLEVBQW1CO01BQ25CQyx1QkFBQSxFQUF5QjtNQUN6QkMsb0JBQUEsRUFBc0I7TUFDdEJDLG9CQUFBLEVBQXNCO01BQ3RCQyxtQkFBQSxFQUFxQjtNQUNyQkMsZUFBQSxFQUFpQjtJQUNuQjs7QUFpQkY7QUFHTyxNQUFNekIsYUFBQTtBQUFBO0FBQUEsQ0FBQUMsY0FBQSxHQUFBRSxDQUFBLFFBQWdCLElBQUlHLGlCQUFBO01BQ2pDRCxRQUFBO0FBQUE7QUFBQSxDQUFBSixjQUFBLEdBQUFFLENBQUEsUUFBZUgsYUFBQSIsImlnbm9yZUxpc3QiOltdfQ==

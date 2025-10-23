@@ -1,0 +1,857 @@
+b39e726dcf13725fa4edce350bba3f39
+"use client";
+"use strict";
+
+/* istanbul ignore next */
+function cov_23rigxxr3f() {
+  var path = "C:\\Users\\chase\\Downloads\\crm (32)\\src\\components\\Pipeline\\PipelineMetricsView.tsx";
+  var hash = "5d7d0d325c2b9cabc8830ee8238c229d28796481";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "C:\\Users\\chase\\Downloads\\crm (32)\\src\\components\\Pipeline\\PipelineMetricsView.tsx",
+    statementMap: {
+      "0": {
+        start: {
+          line: 3,
+          column: 0
+        },
+        end: {
+          line: 5,
+          column: 3
+        }
+      },
+      "1": {
+        start: {
+          line: 6,
+          column: 0
+        },
+        end: {
+          line: 11,
+          column: 3
+        }
+      },
+      "2": {
+        start: {
+          line: 9,
+          column: 8
+        },
+        end: {
+          line: 9,
+          column: 24
+        }
+      },
+      "3": {
+        start: {
+          line: 12,
+          column: 20
+        },
+        end: {
+          line: 12,
+          column: 48
+        }
+      },
+      "4": {
+        start: {
+          line: 13,
+          column: 29
+        },
+        end: {
+          line: 13,
+          column: 71
+        }
+      },
+      "5": {
+        start: {
+          line: 14,
+          column: 22
+        },
+        end: {
+          line: 14,
+          column: 46
+        }
+      },
+      "6": {
+        start: {
+          line: 15,
+          column: 21
+        },
+        end: {
+          line: 15,
+          column: 44
+        }
+      },
+      "7": {
+        start: {
+          line: 17,
+          column: 4
+        },
+        end: {
+          line: 19,
+          column: 6
+        }
+      },
+      "8": {
+        start: {
+          line: 21,
+          column: 28
+        },
+        end: {
+          line: 183,
+          column: 1
+        }
+      },
+      "9": {
+        start: {
+          line: 22,
+          column: 4
+        },
+        end: {
+          line: 182,
+          column: 7
+        }
+      },
+      "10": {
+        start: {
+          line: 25,
+          column: 26
+        },
+        end: {
+          line: 25,
+          column: 49
+        }
+      },
+      "11": {
+        start: {
+          line: 26,
+          column: 28
+        },
+        end: {
+          line: 26,
+          column: 59
+        }
+      },
+      "12": {
+        start: {
+          line: 27,
+          column: 35
+        },
+        end: {
+          line: 27,
+          column: 62
+        }
+      },
+      "13": {
+        start: {
+          line: 28,
+          column: 12
+        },
+        end: {
+          line: 180,
+          column: 25
+        }
+      },
+      "14": {
+        start: {
+          line: 40,
+          column: 54
+        },
+        end: {
+          line: 40,
+          column: 71
+        }
+      },
+      "15": {
+        start: {
+          line: 184,
+          column: 17
+        },
+        end: {
+          line: 184,
+          column: 36
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "(anonymous_0)",
+        decl: {
+          start: {
+            line: 8,
+            column: 9
+          },
+          end: {
+            line: 8,
+            column: 10
+          }
+        },
+        loc: {
+          start: {
+            line: 8,
+            column: 20
+          },
+          end: {
+            line: 10,
+            column: 5
+          }
+        },
+        line: 8
+      },
+      "1": {
+        name: "_interop_require_default",
+        decl: {
+          start: {
+            line: 16,
+            column: 9
+          },
+          end: {
+            line: 16,
+            column: 33
+          }
+        },
+        loc: {
+          start: {
+            line: 16,
+            column: 39
+          },
+          end: {
+            line: 20,
+            column: 1
+          }
+        },
+        line: 16
+      },
+      "2": {
+        name: "(anonymous_2)",
+        decl: {
+          start: {
+            line: 21,
+            column: 28
+          },
+          end: {
+            line: 21,
+            column: 29
+          }
+        },
+        loc: {
+          start: {
+            line: 21,
+            column: 104
+          },
+          end: {
+            line: 183,
+            column: 1
+          }
+        },
+        line: 21
+      },
+      "3": {
+        name: "(anonymous_3)",
+        decl: {
+          start: {
+            line: 24,
+            column: 34
+          },
+          end: {
+            line: 24,
+            column: 35
+          }
+        },
+        loc: {
+          start: {
+            line: 24,
+            column: 43
+          },
+          end: {
+            line: 181,
+            column: 9
+          }
+        },
+        line: 24
+      },
+      "4": {
+        name: "(anonymous_4)",
+        decl: {
+          start: {
+            line: 40,
+            column: 49
+          },
+          end: {
+            line: 40,
+            column: 50
+          }
+        },
+        loc: {
+          start: {
+            line: 40,
+            column: 54
+          },
+          end: {
+            line: 40,
+            column: 71
+          }
+        },
+        line: 40
+      }
+    },
+    branchMap: {
+      "0": {
+        loc: {
+          start: {
+            line: 17,
+            column: 11
+          },
+          end: {
+            line: 19,
+            column: 5
+          }
+        },
+        type: "cond-expr",
+        locations: [{
+          start: {
+            line: 17,
+            column: 35
+          },
+          end: {
+            line: 17,
+            column: 38
+          }
+        }, {
+          start: {
+            line: 17,
+            column: 41
+          },
+          end: {
+            line: 19,
+            column: 5
+          }
+        }],
+        line: 17
+      },
+      "1": {
+        loc: {
+          start: {
+            line: 17,
+            column: 11
+          },
+          end: {
+            line: 17,
+            column: 32
+          }
+        },
+        type: "binary-expr",
+        locations: [{
+          start: {
+            line: 17,
+            column: 11
+          },
+          end: {
+            line: 17,
+            column: 14
+          }
+        }, {
+          start: {
+            line: 17,
+            column: 18
+          },
+          end: {
+            line: 17,
+            column: 32
+          }
+        }],
+        line: 17
+      },
+      "2": {
+        loc: {
+          start: {
+            line: 68,
+            column: 28
+          },
+          end: {
+            line: 76,
+            column: 30
+          }
+        },
+        type: "binary-expr",
+        locations: [{
+          start: {
+            line: 68,
+            column: 28
+          },
+          end: {
+            line: 68,
+            column: 46
+          }
+        }, {
+          start: {
+            line: 68,
+            column: 64
+          },
+          end: {
+            line: 76,
+            column: 30
+          }
+        }],
+        line: 68
+      },
+      "3": {
+        loc: {
+          start: {
+            line: 114,
+            column: 28
+          },
+          end: {
+            line: 129,
+            column: 30
+          }
+        },
+        type: "binary-expr",
+        locations: [{
+          start: {
+            line: 114,
+            column: 28
+          },
+          end: {
+            line: 114,
+            column: 51
+          }
+        }, {
+          start: {
+            line: 114,
+            column: 69
+          },
+          end: {
+            line: 129,
+            column: 30
+          }
+        }],
+        line: 114
+      },
+      "4": {
+        loc: {
+          start: {
+            line: 140,
+            column: 44
+          },
+          end: {
+            line: 142,
+            column: 46
+          }
+        },
+        type: "binary-expr",
+        locations: [{
+          start: {
+            line: 140,
+            column: 44
+          },
+          end: {
+            line: 140,
+            column: 66
+          }
+        }, {
+          start: {
+            line: 140,
+            column: 84
+          },
+          end: {
+            line: 142,
+            column: 46
+          }
+        }],
+        line: 140
+      },
+      "5": {
+        loc: {
+          start: {
+            line: 143,
+            column: 44
+          },
+          end: {
+            line: 145,
+            column: 46
+          }
+        },
+        type: "binary-expr",
+        locations: [{
+          start: {
+            line: 143,
+            column: 44
+          },
+          end: {
+            line: 143,
+            column: 68
+          }
+        }, {
+          start: {
+            line: 143,
+            column: 86
+          },
+          end: {
+            line: 145,
+            column: 46
+          }
+        }],
+        line: 143
+      },
+      "6": {
+        loc: {
+          start: {
+            line: 147,
+            column: 74
+          },
+          end: {
+            line: 147,
+            column: 177
+          }
+        },
+        type: "cond-expr",
+        locations: [{
+          start: {
+            line: 147,
+            column: 99
+          },
+          end: {
+            line: 147,
+            column: 115
+          }
+        }, {
+          start: {
+            line: 147,
+            column: 118
+          },
+          end: {
+            line: 147,
+            column: 177
+          }
+        }],
+        line: 147
+      },
+      "7": {
+        loc: {
+          start: {
+            line: 147,
+            column: 118
+          },
+          end: {
+            line: 147,
+            column: 177
+          }
+        },
+        type: "cond-expr",
+        locations: [{
+          start: {
+            line: 147,
+            column: 145
+          },
+          end: {
+            line: 147,
+            column: 159
+          }
+        }, {
+          start: {
+            line: 147,
+            column: 162
+          },
+          end: {
+            line: 147,
+            column: 177
+          }
+        }],
+        line: 147
+      },
+      "8": {
+        loc: {
+          start: {
+            line: 149,
+            column: 52
+          },
+          end: {
+            line: 149,
+            column: 83
+          }
+        },
+        type: "cond-expr",
+        locations: [{
+          start: {
+            line: 149,
+            column: 75
+          },
+          end: {
+            line: 149,
+            column: 78
+          }
+        }, {
+          start: {
+            line: 149,
+            column: 81
+          },
+          end: {
+            line: 149,
+            column: 83
+          }
+        }],
+        line: 149
+      }
+    },
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    },
+    f: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+    },
+    b: {
+      "0": [0, 0],
+      "1": [0, 0],
+      "2": [0, 0],
+      "3": [0, 0],
+      "4": [0, 0],
+      "5": [0, 0],
+      "6": [0, 0],
+      "7": [0, 0],
+      "8": [0, 0]
+    },
+    inputSourceMap: {
+      version: 3,
+      sources: ["C:\\Users\\chase\\Downloads\\crm (32)\\src\\components\\Pipeline\\PipelineMetricsView.tsx"],
+      sourcesContent: ["\"use client\"\n\nimport React from \"react\"\nimport { motion } from \"framer-motion\"\nimport { Users, AlertCircle, TrendingUp } from \"lucide-react\"\n\ninterface StageMetrics {\n  velocity: number\n  bottleneck: boolean\n  trend: 'up' | 'down' | 'stable'\n  forecast: number\n}\n\ninterface StageStats {\n  count: number\n  value: number\n  avgDaysInStage: number\n  clients: any[]\n}\n\ninterface SalesStage {\n  id: string\n  name: string\n}\n\ninterface PipelineMetricsViewProps {\n  salesStages: SalesStage[]\n  getStageStats: (stageId: string) => StageStats\n  calculateStageMetrics: (stageId: string) => StageMetrics\n  getConversionRate: (stageId: string) => number | null\n}\n\nconst PipelineMetricsView: React.FC<PipelineMetricsViewProps> = ({\n  salesStages,\n  getStageStats,\n  calculateStageMetrics,\n  getConversionRate\n}) => {\n  return (\n    <div className=\"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6\">\n      {salesStages.map((stage) => {\n        const stats = getStageStats(stage.id)\n        const metrics = calculateStageMetrics(stage.id)\n        const conversionRate = getConversionRate(stage.id)\n\n        return (\n          <motion.div\n            key={stage.id}\n            className=\"bg-white rounded-xl shadow-sm border p-6\"\n            initial={{ opacity: 0, scale: 0.9 }}\n            animate={{ opacity: 1, scale: 1 }}\n            transition={{ duration: 0.3, delay: salesStages.findIndex(s => s.id === stage.id) * 0.05 }}\n          >\n            <div className=\"flex justify-between items-start mb-4\">\n              <div>\n                <h3 className=\"font-semibold text-lg\">{stage.name}</h3>\n                <div className=\"flex items-center mt-1 text-sm text-gray-500\">\n                  <Users className=\"h-3.5 w-3.5 mr-1\" />\n                  <span>{stats.count} clients</span>\n                </div>\n              </div>\n              {metrics.bottleneck && (\n                <div className=\"bg-red-100 text-red-700 px-2 py-1 rounded-full text-xs font-medium flex items-center\">\n                  <AlertCircle className=\"h-3 w-3 mr-1\" />\n                  Bottleneck\n                </div>\n              )}\n            </div>\n\n            <div className=\"space-y-3\">\n              <div className=\"flex justify-between items-center\">\n                <span className=\"text-sm text-gray-500\">Total Value</span>\n                <span className=\"font-semibold\">${stats.value.toLocaleString()}</span>\n              </div>\n              \n              <div className=\"flex justify-between items-center\">\n                <span className=\"text-sm text-gray-500\">Avg. Cycle Time</span>\n                <span className=\"font-medium\">{stats.avgDaysInStage} days</span>\n              </div>\n              \n              {conversionRate !== null && (\n                <div className=\"flex justify-between items-center\">\n                  <span className=\"text-sm text-gray-500\">Conversion Rate</span>\n                  <span className=\"font-medium\">{conversionRate}%</span>\n                </div>\n              )}\n              \n              <div className=\"flex justify-between items-center\">\n                <span className=\"text-sm text-gray-500\">Velocity</span>\n                <div className=\"flex items-center\">\n                  {metrics.trend === 'up' && <TrendingUp className=\"h-4 w-4 text-green-500 mr-1\" />}\n                  {metrics.trend === 'down' && <TrendingUp className=\"h-4 w-4 text-red-500 mr-1 rotate-180\" />}\n                  <span className={`font-medium ${\n                    metrics.trend === 'up' ? 'text-green-600' : \n                    metrics.trend === 'down' ? 'text-red-600' : \n                    'text-gray-600'\n                  }`}>\n                    {metrics.velocity > 0 ? '+' : ''}{(metrics.velocity * 100).toFixed(0)}%\n                  </span>\n                </div>\n              </div>\n              \n              <div className=\"pt-3 border-t\">\n                <div className=\"flex justify-between items-center\">\n                  <span className=\"text-sm text-gray-500\">Forecast (Next Week)</span>\n                  <span className=\"font-medium\">{metrics.forecast} clients</span>\n                </div>\n              </div>\n            </div>\n          </motion.div>\n        )\n      })}\n    </div>\n  )\n}\n\nexport default PipelineMetricsView"],
+      names: ["PipelineMetricsView", "salesStages", "getStageStats", "calculateStageMetrics", "getConversionRate", "div", "className", "map", "stage", "stats", "id", "metrics", "conversionRate", "motion", "initial", "opacity", "scale", "animate", "transition", "duration", "delay", "findIndex", "s", "h3", "name", "Users", "span", "count", "bottleneck", "AlertCircle", "value", "toLocaleString", "avgDaysInStage", "trend", "TrendingUp", "velocity", "toFixed", "forecast"],
+      mappings: "AAAA;;;;;+BAoHA;;;eAAA;;;;8DAlHkB;8BACK;6BACwB;;;;;;AA4B/C,MAAMA,sBAA0D,CAAC,EAC/DC,WAAW,EACXC,aAAa,EACbC,qBAAqB,EACrBC,iBAAiB,EAClB;IACC,qBACE,qBAACC;QAAIC,WAAU;kBACZL,YAAYM,GAAG,CAAC,CAACC;YAChB,MAAMC,QAAQP,cAAcM,MAAME,EAAE;YACpC,MAAMC,UAAUR,sBAAsBK,MAAME,EAAE;YAC9C,MAAME,iBAAiBR,kBAAkBI,MAAME,EAAE;YAEjD,qBACE,sBAACG,oBAAM,CAACR,GAAG;gBAETC,WAAU;gBACVQ,SAAS;oBAAEC,SAAS;oBAAGC,OAAO;gBAAI;gBAClCC,SAAS;oBAAEF,SAAS;oBAAGC,OAAO;gBAAE;gBAChCE,YAAY;oBAAEC,UAAU;oBAAKC,OAAOnB,YAAYoB,SAAS,CAACC,CAAAA,IAAKA,EAAEZ,EAAE,KAAKF,MAAME,EAAE,IAAI;gBAAK;;kCAEzF,sBAACL;wBAAIC,WAAU;;0CACb,sBAACD;;kDACC,qBAACkB;wCAAGjB,WAAU;kDAAyBE,MAAMgB,IAAI;;kDACjD,sBAACnB;wCAAIC,WAAU;;0DACb,qBAACmB,kBAAK;gDAACnB,WAAU;;0DACjB,sBAACoB;;oDAAMjB,MAAMkB,KAAK;oDAAC;;;;;;;4BAGtBhB,QAAQiB,UAAU,kBACjB,sBAACvB;gCAAIC,WAAU;;kDACb,qBAACuB,wBAAW;wCAACvB,WAAU;;oCAAiB;;;;;kCAM9C,sBAACD;wBAAIC,WAAU;;0CACb,sBAACD;gCAAIC,WAAU;;kDACb,qBAACoB;wCAAKpB,WAAU;kDAAwB;;kDACxC,sBAACoB;wCAAKpB,WAAU;;4CAAgB;4CAAEG,MAAMqB,KAAK,CAACC,cAAc;;;;;0CAG9D,sBAAC1B;gCAAIC,WAAU;;kDACb,qBAACoB;wCAAKpB,WAAU;kDAAwB;;kDACxC,sBAACoB;wCAAKpB,WAAU;;4CAAeG,MAAMuB,cAAc;4CAAC;;;;;4BAGrDpB,mBAAmB,sBAClB,sBAACP;gCAAIC,WAAU;;kDACb,qBAACoB;wCAAKpB,WAAU;kDAAwB;;kDACxC,sBAACoB;wCAAKpB,WAAU;;4CAAeM;4CAAe;;;;;0CAIlD,sBAACP;gCAAIC,WAAU;;kDACb,qBAACoB;wCAAKpB,WAAU;kDAAwB;;kDACxC,sBAACD;wCAAIC,WAAU;;4CACZK,QAAQsB,KAAK,KAAK,sBAAQ,qBAACC,uBAAU;gDAAC5B,WAAU;;4CAChDK,QAAQsB,KAAK,KAAK,wBAAU,qBAACC,uBAAU;gDAAC5B,WAAU;;0DACnD,sBAACoB;gDAAKpB,WAAW,CAAC,YAAY,EAC5BK,QAAQsB,KAAK,KAAK,OAAO,mBACzBtB,QAAQsB,KAAK,KAAK,SAAS,iBAC3B,iBACA;;oDACCtB,QAAQwB,QAAQ,GAAG,IAAI,MAAM;oDAAKxB,CAAAA,QAAQwB,QAAQ,GAAG,GAAE,EAAGC,OAAO,CAAC;oDAAG;;;;;;;0CAK5E,qBAAC/B;gCAAIC,WAAU;0CACb,cAAA,sBAACD;oCAAIC,WAAU;;sDACb,qBAACoB;4CAAKpB,WAAU;sDAAwB;;sDACxC,sBAACoB;4CAAKpB,WAAU;;gDAAeK,QAAQ0B,QAAQ;gDAAC;;;;;;;;;eA1DjD7B,MAAME,EAAE;QAgEnB;;AAGN;MAEA,WAAeV"
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "5d7d0d325c2b9cabc8830ee8238c229d28796481"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_23rigxxr3f = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+cov_23rigxxr3f();
+cov_23rigxxr3f().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+/* istanbul ignore next */
+cov_23rigxxr3f().s[1]++;
+Object.defineProperty(exports, "default", {
+  enumerable: true,
+  get: function () {
+    /* istanbul ignore next */
+    cov_23rigxxr3f().f[0]++;
+    cov_23rigxxr3f().s[2]++;
+    return _default;
+  }
+});
+const _jsxruntime =
+/* istanbul ignore next */
+(cov_23rigxxr3f().s[3]++, require("react/jsx-runtime"));
+const _react =
+/* istanbul ignore next */
+(/*#__PURE__*/cov_23rigxxr3f().s[4]++, _interop_require_default(require("react")));
+const _framermotion =
+/* istanbul ignore next */
+(cov_23rigxxr3f().s[5]++, require("framer-motion"));
+const _lucidereact =
+/* istanbul ignore next */
+(cov_23rigxxr3f().s[6]++, require("lucide-react"));
+function _interop_require_default(obj) {
+  /* istanbul ignore next */
+  cov_23rigxxr3f().f[1]++;
+  cov_23rigxxr3f().s[7]++;
+  return /* istanbul ignore next */(cov_23rigxxr3f().b[1][0]++, obj) &&
+  /* istanbul ignore next */
+  (cov_23rigxxr3f().b[1][1]++, obj.__esModule) ?
+  /* istanbul ignore next */
+  (cov_23rigxxr3f().b[0][0]++, obj) :
+  /* istanbul ignore next */
+  (cov_23rigxxr3f().b[0][1]++, {
+    default: obj
+  });
+}
+/* istanbul ignore next */
+cov_23rigxxr3f().s[8]++;
+const PipelineMetricsView = ({
+  salesStages,
+  getStageStats,
+  calculateStageMetrics,
+  getConversionRate
+}) => {
+  /* istanbul ignore next */
+  cov_23rigxxr3f().f[2]++;
+  cov_23rigxxr3f().s[9]++;
+  return /*#__PURE__*/(0, _jsxruntime.jsx)("div", {
+    className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6",
+    children: salesStages.map(stage => {
+      /* istanbul ignore next */
+      cov_23rigxxr3f().f[3]++;
+      const stats =
+      /* istanbul ignore next */
+      (cov_23rigxxr3f().s[10]++, getStageStats(stage.id));
+      const metrics =
+      /* istanbul ignore next */
+      (cov_23rigxxr3f().s[11]++, calculateStageMetrics(stage.id));
+      const conversionRate =
+      /* istanbul ignore next */
+      (cov_23rigxxr3f().s[12]++, getConversionRate(stage.id));
+      /* istanbul ignore next */
+      cov_23rigxxr3f().s[13]++;
+      return /*#__PURE__*/(0, _jsxruntime.jsxs)(_framermotion.motion.div, {
+        className: "bg-white rounded-xl shadow-sm border p-6",
+        initial: {
+          opacity: 0,
+          scale: 0.9
+        },
+        animate: {
+          opacity: 1,
+          scale: 1
+        },
+        transition: {
+          duration: 0.3,
+          delay: salesStages.findIndex(s => {
+            /* istanbul ignore next */
+            cov_23rigxxr3f().f[4]++;
+            cov_23rigxxr3f().s[14]++;
+            return s.id === stage.id;
+          }) * 0.05
+        },
+        children: [/*#__PURE__*/(0, _jsxruntime.jsxs)("div", {
+          className: "flex justify-between items-start mb-4",
+          children: [/*#__PURE__*/(0, _jsxruntime.jsxs)("div", {
+            children: [/*#__PURE__*/(0, _jsxruntime.jsx)("h3", {
+              className: "font-semibold text-lg",
+              children: stage.name
+            }), /*#__PURE__*/(0, _jsxruntime.jsxs)("div", {
+              className: "flex items-center mt-1 text-sm text-gray-500",
+              children: [/*#__PURE__*/(0, _jsxruntime.jsx)(_lucidereact.Users, {
+                className: "h-3.5 w-3.5 mr-1"
+              }), /*#__PURE__*/(0, _jsxruntime.jsxs)("span", {
+                children: [stats.count, " clients"]
+              })]
+            })]
+          }),
+          /* istanbul ignore next */
+          (cov_23rigxxr3f().b[2][0]++, metrics.bottleneck) &&
+          /* istanbul ignore next */
+          (cov_23rigxxr3f().b[2][1]++, /*#__PURE__*/(0, _jsxruntime.jsxs)("div", {
+            className: "bg-red-100 text-red-700 px-2 py-1 rounded-full text-xs font-medium flex items-center",
+            children: [/*#__PURE__*/(0, _jsxruntime.jsx)(_lucidereact.AlertCircle, {
+              className: "h-3 w-3 mr-1"
+            }), "Bottleneck"]
+          }))]
+        }), /*#__PURE__*/(0, _jsxruntime.jsxs)("div", {
+          className: "space-y-3",
+          children: [/*#__PURE__*/(0, _jsxruntime.jsxs)("div", {
+            className: "flex justify-between items-center",
+            children: [/*#__PURE__*/(0, _jsxruntime.jsx)("span", {
+              className: "text-sm text-gray-500",
+              children: "Total Value"
+            }), /*#__PURE__*/(0, _jsxruntime.jsxs)("span", {
+              className: "font-semibold",
+              children: ["$", stats.value.toLocaleString()]
+            })]
+          }), /*#__PURE__*/(0, _jsxruntime.jsxs)("div", {
+            className: "flex justify-between items-center",
+            children: [/*#__PURE__*/(0, _jsxruntime.jsx)("span", {
+              className: "text-sm text-gray-500",
+              children: "Avg. Cycle Time"
+            }), /*#__PURE__*/(0, _jsxruntime.jsxs)("span", {
+              className: "font-medium",
+              children: [stats.avgDaysInStage, " days"]
+            })]
+          }),
+          /* istanbul ignore next */
+          (cov_23rigxxr3f().b[3][0]++, conversionRate !== null) &&
+          /* istanbul ignore next */
+          (cov_23rigxxr3f().b[3][1]++, /*#__PURE__*/(0, _jsxruntime.jsxs)("div", {
+            className: "flex justify-between items-center",
+            children: [/*#__PURE__*/(0, _jsxruntime.jsx)("span", {
+              className: "text-sm text-gray-500",
+              children: "Conversion Rate"
+            }), /*#__PURE__*/(0, _jsxruntime.jsxs)("span", {
+              className: "font-medium",
+              children: [conversionRate, "%"]
+            })]
+          })), /*#__PURE__*/(0, _jsxruntime.jsxs)("div", {
+            className: "flex justify-between items-center",
+            children: [/*#__PURE__*/(0, _jsxruntime.jsx)("span", {
+              className: "text-sm text-gray-500",
+              children: "Velocity"
+            }), /*#__PURE__*/(0, _jsxruntime.jsxs)("div", {
+              className: "flex items-center",
+              children: [
+              /* istanbul ignore next */
+              (cov_23rigxxr3f().b[4][0]++, metrics.trend === 'up') &&
+              /* istanbul ignore next */
+              (cov_23rigxxr3f().b[4][1]++, /*#__PURE__*/(0, _jsxruntime.jsx)(_lucidereact.TrendingUp, {
+                className: "h-4 w-4 text-green-500 mr-1"
+              })),
+              /* istanbul ignore next */
+              (cov_23rigxxr3f().b[5][0]++, metrics.trend === 'down') &&
+              /* istanbul ignore next */
+              (cov_23rigxxr3f().b[5][1]++, /*#__PURE__*/(0, _jsxruntime.jsx)(_lucidereact.TrendingUp, {
+                className: "h-4 w-4 text-red-500 mr-1 rotate-180"
+              })), /*#__PURE__*/(0, _jsxruntime.jsxs)("span", {
+                className: `font-medium ${metrics.trend === 'up' ?
+                /* istanbul ignore next */
+                (cov_23rigxxr3f().b[6][0]++, 'text-green-600') :
+                /* istanbul ignore next */
+                (cov_23rigxxr3f().b[6][1]++, metrics.trend === 'down' ?
+                /* istanbul ignore next */
+                (cov_23rigxxr3f().b[7][0]++, 'text-red-600') :
+                /* istanbul ignore next */
+                (cov_23rigxxr3f().b[7][1]++, 'text-gray-600'))}`,
+                children: [metrics.velocity > 0 ?
+                /* istanbul ignore next */
+                (cov_23rigxxr3f().b[8][0]++, '+') :
+                /* istanbul ignore next */
+                (cov_23rigxxr3f().b[8][1]++, ''), (metrics.velocity * 100).toFixed(0), "%"]
+              })]
+            })]
+          }), /*#__PURE__*/(0, _jsxruntime.jsx)("div", {
+            className: "pt-3 border-t",
+            children: /*#__PURE__*/(0, _jsxruntime.jsxs)("div", {
+              className: "flex justify-between items-center",
+              children: [/*#__PURE__*/(0, _jsxruntime.jsx)("span", {
+                className: "text-sm text-gray-500",
+                children: "Forecast (Next Week)"
+              }), /*#__PURE__*/(0, _jsxruntime.jsxs)("span", {
+                className: "font-medium",
+                children: [metrics.forecast, " clients"]
+              })]
+            })
+          })]
+        })]
+      }, stage.id);
+    })
+  });
+};
+const _default =
+/* istanbul ignore next */
+(cov_23rigxxr3f().s[15]++, PipelineMetricsView);
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfZGVmYXVsdCIsIlBpcGVsaW5lTWV0cmljc1ZpZXciLCJzYWxlc1N0YWdlcyIsImdldFN0YWdlU3RhdHMiLCJjYWxjdWxhdGVTdGFnZU1ldHJpY3MiLCJnZXRDb252ZXJzaW9uUmF0ZSIsImNvdl8yM3JpZ3h4cjNmIiwiZiIsInMiLCJfanN4cnVudGltZSIsImpzeCIsImNsYXNzTmFtZSIsIm1hcCIsInN0YWdlIiwic3RhdHMiLCJpZCIsIm1ldHJpY3MiLCJjb252ZXJzaW9uUmF0ZSIsImpzeHMiLCJfZnJhbWVybW90aW9uIiwibW90aW9uIiwiZGl2IiwiaW5pdGlhbCIsIm9wYWNpdHkiLCJzY2FsZSIsImFuaW1hdGUiLCJ0cmFuc2l0aW9uIiwiZHVyYXRpb24iLCJkZWxheSIsImZpbmRJbmRleCIsIm5hbWUiLCJfbHVjaWRlcmVhY3QiLCJVc2VycyIsImNvdW50IiwiYiIsImJvdHRsZW5lY2siLCJBbGVydENpcmNsZSIsInZhbHVlIiwidG9Mb2NhbGVTdHJpbmciLCJhdmdEYXlzSW5TdGFnZSIsInRyZW5kIiwiVHJlbmRpbmdVcCIsInZlbG9jaXR5IiwidG9GaXhlZCIsImZvcmVjYXN0Il0sInNvdXJjZXMiOlsiQzpcXFVzZXJzXFxjaGFzZVxcRG93bmxvYWRzXFxjcm0gKDMyKVxcc3JjXFxjb21wb25lbnRzXFxQaXBlbGluZVxcUGlwZWxpbmVNZXRyaWNzVmlldy50c3giXSwic291cmNlc0NvbnRlbnQiOlsiXCJ1c2UgY2xpZW50XCJcblxuaW1wb3J0IFJlYWN0IGZyb20gXCJyZWFjdFwiXG5pbXBvcnQgeyBtb3Rpb24gfSBmcm9tIFwiZnJhbWVyLW1vdGlvblwiXG5pbXBvcnQgeyBVc2VycywgQWxlcnRDaXJjbGUsIFRyZW5kaW5nVXAgfSBmcm9tIFwibHVjaWRlLXJlYWN0XCJcblxuaW50ZXJmYWNlIFN0YWdlTWV0cmljcyB7XG4gIHZlbG9jaXR5OiBudW1iZXJcbiAgYm90dGxlbmVjazogYm9vbGVhblxuICB0cmVuZDogJ3VwJyB8ICdkb3duJyB8ICdzdGFibGUnXG4gIGZvcmVjYXN0OiBudW1iZXJcbn1cblxuaW50ZXJmYWNlIFN0YWdlU3RhdHMge1xuICBjb3VudDogbnVtYmVyXG4gIHZhbHVlOiBudW1iZXJcbiAgYXZnRGF5c0luU3RhZ2U6IG51bWJlclxuICBjbGllbnRzOiBhbnlbXVxufVxuXG5pbnRlcmZhY2UgU2FsZXNTdGFnZSB7XG4gIGlkOiBzdHJpbmdcbiAgbmFtZTogc3RyaW5nXG59XG5cbmludGVyZmFjZSBQaXBlbGluZU1ldHJpY3NWaWV3UHJvcHMge1xuICBzYWxlc1N0YWdlczogU2FsZXNTdGFnZVtdXG4gIGdldFN0YWdlU3RhdHM6IChzdGFnZUlkOiBzdHJpbmcpID0+IFN0YWdlU3RhdHNcbiAgY2FsY3VsYXRlU3RhZ2VNZXRyaWNzOiAoc3RhZ2VJZDogc3RyaW5nKSA9PiBTdGFnZU1ldHJpY3NcbiAgZ2V0Q29udmVyc2lvblJhdGU6IChzdGFnZUlkOiBzdHJpbmcpID0+IG51bWJlciB8IG51bGxcbn1cblxuY29uc3QgUGlwZWxpbmVNZXRyaWNzVmlldzogUmVhY3QuRkM8UGlwZWxpbmVNZXRyaWNzVmlld1Byb3BzPiA9ICh7XG4gIHNhbGVzU3RhZ2VzLFxuICBnZXRTdGFnZVN0YXRzLFxuICBjYWxjdWxhdGVTdGFnZU1ldHJpY3MsXG4gIGdldENvbnZlcnNpb25SYXRlXG59KSA9PiB7XG4gIHJldHVybiAoXG4gICAgPGRpdiBjbGFzc05hbWU9XCJncmlkIGdyaWQtY29scy0xIG1kOmdyaWQtY29scy0yIGxnOmdyaWQtY29scy0zIGdhcC02XCI+XG4gICAgICB7c2FsZXNTdGFnZXMubWFwKChzdGFnZSkgPT4ge1xuICAgICAgICBjb25zdCBzdGF0cyA9IGdldFN0YWdlU3RhdHMoc3RhZ2UuaWQpXG4gICAgICAgIGNvbnN0IG1ldHJpY3MgPSBjYWxjdWxhdGVTdGFnZU1ldHJpY3Moc3RhZ2UuaWQpXG4gICAgICAgIGNvbnN0IGNvbnZlcnNpb25SYXRlID0gZ2V0Q29udmVyc2lvblJhdGUoc3RhZ2UuaWQpXG5cbiAgICAgICAgcmV0dXJuIChcbiAgICAgICAgICA8bW90aW9uLmRpdlxuICAgICAgICAgICAga2V5PXtzdGFnZS5pZH1cbiAgICAgICAgICAgIGNsYXNzTmFtZT1cImJnLXdoaXRlIHJvdW5kZWQteGwgc2hhZG93LXNtIGJvcmRlciBwLTZcIlxuICAgICAgICAgICAgaW5pdGlhbD17eyBvcGFjaXR5OiAwLCBzY2FsZTogMC45IH19XG4gICAgICAgICAgICBhbmltYXRlPXt7IG9wYWNpdHk6IDEsIHNjYWxlOiAxIH19XG4gICAgICAgICAgICB0cmFuc2l0aW9uPXt7IGR1cmF0aW9uOiAwLjMsIGRlbGF5OiBzYWxlc1N0YWdlcy5maW5kSW5kZXgocyA9PiBzLmlkID09PSBzdGFnZS5pZCkgKiAwLjA1IH19XG4gICAgICAgICAgPlxuICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJmbGV4IGp1c3RpZnktYmV0d2VlbiBpdGVtcy1zdGFydCBtYi00XCI+XG4gICAgICAgICAgICAgIDxkaXY+XG4gICAgICAgICAgICAgICAgPGgzIGNsYXNzTmFtZT1cImZvbnQtc2VtaWJvbGQgdGV4dC1sZ1wiPntzdGFnZS5uYW1lfTwvaDM+XG4gICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJmbGV4IGl0ZW1zLWNlbnRlciBtdC0xIHRleHQtc20gdGV4dC1ncmF5LTUwMFwiPlxuICAgICAgICAgICAgICAgICAgPFVzZXJzIGNsYXNzTmFtZT1cImgtMy41IHctMy41IG1yLTFcIiAvPlxuICAgICAgICAgICAgICAgICAgPHNwYW4+e3N0YXRzLmNvdW50fSBjbGllbnRzPC9zcGFuPlxuICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAge21ldHJpY3MuYm90dGxlbmVjayAmJiAoXG4gICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJiZy1yZWQtMTAwIHRleHQtcmVkLTcwMCBweC0yIHB5LTEgcm91bmRlZC1mdWxsIHRleHQteHMgZm9udC1tZWRpdW0gZmxleCBpdGVtcy1jZW50ZXJcIj5cbiAgICAgICAgICAgICAgICAgIDxBbGVydENpcmNsZSBjbGFzc05hbWU9XCJoLTMgdy0zIG1yLTFcIiAvPlxuICAgICAgICAgICAgICAgICAgQm90dGxlbmVja1xuICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICApfVxuICAgICAgICAgICAgPC9kaXY+XG5cbiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwic3BhY2UteS0zXCI+XG4gICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZmxleCBqdXN0aWZ5LWJldHdlZW4gaXRlbXMtY2VudGVyXCI+XG4gICAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPVwidGV4dC1zbSB0ZXh0LWdyYXktNTAwXCI+VG90YWwgVmFsdWU8L3NwYW4+XG4gICAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPVwiZm9udC1zZW1pYm9sZFwiPiR7c3RhdHMudmFsdWUudG9Mb2NhbGVTdHJpbmcoKX08L3NwYW4+XG4gICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICBcbiAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJmbGV4IGp1c3RpZnktYmV0d2VlbiBpdGVtcy1jZW50ZXJcIj5cbiAgICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJ0ZXh0LXNtIHRleHQtZ3JheS01MDBcIj5BdmcuIEN5Y2xlIFRpbWU8L3NwYW4+XG4gICAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPVwiZm9udC1tZWRpdW1cIj57c3RhdHMuYXZnRGF5c0luU3RhZ2V9IGRheXM8L3NwYW4+XG4gICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICBcbiAgICAgICAgICAgICAge2NvbnZlcnNpb25SYXRlICE9PSBudWxsICYmIChcbiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImZsZXgganVzdGlmeS1iZXR3ZWVuIGl0ZW1zLWNlbnRlclwiPlxuICAgICAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPVwidGV4dC1zbSB0ZXh0LWdyYXktNTAwXCI+Q29udmVyc2lvbiBSYXRlPC9zcGFuPlxuICAgICAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPVwiZm9udC1tZWRpdW1cIj57Y29udmVyc2lvblJhdGV9JTwvc3Bhbj5cbiAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgKX1cbiAgICAgICAgICAgICAgXG4gICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZmxleCBqdXN0aWZ5LWJldHdlZW4gaXRlbXMtY2VudGVyXCI+XG4gICAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPVwidGV4dC1zbSB0ZXh0LWdyYXktNTAwXCI+VmVsb2NpdHk8L3NwYW4+XG4gICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJmbGV4IGl0ZW1zLWNlbnRlclwiPlxuICAgICAgICAgICAgICAgICAge21ldHJpY3MudHJlbmQgPT09ICd1cCcgJiYgPFRyZW5kaW5nVXAgY2xhc3NOYW1lPVwiaC00IHctNCB0ZXh0LWdyZWVuLTUwMCBtci0xXCIgLz59XG4gICAgICAgICAgICAgICAgICB7bWV0cmljcy50cmVuZCA9PT0gJ2Rvd24nICYmIDxUcmVuZGluZ1VwIGNsYXNzTmFtZT1cImgtNCB3LTQgdGV4dC1yZWQtNTAwIG1yLTEgcm90YXRlLTE4MFwiIC8+fVxuICAgICAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPXtgZm9udC1tZWRpdW0gJHtcbiAgICAgICAgICAgICAgICAgICAgbWV0cmljcy50cmVuZCA9PT0gJ3VwJyA/ICd0ZXh0LWdyZWVuLTYwMCcgOiBcbiAgICAgICAgICAgICAgICAgICAgbWV0cmljcy50cmVuZCA9PT0gJ2Rvd24nID8gJ3RleHQtcmVkLTYwMCcgOiBcbiAgICAgICAgICAgICAgICAgICAgJ3RleHQtZ3JheS02MDAnXG4gICAgICAgICAgICAgICAgICB9YH0+XG4gICAgICAgICAgICAgICAgICAgIHttZXRyaWNzLnZlbG9jaXR5ID4gMCA/ICcrJyA6ICcnfXsobWV0cmljcy52ZWxvY2l0eSAqIDEwMCkudG9GaXhlZCgwKX0lXG4gICAgICAgICAgICAgICAgICA8L3NwYW4+XG4gICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICBcbiAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJwdC0zIGJvcmRlci10XCI+XG4gICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJmbGV4IGp1c3RpZnktYmV0d2VlbiBpdGVtcy1jZW50ZXJcIj5cbiAgICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT1cInRleHQtc20gdGV4dC1ncmF5LTUwMFwiPkZvcmVjYXN0IChOZXh0IFdlZWspPC9zcGFuPlxuICAgICAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPVwiZm9udC1tZWRpdW1cIj57bWV0cmljcy5mb3JlY2FzdH0gY2xpZW50czwvc3Bhbj5cbiAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICA8L21vdGlvbi5kaXY+XG4gICAgICAgIClcbiAgICAgIH0pfVxuICAgIDwvZGl2PlxuICApXG59XG5cbmV4cG9ydCBkZWZhdWx0IFBpcGVsaW5lTWV0cmljc1ZpZXciXSwibWFwcGluZ3MiOiJBQUFBOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7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

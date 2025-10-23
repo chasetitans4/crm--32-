@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="CRM Application Tests" tests="61" failures="0" errors="0" time="86.425">
+  <testsuite name="Encryption Integration Tests" errors="0" failures="0" skipped="0" timestamp="2025-09-23T04:51:55" time="0.656" tests="15">
+    <testcase classname="Encryption Integration Tests Client Data Encryption should encrypt sensitive client data when adding a new client" name="Encryption Integration Tests Client Data Encryption should encrypt sensitive client data when adding a new client" time="0.008">
+    </testcase>
+    <testcase classname="Encryption Integration Tests Client Data Encryption should encrypt email data when sending emails" name="Encryption Integration Tests Client Data Encryption should encrypt email data when sending emails" time="0.004">
+    </testcase>
+    <testcase classname="Encryption Integration Tests Client Data Encryption should handle encryption errors gracefully" name="Encryption Integration Tests Client Data Encryption should handle encryption errors gracefully" time="0.017">
+    </testcase>
+    <testcase classname="Encryption Integration Tests Lead Data Encryption should encrypt sensitive lead data when adding a new lead" name="Encryption Integration Tests Lead Data Encryption should encrypt sensitive lead data when adding a new lead" time="0.011">
+    </testcase>
+    <testcase classname="Encryption Integration Tests Lead Data Encryption should encrypt sensitive lead data when updating existing lead" name="Encryption Integration Tests Lead Data Encryption should encrypt sensitive lead data when updating existing lead" time="0.007">
+    </testcase>
+    <testcase classname="Encryption Integration Tests Data Cleanup and Security should auto-clear encrypted data after timeout" name="Encryption Integration Tests Data Cleanup and Security should auto-clear encrypted data after timeout" time="0.025">
+    </testcase>
+    <testcase classname="Encryption Integration Tests Data Cleanup and Security should clear sensitive data on component unmount" name="Encryption Integration Tests Data Cleanup and Security should clear sensitive data on component unmount" time="0.021">
+    </testcase>
+    <testcase classname="Encryption Integration Tests Data Cleanup and Security should handle storage quota exceeded errors" name="Encryption Integration Tests Data Cleanup and Security should handle storage quota exceeded errors" time="0.005">
+    </testcase>
+    <testcase classname="Encryption Integration Tests Data Retrieval and Decryption should decrypt data when retrieving from storage" name="Encryption Integration Tests Data Retrieval and Decryption should decrypt data when retrieving from storage" time="0.003">
+    </testcase>
+    <testcase classname="Encryption Integration Tests Data Retrieval and Decryption should handle missing encrypted data gracefully" name="Encryption Integration Tests Data Retrieval and Decryption should handle missing encrypted data gracefully" time="0.002">
+    </testcase>
+    <testcase classname="Encryption Integration Tests Data Retrieval and Decryption should handle corrupted encrypted data" name="Encryption Integration Tests Data Retrieval and Decryption should handle corrupted encrypted data" time="0.006">
+    </testcase>
+    <testcase classname="Encryption Integration Tests Performance and Scalability should handle multiple encryption operations efficiently" name="Encryption Integration Tests Performance and Scalability should handle multiple encryption operations efficiently" time="0.004">
+    </testcase>
+    <testcase classname="Encryption Integration Tests Performance and Scalability should handle large data objects" name="Encryption Integration Tests Performance and Scalability should handle large data objects" time="0.002">
+    </testcase>
+    <testcase classname="Encryption Integration Tests Security Validation should ensure no plaintext data is stored" name="Encryption Integration Tests Security Validation should ensure no plaintext data is stored" time="0.021">
+    </testcase>
+    <testcase classname="Encryption Integration Tests Security Validation should use different encryption for same data (randomization)" name="Encryption Integration Tests Security Validation should use different encryption for same data (randomization)" time="0.002">
+    </testcase>
+  </testsuite>
+  <testsuite name="invoiceValidation" errors="0" failures="0" skipped="0" timestamp="2025-09-23T04:52:41" time="1.28" tests="12">
+    <testcase classname="invoiceValidation validateEmail validates correct email addresses" name="invoiceValidation validateEmail validates correct email addresses" time="0.006">
+    </testcase>
+    <testcase classname="invoiceValidation validateEmail rejects invalid email addresses" name="invoiceValidation validateEmail rejects invalid email addresses" time="0.001">
+    </testcase>
+    <testcase classname="invoiceValidation validatePhone validates correct phone numbers" name="invoiceValidation validatePhone validates correct phone numbers" time="0.002">
+    </testcase>
+    <testcase classname="invoiceValidation validatePhone rejects invalid phone numbers" name="invoiceValidation validatePhone rejects invalid phone numbers" time="0.005">
+    </testcase>
+    <testcase classname="invoiceValidation validateAmount validates correct amounts" name="invoiceValidation validateAmount validates correct amounts" time="0.005">
+    </testcase>
+    <testcase classname="invoiceValidation validateAmount rejects invalid amounts" name="invoiceValidation validateAmount rejects invalid amounts" time="0.006">
+    </testcase>
+    <testcase classname="invoiceValidation validateContractForm validates correct form data" name="invoiceValidation validateContractForm validates correct form data" time="0.004">
+    </testcase>
+    <testcase classname="invoiceValidation validateContractForm rejects form with missing required fields" name="invoiceValidation validateContractForm rejects form with missing required fields" time="0.002">
+    </testcase>
+    <testcase classname="invoiceValidation validateContractForm rejects form with invalid email" name="invoiceValidation validateContractForm rejects form with invalid email" time="0.002">
+    </testcase>
+    <testcase classname="invoiceValidation validateInvoiceForm validates correct form data" name="invoiceValidation validateInvoiceForm validates correct form data" time="0.003">
+    </testcase>
+    <testcase classname="invoiceValidation validateInvoiceForm rejects form with no items" name="invoiceValidation validateInvoiceForm rejects form with no items" time="0.005">
+    </testcase>
+    <testcase classname="invoiceValidation validateInvoiceForm rejects form with invalid due date" name="invoiceValidation validateInvoiceForm rejects form with invalid due date" time="0.016">
+    </testcase>
+  </testsuite>
+  <testsuite name="useInvoiceForm" errors="0" failures="0" skipped="0" timestamp="2025-09-23T04:52:43" time="1.351" tests="7">
+    <testcase classname="useInvoiceForm initializes with default values" name="useInvoiceForm initializes with default values" time="0.084">
+    </testcase>
+    <testcase classname="useInvoiceForm updates form data correctly" name="useInvoiceForm updates form data correctly" time="0.01">
+    </testcase>
+    <testcase classname="useInvoiceForm adds new item correctly" name="useInvoiceForm adds new item correctly" time="0.023">
+    </testcase>
+    <testcase classname="useInvoiceForm removes item correctly" name="useInvoiceForm removes item correctly" time="0.054">
+    </testcase>
+    <testcase classname="useInvoiceForm calculates totals correctly" name="useInvoiceForm calculates totals correctly" time="0.016">
+    </testcase>
+    <testcase classname="useInvoiceForm validates form correctly" name="useInvoiceForm validates form correctly" time="0.019">
+    </testcase>
+    <testcase classname="useInvoiceForm resets form correctly" name="useInvoiceForm resets form correctly" time="0.012">
+    </testcase>
+  </testsuite>
+  <testsuite name="ContractFieldInput" errors="0" failures="0" skipped="0" timestamp="2025-09-23T04:52:44" time="0.668" tests="6">
+    <testcase classname="ContractFieldInput renders text input correctly" name="ContractFieldInput renders text input correctly" time="0.062">
+    </testcase>
+    <testcase classname="ContractFieldInput calls onChange when value changes" name="ContractFieldInput calls onChange when value changes" time="0.013">
+    </testcase>
+    <testcase classname="ContractFieldInput renders textarea when type is textarea" name="ContractFieldInput renders textarea when type is textarea" time="0.012">
+    </testcase>
+    <testcase classname="ContractFieldInput applies disabled state correctly" name="ContractFieldInput applies disabled state correctly" time="0.011">
+    </testcase>
+    <testcase classname="ContractFieldInput applies required attribute correctly" name="ContractFieldInput applies required attribute correctly" time="0.013">
+    </testcase>
+    <testcase classname="ContractFieldInput applies custom className" name="ContractFieldInput applies custom className" time="0.018">
+    </testcase>
+  </testsuite>
+  <testsuite name="EnhancedContractInvoiceManager" errors="0" failures="0" skipped="0" timestamp="2025-09-23T04:52:45" time="1.119" tests="4">
+    <testcase classname="EnhancedContractInvoiceManager renders the component without errors" name="EnhancedContractInvoiceManager renders the component without errors" time="0.037">
+    </testcase>
+    <testcase classname="EnhancedContractInvoiceManager displays dashboard statistics correctly" name="EnhancedContractInvoiceManager displays dashboard statistics correctly" time="0.023">
+    </testcase>
+    <testcase classname="EnhancedContractInvoiceManager allows navigating between tabs" name="EnhancedContractInvoiceManager allows navigating between tabs" time="0.05">
+    </testcase>
+    <testcase classname="EnhancedContractInvoiceManager opens the conversion modal when a quote is selected" name="EnhancedContractInvoiceManager opens the conversion modal when a quote is selected" time="0.088">
+    </testcase>
+  </testsuite>
+  <testsuite name="Simple Test" errors="0" failures="0" skipped="0" timestamp="2025-09-23T04:52:50" time="0.408" tests="1">
+    <testcase classname="Simple Test should pass" name="Simple Test should pass" time="0.003">
+    </testcase>
+  </testsuite>
+  <testsuite name="AuthService" errors="0" failures="0" skipped="0" timestamp="2025-09-23T04:52:50" time="0.496" tests="16">
+    <testcase classname="AuthService signUp should create a new user account" name="AuthService signUp should create a new user account" time="0.007">
+    </testcase>
+    <testcase classname="AuthService signUp should use email prefix as name when name not provided" name="AuthService signUp should use email prefix as name when name not provided" time="0.004">
+    </testcase>
+    <testcase classname="AuthService signUp should handle signup errors" name="AuthService signUp should handle signup errors" time="0.051">
+    </testcase>
+    <testcase classname="AuthService signIn should authenticate user with valid credentials" name="AuthService signIn should authenticate user with valid credentials" time="0.032">
+    </testcase>
+    <testcase classname="AuthService signIn should handle signin errors" name="AuthService signIn should handle signin errors" time="0.005">
+    </testcase>
+    <testcase classname="AuthService signOut should clear user session" name="AuthService signOut should clear user session" time="0.005">
+    </testcase>
+    <testcase classname="AuthService updateProfile should update user profile when authenticated" name="AuthService updateProfile should update user profile when authenticated" time="0.004">
+    </testcase>
+    <testcase classname="AuthService updateProfile should throw error when not authenticated" name="AuthService updateProfile should throw error when not authenticated" time="0.004">
+    </testcase>
+    <testcase classname="AuthService hasRole should validate admin role hierarchy" name="AuthService hasRole should validate admin role hierarchy" time="0.006">
+    </testcase>
+    <testcase classname="AuthService hasRole should validate agent role hierarchy" name="AuthService hasRole should validate agent role hierarchy" time="0.004">
+    </testcase>
+    <testcase classname="AuthService hasRole should validate user role hierarchy" name="AuthService hasRole should validate user role hierarchy" time="0.004">
+    </testcase>
+    <testcase classname="AuthService hasRole should return false when not authenticated" name="AuthService hasRole should return false when not authenticated" time="0.003">
+    </testcase>
+    <testcase classname="AuthService getAccessToken should return token when authenticated" name="AuthService getAccessToken should return token when authenticated" time="0.004">
+    </testcase>
+    <testcase classname="AuthService getAccessToken should return null when not authenticated" name="AuthService getAccessToken should return null when not authenticated" time="0.004">
+    </testcase>
+    <testcase classname="AuthService state management should notify subscribers of state changes" name="AuthService state management should notify subscribers of state changes" time="0.003">
+    </testcase>
+    <testcase classname="AuthService state management should handle unsubscribe without errors" name="AuthService state management should handle unsubscribe without errors" time="0.002">
+    </testcase>
+  </testsuite>
+</testsuites>

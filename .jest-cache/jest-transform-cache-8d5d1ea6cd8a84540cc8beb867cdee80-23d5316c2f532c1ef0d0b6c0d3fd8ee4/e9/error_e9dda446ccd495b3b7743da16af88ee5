@@ -1,0 +1,280 @@
+3d07218d8580a47898e029b1d69506d2
+'use client';
+"use strict";
+
+/* istanbul ignore next */
+function cov_r74h4c2ze() {
+  var path = "C:\\Users\\chase\\Downloads\\crm (32)\\src\\app\\error.tsx";
+  var hash = "a383adf93233046916217b070873bc08d26bf7c5";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "C:\\Users\\chase\\Downloads\\crm (32)\\src\\app\\error.tsx",
+    statementMap: {
+      "0": {
+        start: {
+          line: 3,
+          column: 0
+        },
+        end: {
+          line: 5,
+          column: 3
+        }
+      },
+      "1": {
+        start: {
+          line: 6,
+          column: 0
+        },
+        end: {
+          line: 11,
+          column: 3
+        }
+      },
+      "2": {
+        start: {
+          line: 9,
+          column: 8
+        },
+        end: {
+          line: 9,
+          column: 21
+        }
+      },
+      "3": {
+        start: {
+          line: 12,
+          column: 20
+        },
+        end: {
+          line: 12,
+          column: 48
+        }
+      },
+      "4": {
+        start: {
+          line: 13,
+          column: 15
+        },
+        end: {
+          line: 13,
+          column: 31
+        }
+      },
+      "5": {
+        start: {
+          line: 15,
+          column: 4
+        },
+        end: {
+          line: 20,
+          column: 7
+        }
+      },
+      "6": {
+        start: {
+          line: 17,
+          column: 8
+        },
+        end: {
+          line: 17,
+          column: 29
+        }
+      },
+      "7": {
+        start: {
+          line: 21,
+          column: 4
+        },
+        end: {
+          line: 62,
+          column: 7
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "(anonymous_0)",
+        decl: {
+          start: {
+            line: 8,
+            column: 9
+          },
+          end: {
+            line: 8,
+            column: 10
+          }
+        },
+        loc: {
+          start: {
+            line: 8,
+            column: 20
+          },
+          end: {
+            line: 10,
+            column: 5
+          }
+        },
+        line: 8
+      },
+      "1": {
+        name: "Error",
+        decl: {
+          start: {
+            line: 14,
+            column: 9
+          },
+          end: {
+            line: 14,
+            column: 14
+          }
+        },
+        loc: {
+          start: {
+            line: 14,
+            column: 33
+          },
+          end: {
+            line: 63,
+            column: 1
+          }
+        },
+        line: 14
+      },
+      "2": {
+        name: "(anonymous_2)",
+        decl: {
+          start: {
+            line: 15,
+            column: 26
+          },
+          end: {
+            line: 15,
+            column: 27
+          }
+        },
+        loc: {
+          start: {
+            line: 15,
+            column: 30
+          },
+          end: {
+            line: 18,
+            column: 5
+          }
+        },
+        line: 15
+      }
+    },
+    branchMap: {},
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0
+    },
+    f: {
+      "0": 0,
+      "1": 0,
+      "2": 0
+    },
+    b: {},
+    inputSourceMap: {
+      version: 3,
+      sources: ["C:\\Users\\chase\\Downloads\\crm (32)\\src\\app\\error.tsx"],
+      sourcesContent: ["'use client'\n\nimport { useEffect } from 'react'\n\nexport default function Error({\n  error,\n  reset,\n}: {\n  error: Error & { digest?: string }\n  reset: () => void\n}) {\n  useEffect(() => {\n    // Log the error to an error reporting service\n    console.error(error)\n  }, [error])\n\n  return (\n    <div className=\"min-h-screen flex items-center justify-center bg-gray-50\">\n      <div className=\"max-w-md w-full text-center\">\n        <div className=\"mb-8\">\n          <h1 className=\"text-6xl font-bold text-red-600 mb-4\">\u26A0\uFE0F</h1>\n          <h2 className=\"text-2xl font-semibold text-gray-700 mb-2\">Something went wrong!</h2>\n          <p className=\"text-gray-600 mb-8\">\n            An unexpected error occurred. Please try again.\n          </p>\n        </div>\n        \n        <div className=\"space-y-4\">\n          <button\n            onClick={reset}\n            className=\"inline-block bg-red-600 text-white px-6 py-3 rounded-lg hover:bg-red-700 transition-colors\"\n          >\n            Try again\n          </button>\n          \n          <div>\n            <a \n              href=\"/\"\n              className=\"text-blue-600 hover:text-blue-800 underline\"\n            >\n              Return to dashboard\n            </a>\n          </div>\n        </div>\n      </div>\n    </div>\n  )\n}"],
+      names: ["Error", "error", "reset", "useEffect", "console", "div", "className", "h1", "h2", "p", "button", "onClick", "a", "href"],
+      mappings: "AAAA;;;;;+BAIA;;;eAAwBA;;;;uBAFE;AAEX,SAASA,MAAM,EAC5BC,KAAK,EACLC,KAAK,EAIN;IACCC,IAAAA,gBAAS,EAAC;QACR,8CAA8C;QAC9CC,QAAQH,KAAK,CAACA;IAChB,GAAG;QAACA;KAAM;IAEV,qBACE,qBAACI;QAAIC,WAAU;kBACb,cAAA,sBAACD;YAAIC,WAAU;;8BACb,sBAACD;oBAAIC,WAAU;;sCACb,qBAACC;4BAAGD,WAAU;sCAAuC;;sCACrD,qBAACE;4BAAGF,WAAU;sCAA4C;;sCAC1D,qBAACG;4BAAEH,WAAU;sCAAqB;;;;8BAKpC,sBAACD;oBAAIC,WAAU;;sCACb,qBAACI;4BACCC,SAAST;4BACTI,WAAU;sCACX;;sCAID,qBAACD;sCACC,cAAA,qBAACO;gCACCC,MAAK;gCACLP,WAAU;0CACX;;;;;;;;AAQb"
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "a383adf93233046916217b070873bc08d26bf7c5"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_r74h4c2ze = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+cov_r74h4c2ze();
+cov_r74h4c2ze().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+/* istanbul ignore next */
+cov_r74h4c2ze().s[1]++;
+Object.defineProperty(exports, "default", {
+  enumerable: true,
+  get: function () {
+    /* istanbul ignore next */
+    cov_r74h4c2ze().f[0]++;
+    cov_r74h4c2ze().s[2]++;
+    return Error;
+  }
+});
+const _jsxruntime =
+/* istanbul ignore next */
+(cov_r74h4c2ze().s[3]++, require("react/jsx-runtime"));
+const _react =
+/* istanbul ignore next */
+(cov_r74h4c2ze().s[4]++, require("react"));
+function Error({
+  error,
+  reset
+}) {
+  /* istanbul ignore next */
+  cov_r74h4c2ze().f[1]++;
+  cov_r74h4c2ze().s[5]++;
+  (0, _react.useEffect)(() => {
+    /* istanbul ignore next */
+    cov_r74h4c2ze().f[2]++;
+    cov_r74h4c2ze().s[6]++;
+    // Log the error to an error reporting service
+    console.error(error);
+  }, [error]);
+  /* istanbul ignore next */
+  cov_r74h4c2ze().s[7]++;
+  return /*#__PURE__*/(0, _jsxruntime.jsx)("div", {
+    className: "min-h-screen flex items-center justify-center bg-gray-50",
+    children: /*#__PURE__*/(0, _jsxruntime.jsxs)("div", {
+      className: "max-w-md w-full text-center",
+      children: [/*#__PURE__*/(0, _jsxruntime.jsxs)("div", {
+        className: "mb-8",
+        children: [/*#__PURE__*/(0, _jsxruntime.jsx)("h1", {
+          className: "text-6xl font-bold text-red-600 mb-4",
+          children: "⚠️"
+        }), /*#__PURE__*/(0, _jsxruntime.jsx)("h2", {
+          className: "text-2xl font-semibold text-gray-700 mb-2",
+          children: "Something went wrong!"
+        }), /*#__PURE__*/(0, _jsxruntime.jsx)("p", {
+          className: "text-gray-600 mb-8",
+          children: "An unexpected error occurred. Please try again."
+        })]
+      }), /*#__PURE__*/(0, _jsxruntime.jsxs)("div", {
+        className: "space-y-4",
+        children: [/*#__PURE__*/(0, _jsxruntime.jsx)("button", {
+          onClick: reset,
+          className: "inline-block bg-red-600 text-white px-6 py-3 rounded-lg hover:bg-red-700 transition-colors",
+          children: "Try again"
+        }), /*#__PURE__*/(0, _jsxruntime.jsx)("div", {
+          children: /*#__PURE__*/(0, _jsxruntime.jsx)("a", {
+            href: "/",
+            className: "text-blue-600 hover:text-blue-800 underline",
+            children: "Return to dashboard"
+          })
+        })]
+      })]
+    })
+  });
+}
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJjb3Zfcjc0aDRjMnplIiwiYWN0dWFsQ292ZXJhZ2UiLCJzIiwiRXJyb3IiLCJlcnJvciIsInJlc2V0IiwiZiIsIl9yZWFjdCIsInVzZUVmZmVjdCIsImNvbnNvbGUiLCJfanN4cnVudGltZSIsImpzeCIsImNsYXNzTmFtZSIsImpzeHMiLCJvbkNsaWNrIiwiaHJlZiJdLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xcY2hhc2VcXERvd25sb2Fkc1xcY3JtICgzMilcXHNyY1xcYXBwXFxlcnJvci50c3giXSwic291cmNlc0NvbnRlbnQiOlsiJ3VzZSBjbGllbnQnXG5cbmltcG9ydCB7IHVzZUVmZmVjdCB9IGZyb20gJ3JlYWN0J1xuXG5leHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBFcnJvcih7XG4gIGVycm9yLFxuICByZXNldCxcbn06IHtcbiAgZXJyb3I6IEVycm9yICYgeyBkaWdlc3Q/OiBzdHJpbmcgfVxuICByZXNldDogKCkgPT4gdm9pZFxufSkge1xuICB1c2VFZmZlY3QoKCkgPT4ge1xuICAgIC8vIExvZyB0aGUgZXJyb3IgdG8gYW4gZXJyb3IgcmVwb3J0aW5nIHNlcnZpY2VcbiAgICBjb25zb2xlLmVycm9yKGVycm9yKVxuICB9LCBbZXJyb3JdKVxuXG4gIHJldHVybiAoXG4gICAgPGRpdiBjbGFzc05hbWU9XCJtaW4taC1zY3JlZW4gZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXIgYmctZ3JheS01MFwiPlxuICAgICAgPGRpdiBjbGFzc05hbWU9XCJtYXgtdy1tZCB3LWZ1bGwgdGV4dC1jZW50ZXJcIj5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJtYi04XCI+XG4gICAgICAgICAgPGgxIGNsYXNzTmFtZT1cInRleHQtNnhsIGZvbnQtYm9sZCB0ZXh0LXJlZC02MDAgbWItNFwiPuKaoO+4jzwvaDE+XG4gICAgICAgICAgPGgyIGNsYXNzTmFtZT1cInRleHQtMnhsIGZvbnQtc2VtaWJvbGQgdGV4dC1ncmF5LTcwMCBtYi0yXCI+U29tZXRoaW5nIHdlbnQgd3JvbmchPC9oMj5cbiAgICAgICAgICA8cCBjbGFzc05hbWU9XCJ0ZXh0LWdyYXktNjAwIG1iLThcIj5cbiAgICAgICAgICAgIEFuIHVuZXhwZWN0ZWQgZXJyb3Igb2NjdXJyZWQuIFBsZWFzZSB0cnkgYWdhaW4uXG4gICAgICAgICAgPC9wPlxuICAgICAgICA8L2Rpdj5cbiAgICAgICAgXG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwic3BhY2UteS00XCI+XG4gICAgICAgICAgPGJ1dHRvblxuICAgICAgICAgICAgb25DbGljaz17cmVzZXR9XG4gICAgICAgICAgICBjbGFzc05hbWU9XCJpbmxpbmUtYmxvY2sgYmctcmVkLTYwMCB0ZXh0LXdoaXRlIHB4LTYgcHktMyByb3VuZGVkLWxnIGhvdmVyOmJnLXJlZC03MDAgdHJhbnNpdGlvbi1jb2xvcnNcIlxuICAgICAgICAgID5cbiAgICAgICAgICAgIFRyeSBhZ2FpblxuICAgICAgICAgIDwvYnV0dG9uPlxuICAgICAgICAgIFxuICAgICAgICAgIDxkaXY+XG4gICAgICAgICAgICA8YSBcbiAgICAgICAgICAgICAgaHJlZj1cIi9cIlxuICAgICAgICAgICAgICBjbGFzc05hbWU9XCJ0ZXh0LWJsdWUtNjAwIGhvdmVyOnRleHQtYmx1ZS04MDAgdW5kZXJsaW5lXCJcbiAgICAgICAgICAgID5cbiAgICAgICAgICAgICAgUmV0dXJuIHRvIGRhc2hib2FyZFxuICAgICAgICAgICAgPC9hPlxuICAgICAgICAgIDwvZGl2PlxuICAgICAgICA8L2Rpdj5cbiAgICAgIDwvZGl2PlxuICAgIDwvZGl2PlxuICApXG59Il0sIm1hcHBpbmdzIjoiQUFBQTs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7SUFZSTtJQUFBQSxhQUFBLFlBQUFBLENBQUE7TUFBQSxPQUFBQyxjQUFBO0lBQUE7RUFBQTtFQUFBLE9BQUFBLGNBQUE7QUFBQTtBQUFBRCxhQUFBO0FBQUFBLGFBQUEsR0FBQUUsQ0FBQTs7Ozs7OytCQVJKOzs7Ozs7V0FBd0JDLEtBQUE7Ozs7Ozs7O2lDQUZFO0FBRVgsU0FBU0EsTUFBTTtFQUM1QkMsS0FBSztFQUNMQztBQUFLLENBSU47RUFBQTtFQUFBTCxhQUFBLEdBQUFNLENBQUE7RUFBQU4sYUFBQSxHQUFBRSxDQUFBO0VBQ0MsSUFBQUssTUFBQSxDQUFBQyxTQUFTLEVBQUM7SUFBQTtJQUFBUixhQUFBLEdBQUFNLENBQUE7SUFBQU4sYUFBQSxHQUFBRSxDQUFBO0lBQ1I7SUFDQU8sT0FBQSxDQUFRTCxLQUFLLENBQUNBLEtBQUE7RUFDaEIsR0FBRyxDQUFDQSxLQUFBLENBQU07RUFBQTtFQUFBSixhQUFBLEdBQUFFLENBQUE7RUFFVixvQkFDRSxJQUFBUSxXQUFBLENBQUFDLEdBQUEsRUFBQztJQUFJQyxTQUFBLEVBQVU7Y0FDYixpQkFBQUYsV0FBQSxDQUFBRyxJQUFBLEVBQUM7TUFBSUQsU0FBQSxFQUFVOzhCQUNiLElBQUFGLFdBQUEsQ0FBQUcsSUFBQSxFQUFDO1FBQUlELFNBQUEsRUFBVTtnQ0FDYixJQUFBRixXQUFBLENBQUFDLEdBQUEsRUFBQztVQUFHQyxTQUFBLEVBQVU7b0JBQXVDO3lCQUNyRCxJQUFBRixXQUFBLENBQUFDLEdBQUEsRUFBQztVQUFHQyxTQUFBLEVBQVU7b0JBQTRDO3lCQUMxRCxJQUFBRixXQUFBLENBQUFDLEdBQUEsRUFBQztVQUFFQyxTQUFBLEVBQVU7b0JBQXFCOzt1QkFLcEMsSUFBQUYsV0FBQSxDQUFBRyxJQUFBLEVBQUM7UUFBSUQsU0FBQSxFQUFVO2dDQUNiLElBQUFGLFdBQUEsQ0FBQUMsR0FBQSxFQUFDO1VBQ0NHLE9BQUEsRUFBU1QsS0FBQTtVQUNUTyxTQUFBLEVBQVU7b0JBQ1g7eUJBSUQsSUFBQUYsV0FBQSxDQUFBQyxHQUFBLEVBQUM7b0JBQ0MsaUJBQUFELFdBQUEsQ0FBQUMsR0FBQSxFQUFDO1lBQ0NJLElBQUEsRUFBSztZQUNMSCxTQUFBLEVBQVU7c0JBQ1g7Ozs7OztBQVFiIiwiaWdub3JlTGlzdCI6W119

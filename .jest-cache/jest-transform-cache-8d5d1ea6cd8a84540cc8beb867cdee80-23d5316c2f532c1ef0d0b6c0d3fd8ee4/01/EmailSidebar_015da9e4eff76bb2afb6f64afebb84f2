@@ -1,0 +1,895 @@
+164e6f4affe6282568e3ae3de2b04534
+"use client";
+"use strict";
+
+/* istanbul ignore next */
+function cov_1mlp5e4ihc() {
+  var path = "C:\\Users\\chase\\Downloads\\crm (32)\\src\\components\\email\\EmailSidebar.tsx";
+  var hash = "5847c0b1da0225c810213190ce70414e033280fe";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "C:\\Users\\chase\\Downloads\\crm (32)\\src\\components\\email\\EmailSidebar.tsx",
+    statementMap: {
+      "0": {
+        start: {
+          line: 3,
+          column: 0
+        },
+        end: {
+          line: 5,
+          column: 3
+        }
+      },
+      "1": {
+        start: {
+          line: 6,
+          column: 0
+        },
+        end: {
+          line: 11,
+          column: 3
+        }
+      },
+      "2": {
+        start: {
+          line: 9,
+          column: 8
+        },
+        end: {
+          line: 9,
+          column: 24
+        }
+      },
+      "3": {
+        start: {
+          line: 12,
+          column: 20
+        },
+        end: {
+          line: 12,
+          column: 48
+        }
+      },
+      "4": {
+        start: {
+          line: 13,
+          column: 29
+        },
+        end: {
+          line: 13,
+          column: 71
+        }
+      },
+      "5": {
+        start: {
+          line: 14,
+          column: 21
+        },
+        end: {
+          line: 14,
+          column: 44
+        }
+      },
+      "6": {
+        start: {
+          line: 16,
+          column: 4
+        },
+        end: {
+          line: 18,
+          column: 6
+        }
+      },
+      "7": {
+        start: {
+          line: 20,
+          column: 21
+        },
+        end: {
+          line: 177,
+          column: 1
+        }
+      },
+      "8": {
+        start: {
+          line: 21,
+          column: 20
+        },
+        end: {
+          line: 66,
+          column: 5
+        }
+      },
+      "9": {
+        start: {
+          line: 67,
+          column: 19
+        },
+        end: {
+          line: 88,
+          column: 5
+        }
+      },
+      "10": {
+        start: {
+          line: 89,
+          column: 4
+        },
+        end: {
+          line: 176,
+          column: 7
+        }
+      },
+      "11": {
+        start: {
+          line: 111,
+          column: 56
+        },
+        end: {
+          line: 132,
+          column: 37
+        }
+      },
+      "12": {
+        start: {
+          line: 112,
+          column: 41
+        },
+        end: {
+          line: 112,
+          column: 65
+        }
+      },
+      "13": {
+        start: {
+          line: 142,
+          column: 54
+        },
+        end: {
+          line: 160,
+          column: 36
+        }
+      },
+      "14": {
+        start: {
+          line: 143,
+          column: 41
+        },
+        end: {
+          line: 143,
+          column: 63
+        }
+      },
+      "15": {
+        start: {
+          line: 178,
+          column: 17
+        },
+        end: {
+          line: 178,
+          column: 29
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "(anonymous_0)",
+        decl: {
+          start: {
+            line: 8,
+            column: 9
+          },
+          end: {
+            line: 8,
+            column: 10
+          }
+        },
+        loc: {
+          start: {
+            line: 8,
+            column: 20
+          },
+          end: {
+            line: 10,
+            column: 5
+          }
+        },
+        line: 8
+      },
+      "1": {
+        name: "_interop_require_default",
+        decl: {
+          start: {
+            line: 15,
+            column: 9
+          },
+          end: {
+            line: 15,
+            column: 33
+          }
+        },
+        loc: {
+          start: {
+            line: 15,
+            column: 39
+          },
+          end: {
+            line: 19,
+            column: 1
+          }
+        },
+        line: 15
+      },
+      "2": {
+        name: "(anonymous_2)",
+        decl: {
+          start: {
+            line: 20,
+            column: 21
+          },
+          end: {
+            line: 20,
+            column: 22
+          }
+        },
+        loc: {
+          start: {
+            line: 20,
+            column: 165
+          },
+          end: {
+            line: 177,
+            column: 1
+          }
+        },
+        line: 20
+      },
+      "3": {
+        name: "(anonymous_3)",
+        decl: {
+          start: {
+            line: 111,
+            column: 32
+          },
+          end: {
+            line: 111,
+            column: 33
+          }
+        },
+        loc: {
+          start: {
+            line: 111,
+            column: 56
+          },
+          end: {
+            line: 132,
+            column: 37
+          }
+        },
+        line: 111
+      },
+      "4": {
+        name: "(anonymous_4)",
+        decl: {
+          start: {
+            line: 112,
+            column: 37
+          },
+          end: {
+            line: 112,
+            column: 38
+          }
+        },
+        loc: {
+          start: {
+            line: 112,
+            column: 41
+          },
+          end: {
+            line: 112,
+            column: 65
+          }
+        },
+        line: 112
+      },
+      "5": {
+        name: "(anonymous_5)",
+        decl: {
+          start: {
+            line: 142,
+            column: 31
+          },
+          end: {
+            line: 142,
+            column: 32
+          }
+        },
+        loc: {
+          start: {
+            line: 142,
+            column: 54
+          },
+          end: {
+            line: 160,
+            column: 36
+          }
+        },
+        line: 142
+      },
+      "6": {
+        name: "(anonymous_6)",
+        decl: {
+          start: {
+            line: 143,
+            column: 37
+          },
+          end: {
+            line: 143,
+            column: 38
+          }
+        },
+        loc: {
+          start: {
+            line: 143,
+            column: 41
+          },
+          end: {
+            line: 143,
+            column: 63
+          }
+        },
+        line: 143
+      }
+    },
+    branchMap: {
+      "0": {
+        loc: {
+          start: {
+            line: 16,
+            column: 11
+          },
+          end: {
+            line: 18,
+            column: 5
+          }
+        },
+        type: "cond-expr",
+        locations: [{
+          start: {
+            line: 16,
+            column: 35
+          },
+          end: {
+            line: 16,
+            column: 38
+          }
+        }, {
+          start: {
+            line: 16,
+            column: 41
+          },
+          end: {
+            line: 18,
+            column: 5
+          }
+        }],
+        line: 16
+      },
+      "1": {
+        loc: {
+          start: {
+            line: 16,
+            column: 11
+          },
+          end: {
+            line: 16,
+            column: 32
+          }
+        },
+        type: "binary-expr",
+        locations: [{
+          start: {
+            line: 16,
+            column: 11
+          },
+          end: {
+            line: 16,
+            column: 14
+          }
+        }, {
+          start: {
+            line: 16,
+            column: 18
+          },
+          end: {
+            line: 16,
+            column: 32
+          }
+        }],
+        line: 16
+      },
+      "2": {
+        loc: {
+          start: {
+            line: 113,
+            column: 112
+          },
+          end: {
+            line: 113,
+            column: 238
+          }
+        },
+        type: "cond-expr",
+        locations: [{
+          start: {
+            line: 113,
+            column: 163
+          },
+          end: {
+            line: 113,
+            column: 202
+          }
+        }, {
+          start: {
+            line: 113,
+            column: 205
+          },
+          end: {
+            line: 113,
+            column: 238
+          }
+        }],
+        line: 113
+      },
+      "3": {
+        loc: {
+          start: {
+            line: 113,
+            column: 112
+          },
+          end: {
+            line: 113,
+            column: 160
+          }
+        },
+        type: "binary-expr",
+        locations: [{
+          start: {
+            line: 113,
+            column: 112
+          },
+          end: {
+            line: 113,
+            column: 138
+          }
+        }, {
+          start: {
+            line: 113,
+            column: 142
+          },
+          end: {
+            line: 113,
+            column: 160
+          }
+        }],
+        line: 113
+      },
+      "4": {
+        loc: {
+          start: {
+            line: 127,
+            column: 32
+          },
+          end: {
+            line: 130,
+            column: 34
+          }
+        },
+        type: "binary-expr",
+        locations: [{
+          start: {
+            line: 127,
+            column: 32
+          },
+          end: {
+            line: 127,
+            column: 44
+          }
+        }, {
+          start: {
+            line: 127,
+            column: 62
+          },
+          end: {
+            line: 130,
+            column: 34
+          }
+        }],
+        line: 127
+      },
+      "5": {
+        loc: {
+          start: {
+            line: 128,
+            column: 83
+          },
+          end: {
+            line: 128,
+            column: 191
+          }
+        },
+        type: "cond-expr",
+        locations: [{
+          start: {
+            line: 128,
+            column: 134
+          },
+          end: {
+            line: 128,
+            column: 161
+          }
+        }, {
+          start: {
+            line: 128,
+            column: 164
+          },
+          end: {
+            line: 128,
+            column: 191
+          }
+        }],
+        line: 128
+      },
+      "6": {
+        loc: {
+          start: {
+            line: 128,
+            column: 83
+          },
+          end: {
+            line: 128,
+            column: 131
+          }
+        },
+        type: "binary-expr",
+        locations: [{
+          start: {
+            line: 128,
+            column: 83
+          },
+          end: {
+            line: 128,
+            column: 109
+          }
+        }, {
+          start: {
+            line: 128,
+            column: 113
+          },
+          end: {
+            line: 128,
+            column: 131
+          }
+        }],
+        line: 128
+      },
+      "7": {
+        loc: {
+          start: {
+            line: 144,
+            column: 102
+          },
+          end: {
+            line: 144,
+            column: 210
+          }
+        },
+        type: "cond-expr",
+        locations: [{
+          start: {
+            line: 144,
+            column: 135
+          },
+          end: {
+            line: 144,
+            column: 174
+          }
+        }, {
+          start: {
+            line: 144,
+            column: 177
+          },
+          end: {
+            line: 144,
+            column: 210
+          }
+        }],
+        line: 144
+      }
+    },
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    },
+    f: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0
+    },
+    b: {
+      "0": [0, 0],
+      "1": [0, 0],
+      "2": [0, 0],
+      "3": [0, 0],
+      "4": [0, 0],
+      "5": [0, 0],
+      "6": [0, 0],
+      "7": [0, 0]
+    },
+    inputSourceMap: {
+      version: 3,
+      sources: ["C:\\Users\\chase\\Downloads\\crm (32)\\src\\components\\email\\EmailSidebar.tsx"],
+      sourcesContent: ["\"use client\"\n\nimport React from \"react\"\nimport {\n  Inbox,\n  SendIcon,\n  Mail,\n  Star,\n  Archive,\n  Trash2,\n  Plus,\n} from \"lucide-react\"\n\ninterface Folder {\n  id: string\n  name: string\n  icon: React.ReactNode\n  count?: number\n}\n\ninterface Label {\n  id: string\n  name: string\n  color: string\n}\n\ninterface EmailSidebarProps {\n  activeFolder: string\n  activeLabelFilter: string | null\n  onFolderClick: (folderId: string) => void\n  onLabelClick: (labelId: string) => void\n  onCompose: () => void\n  getEmailCountForFolder: (folderId: string) => number\n  getEmailCountForLabel: (labelId: string) => number\n  getColorForLabel: (color: string) => string\n}\n\nconst EmailSidebar: React.FC<EmailSidebarProps> = ({\n  activeFolder,\n  activeLabelFilter,\n  onFolderClick,\n  onLabelClick,\n  onCompose,\n  getEmailCountForFolder,\n  getEmailCountForLabel,\n  getColorForLabel,\n}) => {\n  const folders: Folder[] = [\n    { id: \"inbox\", name: \"Inbox\", icon: <Inbox size={18} />, count: 12 },\n    { id: \"sent\", name: \"Sent\", icon: <SendIcon size={18} /> },\n    { id: \"drafts\", name: \"Drafts\", icon: <Mail size={18} />, count: 3 },\n    { id: \"starred\", name: \"Starred\", icon: <Star size={18} /> },\n    { id: \"archive\", name: \"Archive\", icon: <Archive size={18} /> },\n    { id: \"trash\", name: \"Trash\", icon: <Trash2 size={18} /> },\n  ]\n\n  const labels: Label[] = [\n    { id: \"important\", name: \"Important\", color: \"red\" },\n    { id: \"work\", name: \"Work\", color: \"blue\" },\n    { id: \"personal\", name: \"Personal\", color: \"green\" },\n    { id: \"clients\", name: \"Clients\", color: \"purple\" },\n  ]\n\n  return (\n    <div className=\"w-64 border-r border-gray-200 bg-gray-50 p-4 flex flex-col\">\n      <button\n        onClick={onCompose}\n        className=\"bg-blue-600 text-white rounded-lg px-4 py-2 flex items-center justify-center gap-2 hover:bg-blue-700 transition-colors\"\n      >\n        <Plus size={18} />\n        <span>Compose</span>\n      </button>\n\n      <div className=\"mt-6 space-y-1\">\n        <p className=\"text-xs font-semibold text-gray-500 uppercase tracking-wider px-3 mb-2\">\n          Folders\n        </p>\n        {folders.map((folder) => (\n          <button\n            key={folder.id}\n            onClick={() => onFolderClick(folder.id)}\n            className={`w-full flex items-center justify-between px-3 py-2 rounded-lg text-sm ${\n              activeFolder === folder.id && !activeLabelFilter\n                ? \"bg-blue-100 text-blue-700 font-medium\"\n                : \"text-gray-700 hover:bg-gray-100\"\n            }`}\n          >\n            <div className=\"flex items-center gap-3\">\n              <span className=\"text-gray-500\">{folder.icon}</span>\n              <span>{folder.name}</span>\n            </div>\n            {folder.count && (\n              <span\n                className={`text-xs px-2 py-0.5 rounded-full ${\n                  activeFolder === folder.id && !activeLabelFilter\n                    ? \"bg-blue-200 text-blue-800\"\n                    : \"bg-gray-200 text-gray-700\"\n                }`}\n              >\n                {getEmailCountForFolder(folder.id)}\n              </span>\n            )}\n          </button>\n        ))}\n      </div>\n\n      <div className=\"mt-6 space-y-1\">\n        <p className=\"text-xs font-semibold text-gray-500 uppercase tracking-wider px-3 mb-2\">\n          Labels\n        </p>\n        {labels.map((label) => (\n          <button\n            key={label.id}\n            onClick={() => onLabelClick(label.id)}\n            className={`w-full flex items-center gap-3 px-3 py-2 rounded-lg text-sm ${\n              activeLabelFilter === label.id\n                ? \"bg-blue-100 text-blue-700 font-medium\"\n                : \"text-gray-700 hover:bg-gray-100\"\n            }`}\n          >\n            <span\n              className=\"w-3 h-3 rounded-full\"\n              style={{ backgroundColor: getColorForLabel(label.color) }}\n            ></span>\n            <span>{label.name}</span>\n            <span className=\"ml-auto text-xs text-gray-500\">\n              {getEmailCountForLabel(label.id)}\n            </span>\n          </button>\n        ))}\n        <button className=\"w-full flex items-center gap-3 px-3 py-2 rounded-lg text-sm text-gray-700 hover:bg-gray-100\">\n          <Plus size={16} className=\"text-gray-500\" />\n          <span>Create new label</span>\n        </button>\n      </div>\n    </div>\n  )\n}\n\nexport default EmailSidebar"],
+      names: ["EmailSidebar", "activeFolder", "activeLabelFilter", "onFolderClick", "onLabelClick", "onCompose", "getEmailCountForFolder", "getEmailCountForLabel", "getColorForLabel", "folders", "id", "name", "icon", "Inbox", "size", "count", "SendIcon", "Mail", "Star", "Archive", "Trash2", "labels", "color", "div", "className", "button", "onClick", "Plus", "span", "p", "map", "folder", "label", "style", "backgroundColor"],
+      mappings: "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"
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "5847c0b1da0225c810213190ce70414e033280fe"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_1mlp5e4ihc = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+cov_1mlp5e4ihc();
+cov_1mlp5e4ihc().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+/* istanbul ignore next */
+cov_1mlp5e4ihc().s[1]++;
+Object.defineProperty(exports, "default", {
+  enumerable: true,
+  get: function () {
+    /* istanbul ignore next */
+    cov_1mlp5e4ihc().f[0]++;
+    cov_1mlp5e4ihc().s[2]++;
+    return _default;
+  }
+});
+const _jsxruntime =
+/* istanbul ignore next */
+(cov_1mlp5e4ihc().s[3]++, require("react/jsx-runtime"));
+const _react =
+/* istanbul ignore next */
+(/*#__PURE__*/cov_1mlp5e4ihc().s[4]++, _interop_require_default(require("react")));
+const _lucidereact =
+/* istanbul ignore next */
+(cov_1mlp5e4ihc().s[5]++, require("lucide-react"));
+function _interop_require_default(obj) {
+  /* istanbul ignore next */
+  cov_1mlp5e4ihc().f[1]++;
+  cov_1mlp5e4ihc().s[6]++;
+  return /* istanbul ignore next */(cov_1mlp5e4ihc().b[1][0]++, obj) &&
+  /* istanbul ignore next */
+  (cov_1mlp5e4ihc().b[1][1]++, obj.__esModule) ?
+  /* istanbul ignore next */
+  (cov_1mlp5e4ihc().b[0][0]++, obj) :
+  /* istanbul ignore next */
+  (cov_1mlp5e4ihc().b[0][1]++, {
+    default: obj
+  });
+}
+/* istanbul ignore next */
+cov_1mlp5e4ihc().s[7]++;
+const EmailSidebar = ({
+  activeFolder,
+  activeLabelFilter,
+  onFolderClick,
+  onLabelClick,
+  onCompose,
+  getEmailCountForFolder,
+  getEmailCountForLabel,
+  getColorForLabel
+}) => {
+  /* istanbul ignore next */
+  cov_1mlp5e4ihc().f[2]++;
+  const folders =
+  /* istanbul ignore next */
+  (cov_1mlp5e4ihc().s[8]++, [{
+    id: "inbox",
+    name: "Inbox",
+    icon: /*#__PURE__*/(0, _jsxruntime.jsx)(_lucidereact.Inbox, {
+      size: 18
+    }),
+    count: 12
+  }, {
+    id: "sent",
+    name: "Sent",
+    icon: /*#__PURE__*/(0, _jsxruntime.jsx)(_lucidereact.SendIcon, {
+      size: 18
+    })
+  }, {
+    id: "drafts",
+    name: "Drafts",
+    icon: /*#__PURE__*/(0, _jsxruntime.jsx)(_lucidereact.Mail, {
+      size: 18
+    }),
+    count: 3
+  }, {
+    id: "starred",
+    name: "Starred",
+    icon: /*#__PURE__*/(0, _jsxruntime.jsx)(_lucidereact.Star, {
+      size: 18
+    })
+  }, {
+    id: "archive",
+    name: "Archive",
+    icon: /*#__PURE__*/(0, _jsxruntime.jsx)(_lucidereact.Archive, {
+      size: 18
+    })
+  }, {
+    id: "trash",
+    name: "Trash",
+    icon: /*#__PURE__*/(0, _jsxruntime.jsx)(_lucidereact.Trash2, {
+      size: 18
+    })
+  }]);
+  const labels =
+  /* istanbul ignore next */
+  (cov_1mlp5e4ihc().s[9]++, [{
+    id: "important",
+    name: "Important",
+    color: "red"
+  }, {
+    id: "work",
+    name: "Work",
+    color: "blue"
+  }, {
+    id: "personal",
+    name: "Personal",
+    color: "green"
+  }, {
+    id: "clients",
+    name: "Clients",
+    color: "purple"
+  }]);
+  /* istanbul ignore next */
+  cov_1mlp5e4ihc().s[10]++;
+  return /*#__PURE__*/(0, _jsxruntime.jsxs)("div", {
+    className: "w-64 border-r border-gray-200 bg-gray-50 p-4 flex flex-col",
+    children: [/*#__PURE__*/(0, _jsxruntime.jsxs)("button", {
+      onClick: onCompose,
+      className: "bg-blue-600 text-white rounded-lg px-4 py-2 flex items-center justify-center gap-2 hover:bg-blue-700 transition-colors",
+      children: [/*#__PURE__*/(0, _jsxruntime.jsx)(_lucidereact.Plus, {
+        size: 18
+      }), /*#__PURE__*/(0, _jsxruntime.jsx)("span", {
+        children: "Compose"
+      })]
+    }), /*#__PURE__*/(0, _jsxruntime.jsxs)("div", {
+      className: "mt-6 space-y-1",
+      children: [/*#__PURE__*/(0, _jsxruntime.jsx)("p", {
+        className: "text-xs font-semibold text-gray-500 uppercase tracking-wider px-3 mb-2",
+        children: "Folders"
+      }), folders.map(folder => {
+        /* istanbul ignore next */
+        cov_1mlp5e4ihc().f[3]++;
+        cov_1mlp5e4ihc().s[11]++;
+        return /*#__PURE__*/(0, _jsxruntime.jsxs)("button", {
+          onClick: () => {
+            /* istanbul ignore next */
+            cov_1mlp5e4ihc().f[4]++;
+            cov_1mlp5e4ihc().s[12]++;
+            return onFolderClick(folder.id);
+          },
+          className: `w-full flex items-center justify-between px-3 py-2 rounded-lg text-sm ${
+          /* istanbul ignore next */
+          (cov_1mlp5e4ihc().b[3][0]++, activeFolder === folder.id) &&
+          /* istanbul ignore next */
+          (cov_1mlp5e4ihc().b[3][1]++, !activeLabelFilter) ?
+          /* istanbul ignore next */
+          (cov_1mlp5e4ihc().b[2][0]++, "bg-blue-100 text-blue-700 font-medium") :
+          /* istanbul ignore next */
+          (cov_1mlp5e4ihc().b[2][1]++, "text-gray-700 hover:bg-gray-100")}`,
+          children: [/*#__PURE__*/(0, _jsxruntime.jsxs)("div", {
+            className: "flex items-center gap-3",
+            children: [/*#__PURE__*/(0, _jsxruntime.jsx)("span", {
+              className: "text-gray-500",
+              children: folder.icon
+            }), /*#__PURE__*/(0, _jsxruntime.jsx)("span", {
+              children: folder.name
+            })]
+          }),
+          /* istanbul ignore next */
+          (cov_1mlp5e4ihc().b[4][0]++, folder.count) &&
+          /* istanbul ignore next */
+          (cov_1mlp5e4ihc().b[4][1]++, /*#__PURE__*/(0, _jsxruntime.jsx)("span", {
+            className: `text-xs px-2 py-0.5 rounded-full ${
+            /* istanbul ignore next */
+            (cov_1mlp5e4ihc().b[6][0]++, activeFolder === folder.id) &&
+            /* istanbul ignore next */
+            (cov_1mlp5e4ihc().b[6][1]++, !activeLabelFilter) ?
+            /* istanbul ignore next */
+            (cov_1mlp5e4ihc().b[5][0]++, "bg-blue-200 text-blue-800") :
+            /* istanbul ignore next */
+            (cov_1mlp5e4ihc().b[5][1]++, "bg-gray-200 text-gray-700")}`,
+            children: getEmailCountForFolder(folder.id)
+          }))]
+        }, folder.id);
+      })]
+    }), /*#__PURE__*/(0, _jsxruntime.jsxs)("div", {
+      className: "mt-6 space-y-1",
+      children: [/*#__PURE__*/(0, _jsxruntime.jsx)("p", {
+        className: "text-xs font-semibold text-gray-500 uppercase tracking-wider px-3 mb-2",
+        children: "Labels"
+      }), labels.map(label => {
+        /* istanbul ignore next */
+        cov_1mlp5e4ihc().f[5]++;
+        cov_1mlp5e4ihc().s[13]++;
+        return /*#__PURE__*/(0, _jsxruntime.jsxs)("button", {
+          onClick: () => {
+            /* istanbul ignore next */
+            cov_1mlp5e4ihc().f[6]++;
+            cov_1mlp5e4ihc().s[14]++;
+            return onLabelClick(label.id);
+          },
+          className: `w-full flex items-center gap-3 px-3 py-2 rounded-lg text-sm ${activeLabelFilter === label.id ?
+          /* istanbul ignore next */
+          (cov_1mlp5e4ihc().b[7][0]++, "bg-blue-100 text-blue-700 font-medium") :
+          /* istanbul ignore next */
+          (cov_1mlp5e4ihc().b[7][1]++, "text-gray-700 hover:bg-gray-100")}`,
+          children: [/*#__PURE__*/(0, _jsxruntime.jsx)("span", {
+            className: "w-3 h-3 rounded-full",
+            style: {
+              backgroundColor: getColorForLabel(label.color)
+            }
+          }), /*#__PURE__*/(0, _jsxruntime.jsx)("span", {
+            children: label.name
+          }), /*#__PURE__*/(0, _jsxruntime.jsx)("span", {
+            className: "ml-auto text-xs text-gray-500",
+            children: getEmailCountForLabel(label.id)
+          })]
+        }, label.id);
+      }), /*#__PURE__*/(0, _jsxruntime.jsxs)("button", {
+        className: "w-full flex items-center gap-3 px-3 py-2 rounded-lg text-sm text-gray-700 hover:bg-gray-100",
+        children: [/*#__PURE__*/(0, _jsxruntime.jsx)(_lucidereact.Plus, {
+          size: 16,
+          className: "text-gray-500"
+        }), /*#__PURE__*/(0, _jsxruntime.jsx)("span", {
+          children: "Create new label"
+        })]
+      })]
+    })]
+  });
+};
+const _default =
+/* istanbul ignore next */
+(cov_1mlp5e4ihc().s[15]++, EmailSidebar);
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfZGVmYXVsdCIsIkVtYWlsU2lkZWJhciIsImFjdGl2ZUZvbGRlciIsImFjdGl2ZUxhYmVsRmlsdGVyIiwib25Gb2xkZXJDbGljayIsIm9uTGFiZWxDbGljayIsIm9uQ29tcG9zZSIsImdldEVtYWlsQ291bnRGb3JGb2xkZXIiLCJnZXRFbWFpbENvdW50Rm9yTGFiZWwiLCJnZXRDb2xvckZvckxhYmVsIiwiY292XzFtbHA1ZTRpaGMiLCJmIiwiZm9sZGVycyIsInMiLCJpZCIsIm5hbWUiLCJpY29uIiwiX2pzeHJ1bnRpbWUiLCJqc3giLCJfbHVjaWRlcmVhY3QiLCJJbmJveCIsInNpemUiLCJjb3VudCIsIlNlbmRJY29uIiwiTWFpbCIsIlN0YXIiLCJBcmNoaXZlIiwiVHJhc2gyIiwibGFiZWxzIiwiY29sb3IiLCJqc3hzIiwiY2xhc3NOYW1lIiwib25DbGljayIsIlBsdXMiLCJtYXAiLCJmb2xkZXIiLCJiIiwibGFiZWwiLCJzdHlsZSIsImJhY2tncm91bmRDb2xvciJdLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xcY2hhc2VcXERvd25sb2Fkc1xcY3JtICgzMilcXHNyY1xcY29tcG9uZW50c1xcZW1haWxcXEVtYWlsU2lkZWJhci50c3giXSwic291cmNlc0NvbnRlbnQiOlsiXCJ1c2UgY2xpZW50XCJcblxuaW1wb3J0IFJlYWN0IGZyb20gXCJyZWFjdFwiXG5pbXBvcnQge1xuICBJbmJveCxcbiAgU2VuZEljb24sXG4gIE1haWwsXG4gIFN0YXIsXG4gIEFyY2hpdmUsXG4gIFRyYXNoMixcbiAgUGx1cyxcbn0gZnJvbSBcImx1Y2lkZS1yZWFjdFwiXG5cbmludGVyZmFjZSBGb2xkZXIge1xuICBpZDogc3RyaW5nXG4gIG5hbWU6IHN0cmluZ1xuICBpY29uOiBSZWFjdC5SZWFjdE5vZGVcbiAgY291bnQ/OiBudW1iZXJcbn1cblxuaW50ZXJmYWNlIExhYmVsIHtcbiAgaWQ6IHN0cmluZ1xuICBuYW1lOiBzdHJpbmdcbiAgY29sb3I6IHN0cmluZ1xufVxuXG5pbnRlcmZhY2UgRW1haWxTaWRlYmFyUHJvcHMge1xuICBhY3RpdmVGb2xkZXI6IHN0cmluZ1xuICBhY3RpdmVMYWJlbEZpbHRlcjogc3RyaW5nIHwgbnVsbFxuICBvbkZvbGRlckNsaWNrOiAoZm9sZGVySWQ6IHN0cmluZykgPT4gdm9pZFxuICBvbkxhYmVsQ2xpY2s6IChsYWJlbElkOiBzdHJpbmcpID0+IHZvaWRcbiAgb25Db21wb3NlOiAoKSA9PiB2b2lkXG4gIGdldEVtYWlsQ291bnRGb3JGb2xkZXI6IChmb2xkZXJJZDogc3RyaW5nKSA9PiBudW1iZXJcbiAgZ2V0RW1haWxDb3VudEZvckxhYmVsOiAobGFiZWxJZDogc3RyaW5nKSA9PiBudW1iZXJcbiAgZ2V0Q29sb3JGb3JMYWJlbDogKGNvbG9yOiBzdHJpbmcpID0+IHN0cmluZ1xufVxuXG5jb25zdCBFbWFpbFNpZGViYXI6IFJlYWN0LkZDPEVtYWlsU2lkZWJhclByb3BzPiA9ICh7XG4gIGFjdGl2ZUZvbGRlcixcbiAgYWN0aXZlTGFiZWxGaWx0ZXIsXG4gIG9uRm9sZGVyQ2xpY2ssXG4gIG9uTGFiZWxDbGljayxcbiAgb25Db21wb3NlLFxuICBnZXRFbWFpbENvdW50Rm9yRm9sZGVyLFxuICBnZXRFbWFpbENvdW50Rm9yTGFiZWwsXG4gIGdldENvbG9yRm9yTGFiZWwsXG59KSA9PiB7XG4gIGNvbnN0IGZvbGRlcnM6IEZvbGRlcltdID0gW1xuICAgIHsgaWQ6IFwiaW5ib3hcIiwgbmFtZTogXCJJbmJveFwiLCBpY29uOiA8SW5ib3ggc2l6ZT17MTh9IC8+LCBjb3VudDogMTIgfSxcbiAgICB7IGlkOiBcInNlbnRcIiwgbmFtZTogXCJTZW50XCIsIGljb246IDxTZW5kSWNvbiBzaXplPXsxOH0gLz4gfSxcbiAgICB7IGlkOiBcImRyYWZ0c1wiLCBuYW1lOiBcIkRyYWZ0c1wiLCBpY29uOiA8TWFpbCBzaXplPXsxOH0gLz4sIGNvdW50OiAzIH0sXG4gICAgeyBpZDogXCJzdGFycmVkXCIsIG5hbWU6IFwiU3RhcnJlZFwiLCBpY29uOiA8U3RhciBzaXplPXsxOH0gLz4gfSxcbiAgICB7IGlkOiBcImFyY2hpdmVcIiwgbmFtZTogXCJBcmNoaXZlXCIsIGljb246IDxBcmNoaXZlIHNpemU9ezE4fSAvPiB9LFxuICAgIHsgaWQ6IFwidHJhc2hcIiwgbmFtZTogXCJUcmFzaFwiLCBpY29uOiA8VHJhc2gyIHNpemU9ezE4fSAvPiB9LFxuICBdXG5cbiAgY29uc3QgbGFiZWxzOiBMYWJlbFtdID0gW1xuICAgIHsgaWQ6IFwiaW1wb3J0YW50XCIsIG5hbWU6IFwiSW1wb3J0YW50XCIsIGNvbG9yOiBcInJlZFwiIH0sXG4gICAgeyBpZDogXCJ3b3JrXCIsIG5hbWU6IFwiV29ya1wiLCBjb2xvcjogXCJibHVlXCIgfSxcbiAgICB7IGlkOiBcInBlcnNvbmFsXCIsIG5hbWU6IFwiUGVyc29uYWxcIiwgY29sb3I6IFwiZ3JlZW5cIiB9LFxuICAgIHsgaWQ6IFwiY2xpZW50c1wiLCBuYW1lOiBcIkNsaWVudHNcIiwgY29sb3I6IFwicHVycGxlXCIgfSxcbiAgXVxuXG4gIHJldHVybiAoXG4gICAgPGRpdiBjbGFzc05hbWU9XCJ3LTY0IGJvcmRlci1yIGJvcmRlci1ncmF5LTIwMCBiZy1ncmF5LTUwIHAtNCBmbGV4IGZsZXgtY29sXCI+XG4gICAgICA8YnV0dG9uXG4gICAgICAgIG9uQ2xpY2s9e29uQ29tcG9zZX1cbiAgICAgICAgY2xhc3NOYW1lPVwiYmctYmx1ZS02MDAgdGV4dC13aGl0ZSByb3VuZGVkLWxnIHB4LTQgcHktMiBmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWNlbnRlciBnYXAtMiBob3ZlcjpiZy1ibHVlLTcwMCB0cmFuc2l0aW9uLWNvbG9yc1wiXG4gICAgICA+XG4gICAgICAgIDxQbHVzIHNpemU9ezE4fSAvPlxuICAgICAgICA8c3Bhbj5Db21wb3NlPC9zcGFuPlxuICAgICAgPC9idXR0b24+XG5cbiAgICAgIDxkaXYgY2xhc3NOYW1lPVwibXQtNiBzcGFjZS15LTFcIj5cbiAgICAgICAgPHAgY2xhc3NOYW1lPVwidGV4dC14cyBmb250LXNlbWlib2xkIHRleHQtZ3JheS01MDAgdXBwZXJjYXNlIHRyYWNraW5nLXdpZGVyIHB4LTMgbWItMlwiPlxuICAgICAgICAgIEZvbGRlcnNcbiAgICAgICAgPC9wPlxuICAgICAgICB7Zm9sZGVycy5tYXAoKGZvbGRlcikgPT4gKFxuICAgICAgICAgIDxidXR0b25cbiAgICAgICAgICAgIGtleT17Zm9sZGVyLmlkfVxuICAgICAgICAgICAgb25DbGljaz17KCkgPT4gb25Gb2xkZXJDbGljayhmb2xkZXIuaWQpfVxuICAgICAgICAgICAgY2xhc3NOYW1lPXtgdy1mdWxsIGZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktYmV0d2VlbiBweC0zIHB5LTIgcm91bmRlZC1sZyB0ZXh0LXNtICR7XG4gICAgICAgICAgICAgIGFjdGl2ZUZvbGRlciA9PT0gZm9sZGVyLmlkICYmICFhY3RpdmVMYWJlbEZpbHRlclxuICAgICAgICAgICAgICAgID8gXCJiZy1ibHVlLTEwMCB0ZXh0LWJsdWUtNzAwIGZvbnQtbWVkaXVtXCJcbiAgICAgICAgICAgICAgICA6IFwidGV4dC1ncmF5LTcwMCBob3ZlcjpiZy1ncmF5LTEwMFwiXG4gICAgICAgICAgICB9YH1cbiAgICAgICAgICA+XG4gICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImZsZXggaXRlbXMtY2VudGVyIGdhcC0zXCI+XG4gICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT1cInRleHQtZ3JheS01MDBcIj57Zm9sZGVyLmljb259PC9zcGFuPlxuICAgICAgICAgICAgICA8c3Bhbj57Zm9sZGVyLm5hbWV9PC9zcGFuPlxuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICB7Zm9sZGVyLmNvdW50ICYmIChcbiAgICAgICAgICAgICAgPHNwYW5cbiAgICAgICAgICAgICAgICBjbGFzc05hbWU9e2B0ZXh0LXhzIHB4LTIgcHktMC41IHJvdW5kZWQtZnVsbCAke1xuICAgICAgICAgICAgICAgICAgYWN0aXZlRm9sZGVyID09PSBmb2xkZXIuaWQgJiYgIWFjdGl2ZUxhYmVsRmlsdGVyXG4gICAgICAgICAgICAgICAgICAgID8gXCJiZy1ibHVlLTIwMCB0ZXh0LWJsdWUtODAwXCJcbiAgICAgICAgICAgICAgICAgICAgOiBcImJnLWdyYXktMjAwIHRleHQtZ3JheS03MDBcIlxuICAgICAgICAgICAgICAgIH1gfVxuICAgICAgICAgICAgICA+XG4gICAgICAgICAgICAgICAge2dldEVtYWlsQ291bnRGb3JGb2xkZXIoZm9sZGVyLmlkKX1cbiAgICAgICAgICAgICAgPC9zcGFuPlxuICAgICAgICAgICAgKX1cbiAgICAgICAgICA8L2J1dHRvbj5cbiAgICAgICAgKSl9XG4gICAgICA8L2Rpdj5cblxuICAgICAgPGRpdiBjbGFzc05hbWU9XCJtdC02IHNwYWNlLXktMVwiPlxuICAgICAgICA8cCBjbGFzc05hbWU9XCJ0ZXh0LXhzIGZvbnQtc2VtaWJvbGQgdGV4dC1ncmF5LTUwMCB1cHBlcmNhc2UgdHJhY2tpbmctd2lkZXIgcHgtMyBtYi0yXCI+XG4gICAgICAgICAgTGFiZWxzXG4gICAgICAgIDwvcD5cbiAgICAgICAge2xhYmVscy5tYXAoKGxhYmVsKSA9PiAoXG4gICAgICAgICAgPGJ1dHRvblxuICAgICAgICAgICAga2V5PXtsYWJlbC5pZH1cbiAgICAgICAgICAgIG9uQ2xpY2s9eygpID0+IG9uTGFiZWxDbGljayhsYWJlbC5pZCl9XG4gICAgICAgICAgICBjbGFzc05hbWU9e2B3LWZ1bGwgZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTMgcHgtMyBweS0yIHJvdW5kZWQtbGcgdGV4dC1zbSAke1xuICAgICAgICAgICAgICBhY3RpdmVMYWJlbEZpbHRlciA9PT0gbGFiZWwuaWRcbiAgICAgICAgICAgICAgICA/IFwiYmctYmx1ZS0xMDAgdGV4dC1ibHVlLTcwMCBmb250LW1lZGl1bVwiXG4gICAgICAgICAgICAgICAgOiBcInRleHQtZ3JheS03MDAgaG92ZXI6YmctZ3JheS0xMDBcIlxuICAgICAgICAgICAgfWB9XG4gICAgICAgICAgPlxuICAgICAgICAgICAgPHNwYW5cbiAgICAgICAgICAgICAgY2xhc3NOYW1lPVwidy0zIGgtMyByb3VuZGVkLWZ1bGxcIlxuICAgICAgICAgICAgICBzdHlsZT17eyBiYWNrZ3JvdW5kQ29sb3I6IGdldENvbG9yRm9yTGFiZWwobGFiZWwuY29sb3IpIH19XG4gICAgICAgICAgICA+PC9zcGFuPlxuICAgICAgICAgICAgPHNwYW4+e2xhYmVsLm5hbWV9PC9zcGFuPlxuICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPVwibWwtYXV0byB0ZXh0LXhzIHRleHQtZ3JheS01MDBcIj5cbiAgICAgICAgICAgICAge2dldEVtYWlsQ291bnRGb3JMYWJlbChsYWJlbC5pZCl9XG4gICAgICAgICAgICA8L3NwYW4+XG4gICAgICAgICAgPC9idXR0b24+XG4gICAgICAgICkpfVxuICAgICAgICA8YnV0dG9uIGNsYXNzTmFtZT1cInctZnVsbCBmbGV4IGl0ZW1zLWNlbnRlciBnYXAtMyBweC0zIHB5LTIgcm91bmRlZC1sZyB0ZXh0LXNtIHRleHQtZ3JheS03MDAgaG92ZXI6YmctZ3JheS0xMDBcIj5cbiAgICAgICAgICA8UGx1cyBzaXplPXsxNn0gY2xhc3NOYW1lPVwidGV4dC1ncmF5LTUwMFwiIC8+XG4gICAgICAgICAgPHNwYW4+Q3JlYXRlIG5ldyBsYWJlbDwvc3Bhbj5cbiAgICAgICAgPC9idXR0b24+XG4gICAgICA8L2Rpdj5cbiAgICA8L2Rpdj5cbiAgKVxufVxuXG5leHBvcnQgZGVmYXVsdCBFbWFpbFNpZGViYXIiXSwibWFwcGluZ3MiOiJBQUFBOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7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

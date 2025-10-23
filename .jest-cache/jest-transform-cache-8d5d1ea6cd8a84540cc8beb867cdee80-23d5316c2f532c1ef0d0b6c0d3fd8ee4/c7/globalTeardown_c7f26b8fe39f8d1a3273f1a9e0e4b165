@@ -1,0 +1,20 @@
+120c28103bb6ca2587e8c62918e6b0e3
+/**
+ * Global Jest teardown file
+ * Runs once after all test suites
+ */ // const { server } = require('../mocks/server');
+"use strict";
+module.exports = async ()=>{
+    // Close MSW server
+    // server.close();
+    // Clean up any global resources
+    if (global.gc) {
+        global.gc();
+    }
+    // Reset environment variables
+    delete process.env.NODE_ENV;
+    delete process.env.NEXT_PUBLIC_API_URL;
+    console.log('🧹 Global test teardown completed');
+};
+
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xcY2hhc2VcXERvd25sb2Fkc1xcY3JtICgzMilcXHRlc3RzXFxzZXR1cFxcZ2xvYmFsVGVhcmRvd24uanMiXSwic291cmNlc0NvbnRlbnQiOlsiLyoqXG4gKiBHbG9iYWwgSmVzdCB0ZWFyZG93biBmaWxlXG4gKiBSdW5zIG9uY2UgYWZ0ZXIgYWxsIHRlc3Qgc3VpdGVzXG4gKi9cblxuLy8gY29uc3QgeyBzZXJ2ZXIgfSA9IHJlcXVpcmUoJy4uL21vY2tzL3NlcnZlcicpO1xuXG5tb2R1bGUuZXhwb3J0cyA9IGFzeW5jICgpID0+IHtcbiAgLy8gQ2xvc2UgTVNXIHNlcnZlclxuICAvLyBzZXJ2ZXIuY2xvc2UoKTtcbiAgXG4gIC8vIENsZWFuIHVwIGFueSBnbG9iYWwgcmVzb3VyY2VzXG4gIGlmIChnbG9iYWwuZ2MpIHtcbiAgICBnbG9iYWwuZ2MoKTtcbiAgfVxuICBcbiAgLy8gUmVzZXQgZW52aXJvbm1lbnQgdmFyaWFibGVzXG4gIGRlbGV0ZSBwcm9jZXNzLmVudi5OT0RFX0VOVjtcbiAgZGVsZXRlIHByb2Nlc3MuZW52Lk5FWFRfUFVCTElDX0FQSV9VUkw7XG4gIFxuICBjb25zb2xlLmxvZygn8J+nuSBHbG9iYWwgdGVzdCB0ZWFyZG93biBjb21wbGV0ZWQnKTtcbn07Il0sIm5hbWVzIjpbIm1vZHVsZSIsImV4cG9ydHMiLCJnbG9iYWwiLCJnYyIsInByb2Nlc3MiLCJlbnYiLCJOT0RFX0VOViIsIk5FWFRfUFVCTElDX0FQSV9VUkwiLCJjb25zb2xlIiwibG9nIl0sIm1hcHBpbmdzIjoiQUFBQTs7O0NBR0MsR0FFRCxpREFBaUQ7O0FBRWpEQSxPQUFPQyxPQUFPLEdBQUc7SUFDZixtQkFBbUI7SUFDbkIsa0JBQWtCO0lBRWxCLGdDQUFnQztJQUNoQyxJQUFJQyxPQUFPQyxFQUFFLEVBQUU7UUFDYkQsT0FBT0MsRUFBRTtJQUNYO0lBRUEsOEJBQThCO0lBQzlCLE9BQU9DLFFBQVFDLEdBQUcsQ0FBQ0MsUUFBUTtJQUMzQixPQUFPRixRQUFRQyxHQUFHLENBQUNFLG1CQUFtQjtJQUV0Q0MsUUFBUUMsR0FBRyxDQUFDO0FBQ2QifQ==

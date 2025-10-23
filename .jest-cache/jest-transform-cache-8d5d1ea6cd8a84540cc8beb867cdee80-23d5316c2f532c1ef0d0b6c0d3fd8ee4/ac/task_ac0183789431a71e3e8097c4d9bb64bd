@@ -1,0 +1,60 @@
+cb8f8a48e564722fa1521ca0f3f7d00b
+// Shared Task type definitions
+"use strict";
+
+/* istanbul ignore next */
+function cov_1ljx086c1r() {
+  var path = "C:\\Users\\chase\\Downloads\\crm (32)\\src\\types\\task.ts";
+  var hash = "7562aafbfb02ae6f36678d36832df08f4b721695";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "C:\\Users\\chase\\Downloads\\crm (32)\\src\\types\\task.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 3,
+          column: 0
+        },
+        end: {
+          line: 5,
+          column: 3
+        }
+      }
+    },
+    fnMap: {},
+    branchMap: {},
+    s: {
+      "0": 0
+    },
+    f: {},
+    b: {},
+    inputSourceMap: {
+      version: 3,
+      sources: ["C:\\Users\\chase\\Downloads\\crm (32)\\src\\types\\task.ts"],
+      sourcesContent: ["// Shared Task type definitions\nexport interface Task {\n  id: string;\n  title: string;\n  description: string;\n  dueDate: string;\n  priority: 'LOW' | 'MEDIUM' | 'HIGH' | 'URGENT';\n  assignee: string;\n  status: 'TODO' | 'IN_PROGRESS' | 'REVIEW' | 'DONE';\n  category?: string;\n  tags?: string[];\n  estimatedHours?: number;\n  actualHours?: number;\n  dependencies?: string[];\n  recurring?: {\n    type: \"daily\" | \"weekly\" | \"monthly\" | \"yearly\";\n    interval: number;\n    endDate?: string;\n  };\n  attachments?: string[];\n  comments?: Array<{\n    id: string;\n    text: string;\n    author: string;\n    date: string;\n  }>;\n  progress?: number;\n  createdAt?: string;\n  updatedAt?: string;\n}\n\nexport interface TaskPriority {\n  label: string;\n  color: string;\n  bgColor: string;\n  textColor: string;\n  borderColor: string;\n}\n\nexport interface TaskStatus {\n  label: string;\n  color: string;\n  bgColor: string;\n  textColor: string;\n  borderColor: string;\n}\n\nexport interface TaskCategory {\n  id: string;\n  label: string;\n  color: string;\n  bgColor: string;\n  textColor: string;\n}\n\nexport interface TaskColumn {\n  name: string;\n  items: Task[];\n}\n\nexport interface ErrorState {\n  message: string;\n  type: 'error' | 'warning' | 'info';\n  show: boolean;\n}\n\nexport interface LoadingState {\n  isLoading: boolean;\n  operation: string;\n  addTask?: boolean;\n  updateTask?: boolean;\n}\n\nexport interface ValidationErrors {\n  title?: string;\n  description?: string;\n  dueDate?: string;\n  assignee?: string;\n  estimatedHours?: string;\n}"],
+      names: [],
+      mappings: "AAAA,+BAA+B"
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "7562aafbfb02ae6f36678d36832df08f4b721695"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_1ljx086c1r = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+cov_1ljx086c1r();
+cov_1ljx086c1r().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6W10sInNvdXJjZXMiOlsiQzpcXFVzZXJzXFxjaGFzZVxcRG93bmxvYWRzXFxjcm0gKDMyKVxcc3JjXFx0eXBlc1xcdGFzay50cyJdLCJzb3VyY2VzQ29udGVudCI6WyIvLyBTaGFyZWQgVGFzayB0eXBlIGRlZmluaXRpb25zXG5leHBvcnQgaW50ZXJmYWNlIFRhc2sge1xuICBpZDogc3RyaW5nO1xuICB0aXRsZTogc3RyaW5nO1xuICBkZXNjcmlwdGlvbjogc3RyaW5nO1xuICBkdWVEYXRlOiBzdHJpbmc7XG4gIHByaW9yaXR5OiAnTE9XJyB8ICdNRURJVU0nIHwgJ0hJR0gnIHwgJ1VSR0VOVCc7XG4gIGFzc2lnbmVlOiBzdHJpbmc7XG4gIHN0YXR1czogJ1RPRE8nIHwgJ0lOX1BST0dSRVNTJyB8ICdSRVZJRVcnIHwgJ0RPTkUnO1xuICBjYXRlZ29yeT86IHN0cmluZztcbiAgdGFncz86IHN0cmluZ1tdO1xuICBlc3RpbWF0ZWRIb3Vycz86IG51bWJlcjtcbiAgYWN0dWFsSG91cnM/OiBudW1iZXI7XG4gIGRlcGVuZGVuY2llcz86IHN0cmluZ1tdO1xuICByZWN1cnJpbmc/OiB7XG4gICAgdHlwZTogXCJkYWlseVwiIHwgXCJ3ZWVrbHlcIiB8IFwibW9udGhseVwiIHwgXCJ5ZWFybHlcIjtcbiAgICBpbnRlcnZhbDogbnVtYmVyO1xuICAgIGVuZERhdGU/OiBzdHJpbmc7XG4gIH07XG4gIGF0dGFjaG1lbnRzPzogc3RyaW5nW107XG4gIGNvbW1lbnRzPzogQXJyYXk8e1xuICAgIGlkOiBzdHJpbmc7XG4gICAgdGV4dDogc3RyaW5nO1xuICAgIGF1dGhvcjogc3RyaW5nO1xuICAgIGRhdGU6IHN0cmluZztcbiAgfT47XG4gIHByb2dyZXNzPzogbnVtYmVyO1xuICBjcmVhdGVkQXQ/OiBzdHJpbmc7XG4gIHVwZGF0ZWRBdD86IHN0cmluZztcbn1cblxuZXhwb3J0IGludGVyZmFjZSBUYXNrUHJpb3JpdHkge1xuICBsYWJlbDogc3RyaW5nO1xuICBjb2xvcjogc3RyaW5nO1xuICBiZ0NvbG9yOiBzdHJpbmc7XG4gIHRleHRDb2xvcjogc3RyaW5nO1xuICBib3JkZXJDb2xvcjogc3RyaW5nO1xufVxuXG5leHBvcnQgaW50ZXJmYWNlIFRhc2tTdGF0dXMge1xuICBsYWJlbDogc3RyaW5nO1xuICBjb2xvcjogc3RyaW5nO1xuICBiZ0NvbG9yOiBzdHJpbmc7XG4gIHRleHRDb2xvcjogc3RyaW5nO1xuICBib3JkZXJDb2xvcjogc3RyaW5nO1xufVxuXG5leHBvcnQgaW50ZXJmYWNlIFRhc2tDYXRlZ29yeSB7XG4gIGlkOiBzdHJpbmc7XG4gIGxhYmVsOiBzdHJpbmc7XG4gIGNvbG9yOiBzdHJpbmc7XG4gIGJnQ29sb3I6IHN0cmluZztcbiAgdGV4dENvbG9yOiBzdHJpbmc7XG59XG5cbmV4cG9ydCBpbnRlcmZhY2UgVGFza0NvbHVtbiB7XG4gIG5hbWU6IHN0cmluZztcbiAgaXRlbXM6IFRhc2tbXTtcbn1cblxuZXhwb3J0IGludGVyZmFjZSBFcnJvclN0YXRlIHtcbiAgbWVzc2FnZTogc3RyaW5nO1xuICB0eXBlOiAnZXJyb3InIHwgJ3dhcm5pbmcnIHwgJ2luZm8nO1xuICBzaG93OiBib29sZWFuO1xufVxuXG5leHBvcnQgaW50ZXJmYWNlIExvYWRpbmdTdGF0ZSB7XG4gIGlzTG9hZGluZzogYm9vbGVhbjtcbiAgb3BlcmF0aW9uOiBzdHJpbmc7XG4gIGFkZFRhc2s/OiBib29sZWFuO1xuICB1cGRhdGVUYXNrPzogYm9vbGVhbjtcbn1cblxuZXhwb3J0IGludGVyZmFjZSBWYWxpZGF0aW9uRXJyb3JzIHtcbiAgdGl0bGU/OiBzdHJpbmc7XG4gIGRlc2NyaXB0aW9uPzogc3RyaW5nO1xuICBkdWVEYXRlPzogc3RyaW5nO1xuICBhc3NpZ25lZT86IHN0cmluZztcbiAgZXN0aW1hdGVkSG91cnM/OiBzdHJpbmc7XG59Il0sIm1hcHBpbmdzIjoiQUFBQSIsImlnbm9yZUxpc3QiOltdfQ==

@@ -1,0 +1,337 @@
+2547f23ec1f984fed07d6bb5d11b98f1
+// Invoice-related types for validation and processing
+"use strict";
+
+/* istanbul ignore next */
+function cov_1g6hhff1ll() {
+  var path = "C:\\Users\\chase\\Downloads\\crm (32)\\src\\types\\invoice.ts";
+  var hash = "51b41508249d118f7fef8546520dc9255a35b1ba";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "C:\\Users\\chase\\Downloads\\crm (32)\\src\\types\\invoice.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 3,
+          column: 0
+        },
+        end: {
+          line: 5,
+          column: 3
+        }
+      },
+      "1": {
+        start: {
+          line: 7,
+          column: 4
+        },
+        end: {
+          line: 10,
+          column: 7
+        }
+      },
+      "2": {
+        start: {
+          line: 7,
+          column: 24
+        },
+        end: {
+          line: 10,
+          column: 7
+        }
+      },
+      "3": {
+        start: {
+          line: 12,
+          column: 0
+        },
+        end: {
+          line: 19,
+          column: 3
+        }
+      },
+      "4": {
+        start: {
+          line: 14,
+          column: 8
+        },
+        end: {
+          line: 14,
+          column: 29
+        }
+      },
+      "5": {
+        start: {
+          line: 17,
+          column: 8
+        },
+        end: {
+          line: 17,
+          column: 28
+        }
+      },
+      "6": {
+        start: {
+          line: 22,
+          column: 8
+        },
+        end: {
+          line: 22,
+          column: 41
+        }
+      },
+      "7": {
+        start: {
+          line: 23,
+          column: 8
+        },
+        end: {
+          line: 23,
+          column: 35
+        }
+      },
+      "8": {
+        start: {
+          line: 28,
+          column: 8
+        },
+        end: {
+          line: 28,
+          column: 41
+        }
+      },
+      "9": {
+        start: {
+          line: 29,
+          column: 8
+        },
+        end: {
+          line: 29,
+          column: 36
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "_export",
+        decl: {
+          start: {
+            line: 6,
+            column: 9
+          },
+          end: {
+            line: 6,
+            column: 16
+          }
+        },
+        loc: {
+          start: {
+            line: 6,
+            column: 30
+          },
+          end: {
+            line: 11,
+            column: 1
+          }
+        },
+        line: 6
+      },
+      "1": {
+        name: "(anonymous_1)",
+        decl: {
+          start: {
+            line: 13,
+            column: 4
+          },
+          end: {
+            line: 13,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 13,
+            column: 25
+          },
+          end: {
+            line: 15,
+            column: 5
+          }
+        },
+        line: 13
+      },
+      "2": {
+        name: "(anonymous_2)",
+        decl: {
+          start: {
+            line: 16,
+            column: 4
+          },
+          end: {
+            line: 16,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 16,
+            column: 24
+          },
+          end: {
+            line: 18,
+            column: 5
+          }
+        },
+        line: 16
+      },
+      "3": {
+        name: "(anonymous_3)",
+        decl: {
+          start: {
+            line: 21,
+            column: 4
+          },
+          end: {
+            line: 21,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 21,
+            column: 30
+          },
+          end: {
+            line: 24,
+            column: 5
+          }
+        },
+        line: 21
+      },
+      "4": {
+        name: "(anonymous_4)",
+        decl: {
+          start: {
+            line: 27,
+            column: 4
+          },
+          end: {
+            line: 27,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 27,
+            column: 30
+          },
+          end: {
+            line: 30,
+            column: 5
+          }
+        },
+        line: 27
+      }
+    },
+    branchMap: {},
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0
+    },
+    f: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+    },
+    b: {},
+    inputSourceMap: {
+      version: 3,
+      sources: ["C:\\Users\\chase\\Downloads\\crm (32)\\src\\types\\invoice.ts"],
+      sourcesContent: ["// Invoice-related types for validation and processing\n\nexport interface InvoiceItem {\n  id: string;\n  description: string;\n  quantity: number;\n  price: number;\n  total: number;\n}\n\nexport interface Invoice {\n  id: string;\n  invoiceNumber: string;\n  clientId: string;\n  clientName: string;\n  clientEmail: string;\n  clientAddress: string;\n  issueDate: Date | string;\n  dueDate: Date | string;\n  items: InvoiceItem[];\n  subtotal: number;\n  tax: number;\n  totalAmount: number;\n  notes?: string;\n  status: 'Draft' | 'Sent' | 'Paid' | 'Overdue';\n}\n\nexport interface InvoiceValidationResult {\n  isValid: boolean;\n  errors: string[];\n  warnings?: string[];\n}\n\nexport interface InvoiceCalculation {\n  subtotal: number;\n  tax: number;\n  total: number;\n}\n\n// Additional types for validation\nexport interface ContractFormData {\n  clientName: string;\n  clientEmail: string;\n  clientPhone?: string;\n  projectTitle: string;\n  projectDescription: string;\n  startDate: string;\n  endDate: string;\n  deliveryDate?: string;\n  totalAmount: number | string;\n  depositPercentage: string;\n  paymentTerms: string;\n  deliverables: string[];\n}\n\nexport interface InvoiceFormData {\n  invoiceNumber: string;\n  clientName: string;\n  clientEmail: string;\n  clientAddress: string;\n  issueDate: Date | string;\n  dueDate: Date | string;\n  items: InvoiceItem[];\n  subtotal: number;\n  tax: number;\n  totalAmount: number;\n  notes?: string;\n  status: 'Draft' | 'Sent' | 'Paid' | 'Overdue';\n}\n\nexport interface ValidationResult {\n  isValid: boolean;\n  errors: ValidationError[];\n  warnings?: string[];\n}\n\nexport interface ValidationError {\n  field: string;\n  message: string;\n  code?: string;\n}\n\nexport class InvoiceError extends Error {\n  constructor(message: string, public code?: string) {\n    super(message);\n    this.name = 'InvoiceError';\n  }\n}\n\nexport class ContractError extends Error {\n  constructor(message: string, public code?: string) {\n    super(message);\n    this.name = 'ContractError';\n  }\n}"],
+      names: ["ContractError", "InvoiceError", "Error", "message", "code", "name"],
+      mappings: "AAAA,sDAAsD;;;;;;;;;;;;QAyFzCA;eAAAA;;QAPAC;eAAAA;;;AAAN,MAAMA,qBAAqBC;IAChC,YAAYC,OAAe,EAAE,AAAOC,IAAa,CAAE;QACjD,KAAK,CAACD,eAD4BC,OAAAA;QAElC,IAAI,CAACC,IAAI,GAAG;IACd;AACF;AAEO,MAAML,sBAAsBE;IACjC,YAAYC,OAAe,EAAE,AAAOC,IAAa,CAAE;QACjD,KAAK,CAACD,eAD4BC,OAAAA;QAElC,IAAI,CAACC,IAAI,GAAG;IACd;AACF"
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "51b41508249d118f7fef8546520dc9255a35b1ba"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_1g6hhff1ll = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+cov_1g6hhff1ll();
+cov_1g6hhff1ll().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+function _export(target, all) {
+  /* istanbul ignore next */
+  cov_1g6hhff1ll().f[0]++;
+  cov_1g6hhff1ll().s[1]++;
+  for (var name in all) {
+    /* istanbul ignore next */
+    cov_1g6hhff1ll().s[2]++;
+    Object.defineProperty(target, name, {
+      enumerable: true,
+      get: Object.getOwnPropertyDescriptor(all, name).get
+    });
+  }
+}
+/* istanbul ignore next */
+cov_1g6hhff1ll().s[3]++;
+_export(exports, {
+  get ContractError() {
+    /* istanbul ignore next */
+    cov_1g6hhff1ll().f[1]++;
+    cov_1g6hhff1ll().s[4]++;
+    return ContractError;
+  },
+  get InvoiceError() {
+    /* istanbul ignore next */
+    cov_1g6hhff1ll().f[2]++;
+    cov_1g6hhff1ll().s[5]++;
+    return InvoiceError;
+  }
+});
+class InvoiceError extends Error {
+  constructor(message, code) {
+    /* istanbul ignore next */
+    cov_1g6hhff1ll().f[3]++;
+    cov_1g6hhff1ll().s[6]++;
+    super(message), this.code = code;
+    /* istanbul ignore next */
+    cov_1g6hhff1ll().s[7]++;
+    this.name = 'InvoiceError';
+  }
+}
+class ContractError extends Error {
+  constructor(message, code) {
+    /* istanbul ignore next */
+    cov_1g6hhff1ll().f[4]++;
+    cov_1g6hhff1ll().s[8]++;
+    super(message), this.code = code;
+    /* istanbul ignore next */
+    cov_1g6hhff1ll().s[9]++;
+    this.name = 'ContractError';
+  }
+}
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJjb3ZfMWc2aGhmZjFsbCIsImFjdHVhbENvdmVyYWdlIiwicyIsIkNvbnRyYWN0RXJyb3IiLCJmIiwiSW52b2ljZUVycm9yIiwiRXJyb3IiLCJjb25zdHJ1Y3RvciIsIm1lc3NhZ2UiLCJjb2RlIiwibmFtZSJdLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xcY2hhc2VcXERvd25sb2Fkc1xcY3JtICgzMilcXHNyY1xcdHlwZXNcXGludm9pY2UudHMiXSwic291cmNlc0NvbnRlbnQiOlsiLy8gSW52b2ljZS1yZWxhdGVkIHR5cGVzIGZvciB2YWxpZGF0aW9uIGFuZCBwcm9jZXNzaW5nXG5cbmV4cG9ydCBpbnRlcmZhY2UgSW52b2ljZUl0ZW0ge1xuICBpZDogc3RyaW5nO1xuICBkZXNjcmlwdGlvbjogc3RyaW5nO1xuICBxdWFudGl0eTogbnVtYmVyO1xuICBwcmljZTogbnVtYmVyO1xuICB0b3RhbDogbnVtYmVyO1xufVxuXG5leHBvcnQgaW50ZXJmYWNlIEludm9pY2Uge1xuICBpZDogc3RyaW5nO1xuICBpbnZvaWNlTnVtYmVyOiBzdHJpbmc7XG4gIGNsaWVudElkOiBzdHJpbmc7XG4gIGNsaWVudE5hbWU6IHN0cmluZztcbiAgY2xpZW50RW1haWw6IHN0cmluZztcbiAgY2xpZW50QWRkcmVzczogc3RyaW5nO1xuICBpc3N1ZURhdGU6IERhdGUgfCBzdHJpbmc7XG4gIGR1ZURhdGU6IERhdGUgfCBzdHJpbmc7XG4gIGl0ZW1zOiBJbnZvaWNlSXRlbVtdO1xuICBzdWJ0b3RhbDogbnVtYmVyO1xuICB0YXg6IG51bWJlcjtcbiAgdG90YWxBbW91bnQ6IG51bWJlcjtcbiAgbm90ZXM/OiBzdHJpbmc7XG4gIHN0YXR1czogJ0RyYWZ0JyB8ICdTZW50JyB8ICdQYWlkJyB8ICdPdmVyZHVlJztcbn1cblxuZXhwb3J0IGludGVyZmFjZSBJbnZvaWNlVmFsaWRhdGlvblJlc3VsdCB7XG4gIGlzVmFsaWQ6IGJvb2xlYW47XG4gIGVycm9yczogc3RyaW5nW107XG4gIHdhcm5pbmdzPzogc3RyaW5nW107XG59XG5cbmV4cG9ydCBpbnRlcmZhY2UgSW52b2ljZUNhbGN1bGF0aW9uIHtcbiAgc3VidG90YWw6IG51bWJlcjtcbiAgdGF4OiBudW1iZXI7XG4gIHRvdGFsOiBudW1iZXI7XG59XG5cbi8vIEFkZGl0aW9uYWwgdHlwZXMgZm9yIHZhbGlkYXRpb25cbmV4cG9ydCBpbnRlcmZhY2UgQ29udHJhY3RGb3JtRGF0YSB7XG4gIGNsaWVudE5hbWU6IHN0cmluZztcbiAgY2xpZW50RW1haWw6IHN0cmluZztcbiAgY2xpZW50UGhvbmU/OiBzdHJpbmc7XG4gIHByb2plY3RUaXRsZTogc3RyaW5nO1xuICBwcm9qZWN0RGVzY3JpcHRpb246IHN0cmluZztcbiAgc3RhcnREYXRlOiBzdHJpbmc7XG4gIGVuZERhdGU6IHN0cmluZztcbiAgZGVsaXZlcnlEYXRlPzogc3RyaW5nO1xuICB0b3RhbEFtb3VudDogbnVtYmVyIHwgc3RyaW5nO1xuICBkZXBvc2l0UGVyY2VudGFnZTogc3RyaW5nO1xuICBwYXltZW50VGVybXM6IHN0cmluZztcbiAgZGVsaXZlcmFibGVzOiBzdHJpbmdbXTtcbn1cblxuZXhwb3J0IGludGVyZmFjZSBJbnZvaWNlRm9ybURhdGEge1xuICBpbnZvaWNlTnVtYmVyOiBzdHJpbmc7XG4gIGNsaWVudE5hbWU6IHN0cmluZztcbiAgY2xpZW50RW1haWw6IHN0cmluZztcbiAgY2xpZW50QWRkcmVzczogc3RyaW5nO1xuICBpc3N1ZURhdGU6IERhdGUgfCBzdHJpbmc7XG4gIGR1ZURhdGU6IERhdGUgfCBzdHJpbmc7XG4gIGl0ZW1zOiBJbnZvaWNlSXRlbVtdO1xuICBzdWJ0b3RhbDogbnVtYmVyO1xuICB0YXg6IG51bWJlcjtcbiAgdG90YWxBbW91bnQ6IG51bWJlcjtcbiAgbm90ZXM/OiBzdHJpbmc7XG4gIHN0YXR1czogJ0RyYWZ0JyB8ICdTZW50JyB8ICdQYWlkJyB8ICdPdmVyZHVlJztcbn1cblxuZXhwb3J0IGludGVyZmFjZSBWYWxpZGF0aW9uUmVzdWx0IHtcbiAgaXNWYWxpZDogYm9vbGVhbjtcbiAgZXJyb3JzOiBWYWxpZGF0aW9uRXJyb3JbXTtcbiAgd2FybmluZ3M/OiBzdHJpbmdbXTtcbn1cblxuZXhwb3J0IGludGVyZmFjZSBWYWxpZGF0aW9uRXJyb3Ige1xuICBmaWVsZDogc3RyaW5nO1xuICBtZXNzYWdlOiBzdHJpbmc7XG4gIGNvZGU/OiBzdHJpbmc7XG59XG5cbmV4cG9ydCBjbGFzcyBJbnZvaWNlRXJyb3IgZXh0ZW5kcyBFcnJvciB7XG4gIGNvbnN0cnVjdG9yKG1lc3NhZ2U6IHN0cmluZywgcHVibGljIGNvZGU/OiBzdHJpbmcpIHtcbiAgICBzdXBlcihtZXNzYWdlKTtcbiAgICB0aGlzLm5hbWUgPSAnSW52b2ljZUVycm9yJztcbiAgfVxufVxuXG5leHBvcnQgY2xhc3MgQ29udHJhY3RFcnJvciBleHRlbmRzIEVycm9yIHtcbiAgY29uc3RydWN0b3IobWVzc2FnZTogc3RyaW5nLCBwdWJsaWMgY29kZT86IHN0cmluZykge1xuICAgIHN1cGVyKG1lc3NhZ2UpO1xuICAgIHRoaXMubmFtZSA9ICdDb250cmFjdEVycm9yJztcbiAgfVxufSJdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0lBa0ZhO0lBQUFBLGNBQUEsWUFBQUEsQ0FBQTtNQUFBLE9BQUFDLGNBQUE7SUFBQTtFQUFBO0VBQUEsT0FBQUEsY0FBQTtBQUFBO0FBQUFELGNBQUE7QUFBQUEsY0FBQSxHQUFBRSxDQUFBOzs7Ozs7Ozs7Ozs7Ozs7Ozs7OztNQU9BQyxjQUFBO0lBQUE7SUFBQUgsY0FBQSxHQUFBSSxDQUFBO0lBQUFKLGNBQUEsR0FBQUUsQ0FBQTtXQUFBQyxhQUFBOztNQVBBRSxhQUFBO0lBQUE7SUFBQUwsY0FBQSxHQUFBSSxDQUFBO0lBQUFKLGNBQUEsR0FBQUUsQ0FBQTtXQUFBRyxZQUFBOzs7QUFBTixNQUFNQSxZQUFBLFNBQXFCQyxLQUFBO0VBQ2hDQyxZQUFZQyxPQUFlLEVBQUVDLElBQW9CLEVBQUU7SUFBQTtJQUFBVCxjQUFBLEdBQUFJLENBQUE7SUFBQUosY0FBQSxHQUFBRSxDQUFBO0lBQ2pELEtBQUssQ0FBQ00sT0FBQSxRQUQ0QkMsSUFBQSxHQUFBQSxJQUFBO0lBQUE7SUFBQVQsY0FBQSxHQUFBRSxDQUFBO0lBRWxDLElBQUksQ0FBQ1EsSUFBSSxHQUFHO0VBQ2Q7QUFDRjtBQUVPLE1BQU1QLGFBQUEsU0FBc0JHLEtBQUE7RUFDakNDLFlBQVlDLE9BQWUsRUFBRUMsSUFBb0IsRUFBRTtJQUFBO0lBQUFULGNBQUEsR0FBQUksQ0FBQTtJQUFBSixjQUFBLEdBQUFFLENBQUE7SUFDakQsS0FBSyxDQUFDTSxPQUFBLFFBRDRCQyxJQUFBLEdBQUFBLElBQUE7SUFBQTtJQUFBVCxjQUFBLEdBQUFFLENBQUE7SUFFbEMsSUFBSSxDQUFDUSxJQUFJLEdBQUc7RUFDZDtBQUNGIiwiaWdub3JlTGlzdCI6W119

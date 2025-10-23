@@ -1,0 +1,345 @@
+f0a1e302a5cbf1da7329e45159c3817e
+// Zod validation schemas for WebDesignQuote component
+"use strict";
+
+/* istanbul ignore next */
+function cov_26o88fbczl() {
+  var path = "C:\\Users\\chase\\Downloads\\crm (32)\\src\\components\\WebDesignQuote\\schema.ts";
+  var hash = "ce93fbb697f9af894ee707d4f09ed0b650be2448";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "C:\\Users\\chase\\Downloads\\crm (32)\\src\\components\\WebDesignQuote\\schema.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 3,
+          column: 0
+        },
+        end: {
+          line: 5,
+          column: 3
+        }
+      },
+      "1": {
+        start: {
+          line: 7,
+          column: 4
+        },
+        end: {
+          line: 10,
+          column: 7
+        }
+      },
+      "2": {
+        start: {
+          line: 7,
+          column: 24
+        },
+        end: {
+          line: 10,
+          column: 7
+        }
+      },
+      "3": {
+        start: {
+          line: 12,
+          column: 0
+        },
+        end: {
+          line: 22,
+          column: 3
+        }
+      },
+      "4": {
+        start: {
+          line: 14,
+          column: 8
+        },
+        end: {
+          line: 14,
+          column: 29
+        }
+      },
+      "5": {
+        start: {
+          line: 17,
+          column: 8
+        },
+        end: {
+          line: 17,
+          column: 27
+        }
+      },
+      "6": {
+        start: {
+          line: 20,
+          column: 8
+        },
+        end: {
+          line: 20,
+          column: 33
+        }
+      },
+      "7": {
+        start: {
+          line: 23,
+          column: 13
+        },
+        end: {
+          line: 23,
+          column: 27
+        }
+      },
+      "8": {
+        start: {
+          line: 24,
+          column: 26
+        },
+        end: {
+          line: 33,
+          column: 2
+        }
+      },
+      "9": {
+        start: {
+          line: 34,
+          column: 22
+        },
+        end: {
+          line: 39,
+          column: 2
+        }
+      },
+      "10": {
+        start: {
+          line: 40,
+          column: 20
+        },
+        end: {
+          line: 52,
+          column: 2
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "_export",
+        decl: {
+          start: {
+            line: 6,
+            column: 9
+          },
+          end: {
+            line: 6,
+            column: 16
+          }
+        },
+        loc: {
+          start: {
+            line: 6,
+            column: 30
+          },
+          end: {
+            line: 11,
+            column: 1
+          }
+        },
+        line: 6
+      },
+      "1": {
+        name: "(anonymous_1)",
+        decl: {
+          start: {
+            line: 13,
+            column: 4
+          },
+          end: {
+            line: 13,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 13,
+            column: 25
+          },
+          end: {
+            line: 15,
+            column: 5
+          }
+        },
+        line: 13
+      },
+      "2": {
+        name: "(anonymous_2)",
+        decl: {
+          start: {
+            line: 16,
+            column: 4
+          },
+          end: {
+            line: 16,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 16,
+            column: 23
+          },
+          end: {
+            line: 18,
+            column: 5
+          }
+        },
+        line: 16
+      },
+      "3": {
+        name: "(anonymous_3)",
+        decl: {
+          start: {
+            line: 19,
+            column: 4
+          },
+          end: {
+            line: 19,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 19,
+            column: 29
+          },
+          end: {
+            line: 21,
+            column: 5
+          }
+        },
+        line: 19
+      }
+    },
+    branchMap: {},
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0
+    },
+    f: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0
+    },
+    b: {},
+    inputSourceMap: {
+      version: 3,
+      sources: ["C:\\Users\\chase\\Downloads\\crm (32)\\src\\components\\WebDesignQuote\\schema.ts"],
+      sourcesContent: ["// Zod validation schemas for WebDesignQuote component\nimport { z } from \"zod\"\n\nexport const requirementSchema = z.object({\n  businessGoals: z.array(z.string()).min(1, \"Please select at least one business goal\"),\n  targetAudience: z.string().min(1, \"Please describe your target audience\"),\n  industry: z.string().min(1, \"Please select your industry\"),\n  websiteType: z.string().min(1, \"Please select a website type\"),\n  features: z.array(z.string()).min(1, \"Please select at least one feature\"),\n  budget: z.string().min(1, \"Please select a budget range\"),\n  timeline: z.string().min(1, \"Please select a timeline\"),\n  additionalRequirements: z.string().optional(),\n})\n\nexport const contactSchema = z.object({\n  name: z.string().min(1, \"Name is required\"),\n  email: z.string().email(\"Please enter a valid email address\"),\n  phone: z.string().optional(),\n  company: z.string().optional(),\n})\n\nexport const quoteSchema = z.object({\n  requirements: requirementSchema,\n  contact: contactSchema,\n  estimatedCost: z.number().min(0),\n  estimatedTimeline: z.string(),\n  features: z.array(z.object({\n    name: z.string(),\n    description: z.string(),\n    cost: z.number(),\n    timeEstimate: z.string(),\n  })),\n  additionalNotes: z.string().optional(),\n})\n\nexport type RequirementFormData = z.infer<typeof requirementSchema>\nexport type ContactFormData = z.infer<typeof contactSchema>\nexport type QuoteFormData = z.infer<typeof quoteSchema>"],
+      names: ["contactSchema", "quoteSchema", "requirementSchema", "z", "object", "businessGoals", "array", "string", "min", "targetAudience", "industry", "websiteType", "features", "budget", "timeline", "additionalRequirements", "optional", "name", "email", "phone", "company", "requirements", "contact", "estimatedCost", "number", "estimatedTimeline", "description", "cost", "timeEstimate", "additionalNotes"],
+      mappings: "AAAA,sDAAsD;;;;;;;;;;;;QAczCA;eAAAA;;QAOAC;eAAAA;;QAlBAC;eAAAA;;;qBAFK;AAEX,MAAMA,oBAAoBC,MAAC,CAACC,MAAM,CAAC;IACxCC,eAAeF,MAAC,CAACG,KAAK,CAACH,MAAC,CAACI,MAAM,IAAIC,GAAG,CAAC,GAAG;IAC1CC,gBAAgBN,MAAC,CAACI,MAAM,GAAGC,GAAG,CAAC,GAAG;IAClCE,UAAUP,MAAC,CAACI,MAAM,GAAGC,GAAG,CAAC,GAAG;IAC5BG,aAAaR,MAAC,CAACI,MAAM,GAAGC,GAAG,CAAC,GAAG;IAC/BI,UAAUT,MAAC,CAACG,KAAK,CAACH,MAAC,CAACI,MAAM,IAAIC,GAAG,CAAC,GAAG;IACrCK,QAAQV,MAAC,CAACI,MAAM,GAAGC,GAAG,CAAC,GAAG;IAC1BM,UAAUX,MAAC,CAACI,MAAM,GAAGC,GAAG,CAAC,GAAG;IAC5BO,wBAAwBZ,MAAC,CAACI,MAAM,GAAGS,QAAQ;AAC7C;AAEO,MAAMhB,gBAAgBG,MAAC,CAACC,MAAM,CAAC;IACpCa,MAAMd,MAAC,CAACI,MAAM,GAAGC,GAAG,CAAC,GAAG;IACxBU,OAAOf,MAAC,CAACI,MAAM,GAAGW,KAAK,CAAC;IACxBC,OAAOhB,MAAC,CAACI,MAAM,GAAGS,QAAQ;IAC1BI,SAASjB,MAAC,CAACI,MAAM,GAAGS,QAAQ;AAC9B;AAEO,MAAMf,cAAcE,MAAC,CAACC,MAAM,CAAC;IAClCiB,cAAcnB;IACdoB,SAAStB;IACTuB,eAAepB,MAAC,CAACqB,MAAM,GAAGhB,GAAG,CAAC;IAC9BiB,mBAAmBtB,MAAC,CAACI,MAAM;IAC3BK,UAAUT,MAAC,CAACG,KAAK,CAACH,MAAC,CAACC,MAAM,CAAC;QACzBa,MAAMd,MAAC,CAACI,MAAM;QACdmB,aAAavB,MAAC,CAACI,MAAM;QACrBoB,MAAMxB,MAAC,CAACqB,MAAM;QACdI,cAAczB,MAAC,CAACI,MAAM;IACxB;IACAsB,iBAAiB1B,MAAC,CAACI,MAAM,GAAGS,QAAQ;AACtC"
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "ce93fbb697f9af894ee707d4f09ed0b650be2448"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_26o88fbczl = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+cov_26o88fbczl();
+cov_26o88fbczl().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+function _export(target, all) {
+  /* istanbul ignore next */
+  cov_26o88fbczl().f[0]++;
+  cov_26o88fbczl().s[1]++;
+  for (var name in all) {
+    /* istanbul ignore next */
+    cov_26o88fbczl().s[2]++;
+    Object.defineProperty(target, name, {
+      enumerable: true,
+      get: Object.getOwnPropertyDescriptor(all, name).get
+    });
+  }
+}
+/* istanbul ignore next */
+cov_26o88fbczl().s[3]++;
+_export(exports, {
+  get contactSchema() {
+    /* istanbul ignore next */
+    cov_26o88fbczl().f[1]++;
+    cov_26o88fbczl().s[4]++;
+    return contactSchema;
+  },
+  get quoteSchema() {
+    /* istanbul ignore next */
+    cov_26o88fbczl().f[2]++;
+    cov_26o88fbczl().s[5]++;
+    return quoteSchema;
+  },
+  get requirementSchema() {
+    /* istanbul ignore next */
+    cov_26o88fbczl().f[3]++;
+    cov_26o88fbczl().s[6]++;
+    return requirementSchema;
+  }
+});
+const _zod =
+/* istanbul ignore next */
+(cov_26o88fbczl().s[7]++, require("zod"));
+const requirementSchema =
+/* istanbul ignore next */
+(cov_26o88fbczl().s[8]++, _zod.z.object({
+  businessGoals: _zod.z.array(_zod.z.string()).min(1, "Please select at least one business goal"),
+  targetAudience: _zod.z.string().min(1, "Please describe your target audience"),
+  industry: _zod.z.string().min(1, "Please select your industry"),
+  websiteType: _zod.z.string().min(1, "Please select a website type"),
+  features: _zod.z.array(_zod.z.string()).min(1, "Please select at least one feature"),
+  budget: _zod.z.string().min(1, "Please select a budget range"),
+  timeline: _zod.z.string().min(1, "Please select a timeline"),
+  additionalRequirements: _zod.z.string().optional()
+}));
+const contactSchema =
+/* istanbul ignore next */
+(cov_26o88fbczl().s[9]++, _zod.z.object({
+  name: _zod.z.string().min(1, "Name is required"),
+  email: _zod.z.string().email("Please enter a valid email address"),
+  phone: _zod.z.string().optional(),
+  company: _zod.z.string().optional()
+}));
+const quoteSchema =
+/* istanbul ignore next */
+(cov_26o88fbczl().s[10]++, _zod.z.object({
+  requirements: requirementSchema,
+  contact: contactSchema,
+  estimatedCost: _zod.z.number().min(0),
+  estimatedTimeline: _zod.z.string(),
+  features: _zod.z.array(_zod.z.object({
+    name: _zod.z.string(),
+    description: _zod.z.string(),
+    cost: _zod.z.number(),
+    timeEstimate: _zod.z.string()
+  })),
+  additionalNotes: _zod.z.string().optional()
+}));
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJjb3ZfMjZvODhmYmN6bCIsImFjdHVhbENvdmVyYWdlIiwicyIsImNvbnRhY3RTY2hlbWEiLCJmIiwicXVvdGVTY2hlbWEiLCJyZXF1aXJlbWVudFNjaGVtYSIsIl96b2QiLCJ6Iiwib2JqZWN0IiwiYnVzaW5lc3NHb2FscyIsImFycmF5Iiwic3RyaW5nIiwibWluIiwidGFyZ2V0QXVkaWVuY2UiLCJpbmR1c3RyeSIsIndlYnNpdGVUeXBlIiwiZmVhdHVyZXMiLCJidWRnZXQiLCJ0aW1lbGluZSIsImFkZGl0aW9uYWxSZXF1aXJlbWVudHMiLCJvcHRpb25hbCIsIm5hbWUiLCJlbWFpbCIsInBob25lIiwiY29tcGFueSIsInJlcXVpcmVtZW50cyIsImNvbnRhY3QiLCJlc3RpbWF0ZWRDb3N0IiwibnVtYmVyIiwiZXN0aW1hdGVkVGltZWxpbmUiLCJkZXNjcmlwdGlvbiIsImNvc3QiLCJ0aW1lRXN0aW1hdGUiLCJhZGRpdGlvbmFsTm90ZXMiXSwic291cmNlcyI6WyJDOlxcVXNlcnNcXGNoYXNlXFxEb3dubG9hZHNcXGNybSAoMzIpXFxzcmNcXGNvbXBvbmVudHNcXFdlYkRlc2lnblF1b3RlXFxzY2hlbWEudHMiXSwic291cmNlc0NvbnRlbnQiOlsiLy8gWm9kIHZhbGlkYXRpb24gc2NoZW1hcyBmb3IgV2ViRGVzaWduUXVvdGUgY29tcG9uZW50XG5pbXBvcnQgeyB6IH0gZnJvbSBcInpvZFwiXG5cbmV4cG9ydCBjb25zdCByZXF1aXJlbWVudFNjaGVtYSA9IHoub2JqZWN0KHtcbiAgYnVzaW5lc3NHb2Fsczogei5hcnJheSh6LnN0cmluZygpKS5taW4oMSwgXCJQbGVhc2Ugc2VsZWN0IGF0IGxlYXN0IG9uZSBidXNpbmVzcyBnb2FsXCIpLFxuICB0YXJnZXRBdWRpZW5jZTogei5zdHJpbmcoKS5taW4oMSwgXCJQbGVhc2UgZGVzY3JpYmUgeW91ciB0YXJnZXQgYXVkaWVuY2VcIiksXG4gIGluZHVzdHJ5OiB6LnN0cmluZygpLm1pbigxLCBcIlBsZWFzZSBzZWxlY3QgeW91ciBpbmR1c3RyeVwiKSxcbiAgd2Vic2l0ZVR5cGU6IHouc3RyaW5nKCkubWluKDEsIFwiUGxlYXNlIHNlbGVjdCBhIHdlYnNpdGUgdHlwZVwiKSxcbiAgZmVhdHVyZXM6IHouYXJyYXkoei5zdHJpbmcoKSkubWluKDEsIFwiUGxlYXNlIHNlbGVjdCBhdCBsZWFzdCBvbmUgZmVhdHVyZVwiKSxcbiAgYnVkZ2V0OiB6LnN0cmluZygpLm1pbigxLCBcIlBsZWFzZSBzZWxlY3QgYSBidWRnZXQgcmFuZ2VcIiksXG4gIHRpbWVsaW5lOiB6LnN0cmluZygpLm1pbigxLCBcIlBsZWFzZSBzZWxlY3QgYSB0aW1lbGluZVwiKSxcbiAgYWRkaXRpb25hbFJlcXVpcmVtZW50czogei5zdHJpbmcoKS5vcHRpb25hbCgpLFxufSlcblxuZXhwb3J0IGNvbnN0IGNvbnRhY3RTY2hlbWEgPSB6Lm9iamVjdCh7XG4gIG5hbWU6IHouc3RyaW5nKCkubWluKDEsIFwiTmFtZSBpcyByZXF1aXJlZFwiKSxcbiAgZW1haWw6IHouc3RyaW5nKCkuZW1haWwoXCJQbGVhc2UgZW50ZXIgYSB2YWxpZCBlbWFpbCBhZGRyZXNzXCIpLFxuICBwaG9uZTogei5zdHJpbmcoKS5vcHRpb25hbCgpLFxuICBjb21wYW55OiB6LnN0cmluZygpLm9wdGlvbmFsKCksXG59KVxuXG5leHBvcnQgY29uc3QgcXVvdGVTY2hlbWEgPSB6Lm9iamVjdCh7XG4gIHJlcXVpcmVtZW50czogcmVxdWlyZW1lbnRTY2hlbWEsXG4gIGNvbnRhY3Q6IGNvbnRhY3RTY2hlbWEsXG4gIGVzdGltYXRlZENvc3Q6IHoubnVtYmVyKCkubWluKDApLFxuICBlc3RpbWF0ZWRUaW1lbGluZTogei5zdHJpbmcoKSxcbiAgZmVhdHVyZXM6IHouYXJyYXkoei5vYmplY3Qoe1xuICAgIG5hbWU6IHouc3RyaW5nKCksXG4gICAgZGVzY3JpcHRpb246IHouc3RyaW5nKCksXG4gICAgY29zdDogei5udW1iZXIoKSxcbiAgICB0aW1lRXN0aW1hdGU6IHouc3RyaW5nKCksXG4gIH0pKSxcbiAgYWRkaXRpb25hbE5vdGVzOiB6LnN0cmluZygpLm9wdGlvbmFsKCksXG59KVxuXG5leHBvcnQgdHlwZSBSZXF1aXJlbWVudEZvcm1EYXRhID0gei5pbmZlcjx0eXBlb2YgcmVxdWlyZW1lbnRTY2hlbWE+XG5leHBvcnQgdHlwZSBDb250YWN0Rm9ybURhdGEgPSB6LmluZmVyPHR5cGVvZiBjb250YWN0U2NoZW1hPlxuZXhwb3J0IHR5cGUgUXVvdGVGb3JtRGF0YSA9IHouaW5mZXI8dHlwZW9mIHF1b3RlU2NoZW1hPiJdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztJQXFCYTtJQUFBQSxjQUFBLFlBQUFBLENBQUE7TUFBQSxPQUFBQyxjQUFBO0lBQUE7RUFBQTtFQUFBLE9BQUFBLGNBQUE7QUFBQTtBQUFBRCxjQUFBO0FBQUFBLGNBQUEsR0FBQUUsQ0FBQTs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7TUFQQUMsY0FBQTtJQUFBO0lBQUFILGNBQUEsR0FBQUksQ0FBQTtJQUFBSixjQUFBLEdBQUFFLENBQUE7V0FBQUMsYUFBQTs7TUFPQUUsWUFBQTtJQUFBO0lBQUFMLGNBQUEsR0FBQUksQ0FBQTtJQUFBSixjQUFBLEdBQUFFLENBQUE7V0FBQUcsV0FBQTs7TUFsQkFDLGtCQUFBO0lBQUE7SUFBQU4sY0FBQSxHQUFBSSxDQUFBO0lBQUFKLGNBQUEsR0FBQUUsQ0FBQTtXQUFBSSxpQkFBQTs7Ozs7a0NBRks7QUFFWCxNQUFNQSxpQkFBQTtBQUFBO0FBQUEs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
