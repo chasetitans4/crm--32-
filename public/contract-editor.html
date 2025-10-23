@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contract Editor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f7f6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+        h1 {
+            color: #1a202c;
+            font-size: 2.25rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #2d3748;
+        }
+        input[type="text"],
+        input[type="date"],
+        input[type="number"],
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            font-size: 1rem;
+            color: #4a5568;
+            transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        input[type="text"]:focus,
+        input[type="date"]:focus,
+        input[type="number"]:focus,
+        textarea:focus {
+            border-color: #4299e1;
+            box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+            outline: none;
+        }
+        textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        .button-group {
+            display: flex;
+            justify-content: flex-end;
+            gap: 15px;
+            margin-top: 30px;
+        }
+        button {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out;
+        }
+        button.primary {
+            background-color: #4299e1;
+            color: #ffffff;
+        }
+        button.primary:hover {
+            background-color: #3182ce;
+            transform: translateY(-1px);
+        }
+        button.secondary {
+            background-color: #e2e8f0;
+            color: #2d3748;
+        }
+        button.secondary:hover {
+            background-color: #cbd5e0;
+            transform: translateY(-1px);
+        }
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #2d3748;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 10px;
+        }
+        .array-item {
+            background-color: #f7fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+        .array-item-actions {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 10px;
+        }
+        .array-item-actions button {
+            padding: 8px 15px;
+            font-size: 0.9rem;
+            margin-left: 10px;
+        }
+        .add-button {
+            background-color: #63b3ed;
+            color: #ffffff;
+            padding: 10px 20px;
+            margin-top: 15px;
+        }
+        .add-button:hover {
+            background-color: #4299e1;
+        }
+        .error-message {
+            color: #e53e3e;
+            font-size: 0.875rem;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contract Editor</h1>
+        <form id="contractForm">
+            <div class="section-title">Project Scope</div>
+            <div class="form-group">
+                <label for="pageCount">Page Count:</label>
+                <input type="number" id="pageCount" name="pageCount" min="1" required>
+                <div class="error-message" id="pageCountError"></div>
+            </div>
+            <div class="form-group">
+                <label for="designRevisions">Design Revisions Included:</label>
+                <input type="number" id="designRevisions" name="designRevisions" min="0">
+            </div>
+            <div class="form-group">
+                <label for="developmentRevisions">Development Revisions Included:</label>
+                <input type="number" id="developmentRevisions" name="developmentRevisions" min="0">
+            </div>
+            <div class="form-group">
+                <label for="servicesIncluded">Services Included:</label>
+                <div id="servicesIncludedContainer"></div>
+                <button type="button" class="add-button" onclick="addArrayItem('servicesIncluded')">Add Service</button>
+                <div class="error-message" id="servicesIncludedError"></div>
+            </div>
+            <div class="form-group">
+                <label for="servicesExcluded">Services Excluded:</label>
+                <div id="servicesExcludedContainer"></div>
+                <button type="button" class="add-button" onclick="addArrayItem('servicesExcluded')">Add Exclusion</button>
+            </div>
+            <div class="form-group">
+                <label for="contentResponsibility">Content Responsibility:</label>
+                <textarea id="contentResponsibility" name="contentResponsibility"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="thirdPartyIntegrations">Third-Party Integrations:</label>
+                <div id="thirdPartyIntegrationsContainer"></div>
+                <button type="button" class="add-button" onclick="addArrayItem('thirdPartyIntegrations')">Add Integration</button>
+            </div>
+            <div class="form-group">
+                <label for="customFunctionalities">Custom Functionalities:</label>
+                <div id="customFunctionalitiesContainer"></div>
+                <button type="button" class="add-button" onclick="addArrayItem('customFunctionalities')">Add Functionality</button>
+            </div>
+
+            <div class="section-title">Payment Terms</div>
+            <div class="form-group">
+                <label for="totalCost">Total Project Cost:</label>
+                <input type="number" id="totalCost" name="totalCost" min="0" step="0.01" required>
+                <div class="error-message" id="totalCostError"></div>
+            </div>
+            <div class="form-group">
+                <label for="currency">Currency:</label>
+                <input type="text" id="currency" name="currency" value="USD">
+            </div>
+            <div class="form-group">
+                <label for="depositPercentage">Deposit Percentage:</label>
+                <input type="number" id="depositPercentage" name="depositPercentage" min="0" max="100">
+            </div>
+            <div class="form-group">
+                <label>Payment Milestones:</label>
+                <div id="milestonePaymentsContainer"></div>
+                <button type="button" class="add-button" onclick="addMilestone()">Add Milestone</button>
+                <div class="error-message" id="milestonePaymentsError"></div>
+            </div>
+            <div class="form-group">
+                <label for="paymentMethods">Accepted Payment Methods:</label>
+                <div id="paymentMethodsContainer"></div>
+                <button type="button" class="add-button" onclick="addArrayItem('paymentMethods')">Add Method</button>
+            </div>
+            <div class="form-group">
+                <label for="lateFeeRate">Late Fee Rate (% per month):</label>
+                <input type="number" id="lateFeeRate" name="lateFeeRate" min="0" step="0.1">
+                <div class="error-message" id="lateFeeRateError"></div>
+            </div>
+            <div class="form-group">
+                <label for="refundPolicy">Refund Policy:</label>
+                <textarea id="refundPolicy" name="refundPolicy"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="changeOrderProcess">Change Order Process:</label>
+                <textarea id="changeOrderProcess" name="changeOrderProcess"></textarea>
+            </div>
+
+            <div class="section-title">Timeline</div>
+            <div class="form-group">
+                <label for="projectStartDate">Project Start Date:</label>
+                <input type="date" id="projectStartDate" name="projectStartDate" required>
+                <div class="error-message" id="projectStartDateError"></div>
+            </div>
+            <div class="form-group">
+                <label for="estimatedCompletionDate">Estimated Completion Date:</label>
+                <input type="date" id="estimatedCompletionDate" name="estimatedCompletionDate" required>
+                <div class="error-message" id="estimatedCompletionDateError"></div>
+            </div>
+            <div class="form-group">
+                <label for="clientResponseTime">Client Response Time (business days):</label>
+                <input type="number" id="clientResponseTime" name="clientResponseTime" min="1">
+                <div class="error-message" id="clientResponseTimeError"></div>
+            </div>
+            <div class="form-group">
+                <label>Key Milestones:</label>
+                <div id="keyMilestonesContainer"></div>
+                <button type="button" class="add-button" onclick="addKeyMilestone()">Add Key Milestone</button>
+            </div>
+            <div class="form-group">
+                <label for="delayPenalties">Delay Penalties & Policies:</label>
+                <textarea id="delayPenalties" name="delayPenalties"></textarea>
+            </div>
+
+            <div class="button-group">
+                <button type="button" class="secondary" onclick="cancelForm()">Cancel</button>
+                <button type="submit" class="primary">Save Contract</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        const contractForm = document.getElementById('contractForm');
+        const initialData = {
+            pageCount: 5,
+            designRevisions: 3,
+            developmentRevisions: 2,
+            servicesIncluded: ["Custom Website Design", "Responsive Development", "Basic SEO Setup"],
+            servicesExcluded: ["Ongoing Maintenance", "Advanced Marketing"],
+            contentResponsibility: "Client to provide all text and images.",
+            thirdPartyIntegrations: ["Stripe", "Google Analytics"],
+            customFunctionalities: ["Custom Contact Form"],
+            totalCost: 5000,
+            currency: "USD",
+            depositPercentage: 50,
+            milestonePayments: [
+                { name: "Initial Deposit", percentage: 50, dueDate: "2023-03-01" },
+                { name: "Project Completion", percentage: 50, dueDate: "2023-04-15" }
+            ],
+            paymentMethods: ["Bank Transfer", "Credit Card"],
+            lateFeeRate: 1.5,
+            refundPolicy: "No refunds after 14 days.",
+            changeOrderProcess: "All changes require written approval and may incur additional costs.",
+            projectStartDate: "2023-03-01",
+            estimatedCompletionDate: "2023-04-15",
+            clientResponseTime: 3,
+            delayPenalties: "Client delays over 7 days may incur a 5% project fee.",
+            keyMilestones: [
+                { name: "Design Approval", targetDate: "2023-03-15", deliverables: ["Wireframes", "Mockups"] },
+                { name: "Development Complete", targetDate: "2023-04-05", deliverables: ["Functional Prototype"] }
+            ]
+        };
+
+        function populateForm(data) {
+            for (const key in data) {
+                const element = document.getElementById(key);
+                if (element) {
+                    if (element.type === 'checkbox') {
+                        element.checked = data[key];
+                    } else if (element.type === 'date') {
+                        element.value = data[key];
+                    } else if (Array.isArray(data[key])) {
+                        // Handle array fields
+                        const container = document.getElementById(`${key}Container`);
+                        if (container) {
+                            container.innerHTML = ''; // Clear existing items
+                            data[key].forEach((item, index) => {
+                                if (key === 'milestonePayments') {
+                                    addMilestone(item);
+                                } else if (key === 'keyMilestones') {
+                                    addKeyMilestone(item);
+                                } else {
+                                    addArrayItem(key, item);
+                                }
+                            });
+                        }
+                    } else {
+                        element.value = data[key];
+                    }
+                }
+            }
+        }
+
+        function addArrayItem(containerId, value = '') {
+            const container = document.getElementById(containerId);
+            const index = container.children.length;
+            const div = document.createElement('div');
+            div.className = 'flex items-center space-x-2 mb-2';
+            div.innerHTML = `
+                <input type="text" name="${containerId}[]" value="${value}" class="flex-1 px-3 py-2 border border-gray-300 rounded-md">
+                <button type="button" class="secondary" onclick="removeArrayItem(this)">Remove</button>
+            `;
+            container.appendChild(div);
+        }
+
+        function removeArrayItem(button) {
+            button.closest('.flex.items-center.space-x-2.mb-2').remove();
+        }
+
+        function addMilestone(data = { name: '', percentage: 0, dueDate: '' }) {
+            const container = document.getElementById('milestonePaymentsContainer');
+            const index = container.children.length;
+            const div = document.createElement('div');
+            div.className = 'array-item';
+            div.innerHTML = `
+                <div class="form-group">
+                    <label>Name:</label>
+                    <input type="text" name="milestonePayments[${index}][name]" value="${data.name}" required>
+                </div>
+                <div class="form-group">
+                    <label>Percentage:</label>
+                    <input type="number" name="milestonePayments[${index}][percentage]" value="${data.percentage}" min="0" max="100" required>
+                </div>
+                <div class="form-group">
+                    <label>Due Date:</label>
+                    <input type="date" name="milestonePayments[${index}][dueDate]" value="${data.dueDate}" required>
+                </div>
+                <div class="array-item-actions">
+                    <button type="button" class="secondary" onclick="removeArrayItem(this.closest('.array-item'))">Remove</

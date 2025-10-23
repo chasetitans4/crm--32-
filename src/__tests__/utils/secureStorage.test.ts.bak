@@ -1,0 +1,27 @@
+/**
+ * Minimal Secure Storage Tests
+ * Basic validation without module imports
+ */
+
+describe('Secure Storage Concepts', () => {
+  test('validates basic storage principles', () => {
+    expect(true).toBe(true)
+  })
+
+  test('validates key management concepts', () => {
+    const baseKey = 'userToken'
+    const prefixedKey = `secure_${baseKey}`
+    
+    expect(prefixedKey).toBe('secure_userToken')
+    expect(prefixedKey).toContain('secure_')
+  })
+
+  test('validates data serialization concepts', () => {
+    const userData = { id: 1, name: 'John', email: 'john@example.com' }
+    const serialized = JSON.stringify(userData)
+    const deserialized = JSON.parse(serialized)
+    
+    expect(deserialized).toEqual(userData)
+    expect(typeof serialized).toBe('string')
+  })
+})

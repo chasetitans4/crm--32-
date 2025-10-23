@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Existing styles... */
+
+/* Toast animations */
+@keyframes slide-in-right {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes shrink {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0%;
+  }
+}
+
+.animate-slide-in-right {
+  animation: slide-in-right 0.3s ease-out;
+}
+
+/* Notification dot */
+.notification-dot {
+  @apply absolute top-0 right-0 w-2 h-2 bg-red-500 rounded-full;
+  transform: translate(25%, -25%);
+}
+
+/* Hover lift effect */
+.hover-lift {
+  transition: transform 0.2s ease-in-out;
+}
+
+.hover-lift:hover {
+  transform: translateY(-2px);
+}
+
+/* Primary colors for consistency */
+.border-primary-600 {
+  border-color: #2563eb;
+}
+
+.text-primary-600 {
+  color: #2563eb;
+}
+
+.text-primary-700 {
+  color: #1d4ed8;
+}
+
+.bg-primary-50 {
+  background-color: #eff6ff;
+}
+
+.bg-primary-500 {
+  background-color: #3b82f6;
+}
+
+.text-danger-600 {
+  color: #dc2626;
+}
+
+/* Mobile navigation trigger */
+.mobile-nav-trigger {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Touch manipulation for better mobile experience */
+.touch-manipulation {
+  touch-action: manipulation;
+}
+
+@keyframes wiggle {
+  0%,
+  100% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+}
+
+.animate-wiggle {
+  animation: wiggle 0.3s ease-in-out infinite;
+}
+
+@keyframes bounce-subtle {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.animate-bounce-subtle {
+  animation: bounce-subtle 1s ease-in-out;
+}
+
+/* Styles for Pixel Works Cold Call Sales Script */
+.script-section {
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+}
+.script-section p,
+.script-section .sub-section-title {
+  background-color: #ffff00; /* Yellow background for individual lines/titles */
+  color: #000000; /* Black font */
+  padding: 0.5rem 1rem; /* Padding for the highlighted text */
+  border-radius: 0.25rem; /* Slightly rounded corners for highlights */
+  margin-bottom: 0.75rem; /* Space between highlighted lines */
+  line-height: 1.6;
+  display: block; /* Ensure each highlight takes its own line */
+  width: fit-content; /* Make background only wrap content */
+  max-width: 100%; /* Ensure it doesn't overflow */
+}
+.script-section p.italic-note {
+  background-color: #000000; /* Black background for notes */
+  color: #ffffff; /* White font for notes */
+  font-style: italic;
+  font-size: 0.9rem;
+  padding: 0.25rem 0.75rem; /* Smaller padding for notes */
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  width: fit-content; /* Ensure background only wraps content */
+  max-width: 100%; /* Ensure it doesn't overflow */
+}
+.side-note {
+  background-color: #000000; /* Black background */
+  color: #ffffff; /* White font */
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+.section-title {
+  font-weight: bold;
+  font-size: 1.25rem; /* Equivalent to text-xl */
+  margin-bottom: 0.75rem;
+}

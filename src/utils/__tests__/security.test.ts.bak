@@ -1,0 +1,378 @@
+import {
+  sanitizeUserInput,
+  sanitizeHTML,
+  isValidURL,
+  isValidEmail,
+  validatePasswordStrength,
+  generateCSRFToken,
+  isValidSessionToken,
+  sanitizeSearchQuery,
+  validateFileUpload,
+  escapeHTML,
+  generateSecureRandomString,
+  encryptApiKey,
+  decryptApiKey,
+  validateTrainingContent,
+  getSecurityHeaders,
+  securityService,
+} from '../security'
+
+// Mock crypto for testing
+Object.defineProperty(global, 'crypto', {
+  value: {
+    getRandomValues: jest.fn((arr: Uint8Array) => {
+      for (let i = 0; i < arr.length; i++) {
+        arr[i] = Math.floor(Math.random() * 256)
+      }
+      return arr
+    }),
+  },
+})
+
+// Mock document for testing
+if (!global.document) {
+  Object.defineProperty(global, 'document', {
+    value: {
+      createElement: jest.fn(() => ({
+        textContent: '',
+        innerHTML: '',
+      })),
+    },
+    configurable: true,
+  })
+}
+
+describe('Security Utils', () => {
+  describe('sanitizeUserInput', () => {
+    it('should remove script tags', () => {
+      const input = 'Hello <script>alert("xss")</script> World'
+      const result = sanitizeUserInput(input)
+      expect(result).not.toContain('<script>')
+      expect(result).not.toContain('alert')
+    })
+
+    it('should allow safe HTML tags', () => {
+      const input = 'Hello <strong>bold</strong> and <em>italic</em> text'
+      const result = sanitizeUserInput(input)
+      expect(result).toContain('<strong>')
+      expect(result).toContain('<em>')
+    })
+
+    it('should handle non-string input', () => {
+      expect(sanitizeUserInput(null as any)).toBe('')
+      expect(sanitizeUserInput(undefined as any)).toBe('')
+      expect(sanitizeUserInput(123 as any)).toBe('')
+    })
+
+    it('should remove dangerous attributes', () => {
+      const input = '<a href="#" onclick="alert(1)">Link</a>'
+      const result = sanitizeUserInput(input)
+      expect(result).not.toContain('onclick')
+    })
+  })
+
+  describe('sanitizeHTML', () => {
+    it('should allow rich content tags', () => {
+      const input = '<h1>Title</h1><p>Paragraph with <strong>bold</strong> text</p>'
+      const result = sanitizeHTML(input)
+      expect(result).toContain('<h1>')
+      expect(result).toContain('<p>')
+      expect(result).toContain('<strong>')
+    })
+
+    it('should remove script tags from HTML', () => {
+      const input = '<p>Safe content</p><script>alert("xss")</script>'
+      const result = sanitizeHTML(input)
+      expect(result).not.toContain('<script>')
+      expect(result).toContain('<p>')
+    })
+
+    it('should handle non-string input', () => {
+      expect(sanitizeHTML(null as any)).toBe('')
+      expect(sanitizeHTML(undefined as any)).toBe('')
+    })
+  })
+
+  describe('isValidURL', () => {
+    it('should validate HTTP URLs', () => {
+      expect(isValidURL('http://example.com')).toBe(true)
+      expect(isValidURL('https://example.com')).toBe(true)
+    })
+
+    it('should reject invalid URLs', () => {
+      expect(isValidURL('ftp://example.com')).toBe(false)
+      expect(isValidURL('javascript:alert(1)')).toBe(false)
+      expect(isValidURL('not-a-url')).toBe(false)
+      expect(isValidURL('')).toBe(false)
+    })
+
+    it('should handle malformed URLs', () => {
+      expect(isValidURL('http://')).toBe(false)
+      expect(isValidURL('https://')).toBe(false)
+    })
+  })
+
+  describe('isValidEmail', () => {
+    it('should validate correct email formats', () => {
+      expect(isValidEmail('user@example.com')).toBe(true)
+      expect(isValidEmail('test.email+tag@domain.co.uk')).toBe(true)
+    })
+
+    it('should reject invalid email formats', () => {
+      expect(isValidEmail('invalid-email')).toBe(false)
+      expect(isValidEmail('@example.com')).toBe(false)
+      expect(isValidEmail('user@')).toBe(false)
+      expect(isValidEmail('')).toBe(false)
+    })
+
+    it('should reject emails that are too long', () => {
+      const longEmail = 'a'.repeat(250) + '@example.com'
+      expect(isValidEmail(longEmail)).toBe(false)
+    })
+  })
+
+  describe('validatePasswordStrength', () => {
+    it('should validate strong passwords', () => {
+      const result = validatePasswordStrength('StrongP@ssw0rd!')
+      expect(result.isValid).toBe(true)
+      expect(result.errors).toHaveLength(0)
+      expect(result.score).toBeGreaterThan(3)
+    })
+
+    it('should reject weak passwords', () => {
+      const result = validatePasswordStrength('weak')
+      expect(result.isValid).toBe(false)
+      expect(result.errors.length).toBeGreaterThan(0)
+    })
+
+    it('should calculate password score correctly', () => {
+      const strongResult = validatePasswordStrength('StrongP@ssw0rd!')
+      const weakResult = validatePasswordStrength('password')
+      
+      if (strongResult.isValid && weakResult.isValid) {
+        expect(strongResult.score).toBeGreaterThan(weakResult.score)
+      }
+    })
+  })
+
+  describe('generateCSRFToken', () => {
+    it('should generate a token', () => {
+      const token = generateCSRFToken()
+      expect(token).toBeDefined()
+      expect(typeof token).toBe('string')
+      expect(token.length).toBe(64) // 32 bytes * 2 hex chars
+    })
+
+    it('should generate unique tokens', () => {
+      const token1 = generateCSRFToken()
+      const token2 = generateCSRFToken()
+      expect(token1).not.toBe(token2)
+    })
+
+    it('should generate hex strings', () => {
+      const token = generateCSRFToken()
+      expect(/^[a-f0-9]+$/i.test(token)).toBe(true)
+    })
+  })
+
+  describe('isValidSessionToken', () => {
+    it('should validate correct token format', () => {
+      const validToken = 'a'.repeat(64)
+      expect(isValidSessionToken(validToken)).toBe(true)
+    })
+
+    it('should reject invalid token formats', () => {
+      expect(isValidSessionToken('')).toBe(false)
+      expect(isValidSessionToken('short')).toBe(false)
+      expect(isValidSessionToken('a'.repeat(63))).toBe(false)
+      expect(isValidSessionToken('a'.repeat(65))).toBe(false)
+      expect(isValidSessionToken(null as any)).toBe(false)
+    })
+
+    it('should reject tokens with invalid characters', () => {
+      const invalidToken = 'g'.repeat(64) // 'g' is not a hex character
+      expect(isValidSessionToken(invalidToken)).toBe(false)
+    })
+  })
+
+  describe('sanitizeSearchQuery', () => {
+    it('should allow safe characters', () => {
+      const query = 'search term 123'
+      const result = sanitizeSearchQuery(query)
+      expect(result).toBe('search term 123')
+    })
+
+    it('should remove dangerous characters', () => {
+      const query = "search'; DROP TABLE users; --"
+      const result = sanitizeSearchQuery(query)
+      expect(result).not.toContain(';')
+      expect(result).not.toContain('--')
+      // Note: DROP might still be present as it's alphanumeric, but SQL injection is prevented by removing special chars
+      expect(result).toBe('search DROP TABLE users ')
+    })
+
+    it('should limit query length', () => {
+      const longQuery = 'a'.repeat(200)
+      const result = sanitizeSearchQuery(longQuery)
+      expect(result.length).toBeLessThanOrEqual(100)
+    })
+
+    it('should handle non-string input', () => {
+      expect(sanitizeSearchQuery(null as any)).toBe('')
+      expect(sanitizeSearchQuery(undefined as any)).toBe('')
+    })
+  })
+
+  describe('validateFileUpload', () => {
+    const createMockFile = (name: string, type: string, size: number): File => {
+      return {
+        name,
+        type,
+        size,
+      } as File
+    }
+
+    it('should validate allowed file types', () => {
+      const file = createMockFile('test.jpg', 'image/jpeg', 1024)
+      const result = validateFileUpload(file)
+      expect(result.isValid).toBe(true)
+      expect(result.errors).toHaveLength(0)
+    })
+
+    it('should reject files that are too large', () => {
+      const file = createMockFile('large.jpg', 'image/jpeg', 15 * 1024 * 1024) // 15MB
+      const result = validateFileUpload(file)
+      expect(result.isValid).toBe(false)
+      expect(result.errors).toContain('File size must be less than 10MB')
+    })
+
+    it('should reject disallowed file types', () => {
+      const file = createMockFile('script.exe', 'application/x-executable', 1024)
+      const result = validateFileUpload(file)
+      expect(result.isValid).toBe(false)
+      expect(result.errors).toContain('File type not allowed')
+    })
+
+    it('should validate file extension matches MIME type', () => {
+      const file = createMockFile('image.txt', 'image/jpeg', 1024)
+      const result = validateFileUpload(file)
+      expect(result.isValid).toBe(false)
+      expect(result.errors).toContain('File extension does not match file type')
+    })
+  })
+
+  describe('generateSecureRandomString', () => {
+    it('should generate string of specified length', () => {
+      const result = generateSecureRandomString(16)
+      expect(result.length).toBe(16)
+    })
+
+    it('should generate different strings', () => {
+      const str1 = generateSecureRandomString()
+      const str2 = generateSecureRandomString()
+      expect(str1).not.toBe(str2)
+    })
+
+    it('should use default length when not specified', () => {
+      const result = generateSecureRandomString()
+      expect(result.length).toBe(32)
+    })
+  })
+
+  describe('API Key encryption/decryption', () => {
+    it('should encrypt and decrypt API keys', () => {
+      const originalKey = 'test-api-key-123'
+      const encrypted = encryptApiKey(originalKey)
+      const decrypted = decryptApiKey(encrypted)
+      
+      expect(encrypted).not.toBe(originalKey)
+      expect(decrypted).toBe(originalKey)
+    })
+
+    it('should handle decryption of invalid data', () => {
+      const result = decryptApiKey('invalid-encrypted-data')
+      expect(result).toBeDefined()
+    })
+  })
+
+  describe('validateTrainingContent', () => {
+    it('should validate correct training content', () => {
+      const content = {
+        title: 'Security Training',
+        description: 'Learn about security best practices',
+        category: 'security',
+      }
+      const result = validateTrainingContent(content)
+      expect(result.isValid).toBe(true)
+      expect(result.errors).toHaveLength(0)
+    })
+
+    it('should reject content with missing required fields', () => {
+      const content = {
+        title: 'Training',
+        // missing description and category
+      }
+      const result = validateTrainingContent(content)
+      expect(result.isValid).toBe(false)
+      expect(result.errors.length).toBeGreaterThan(0)
+    })
+
+    it('should reject content with invalid category', () => {
+      const content = {
+        title: 'Training',
+        description: 'Description',
+        category: 'invalid-category',
+      }
+      const result = validateTrainingContent(content)
+      expect(result.isValid).toBe(false)
+      expect(result.errors).toContain('Invalid category')
+    })
+
+    it('should reject content with fields that are too long', () => {
+      const content = {
+        title: 'a'.repeat(150), // Too long
+        description: 'Description',
+        category: 'security',
+      }
+      const result = validateTrainingContent(content)
+      expect(result.isValid).toBe(false)
+      expect(result.errors).toContain('Title must be less than 100 characters')
+    })
+  })
+
+  describe('getSecurityHeaders', () => {
+    it('should return security headers', () => {
+      const headers = getSecurityHeaders()
+      expect(headers['X-Content-Type-Options']).toBe('nosniff')
+      expect(headers['X-Frame-Options']).toBe('DENY')
+      expect(headers['X-XSS-Protection']).toBe('1; mode=block')
+      expect(headers['Content-Security-Policy']).toBeDefined()
+    })
+  })
+
+  describe('securityService', () => {
+    it('should validate CSRF tokens', () => {
+      const validToken = 'a'.repeat(64)
+      expect(securityService.validateCSRFToken(validToken)).toBe(true)
+      expect(securityService.validateCSRFToken('invalid')).toBe(false)
+    })
+
+    it('should validate sessions', () => {
+      const validSession = 'a'.repeat(64)
+      expect(securityService.validateSession(validSession)).toBe(true)
+      expect(securityService.validateSession('invalid')).toBe(false)
+    })
+
+    it('should sanitize input', () => {
+      const input = '<script>alert(1)</script>Hello'
+      const result = securityService.sanitizeInput(input)
+      expect(result).not.toContain('<script>')
+    })
+
+    it('should generate CSP header', () => {
+      const csp = securityService.generateCSPHeader()
+      expect(csp).toContain("default-src 'self'")
+      expect(csp).toContain("script-src 'self'")
+    })
+  })
+})
